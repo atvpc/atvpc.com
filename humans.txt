@@ -1,0 +1,22 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+    Web design: Keithieopia
+    Site: http://keithieopia.com
+
+    Photographer: Bill Deuster
+    Site: http://www.billdeuster.com
+
+    Layout: Frooition
+    Site: http://www.frooition.com
+
+
+/* SITE */
+    Last update: see CHANGELOG.md
+    Standards: HTML5, CSS3
+    Components: jQuery, HTML5 Shiv, jQuery lightbox2 plugin
+    Images: Silk Icons
+    Software: PHP
+    IDE: Geany, GIMP2

@@ -1,0 +1,9 @@
+#box_makes, #box_products {
+	width: 100%;
+}
+
+#slider_makes img, #slider_products img {
+	padding: 10px;
+	width: 100px;
+	height: 100px;
+}

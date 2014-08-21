@@ -1,0 +1,15 @@
+#testimonials {
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+
+#testimonials .testimonial {
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#testimonials .author {
+	text-align: right;
+	margin-top: 5px;
+	font-size: 14px;
+}
