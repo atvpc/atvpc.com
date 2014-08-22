@@ -82,6 +82,8 @@ switch ($c['page']['id']) {
 		header('HTTP/1.0 404 Not Found');
 		
 		$c['page']['file'] = 'content/pages/404.md';
+		
+		get_page_info();
         $template = file_get_contents('content/themes/' . $c['site']['theme'] . '/template.html');
         echo display_theme($template);
 		break;
@@ -99,8 +101,8 @@ switch ($c['page']['id']) {
             $c['page']['file'] = 'content/pages/' . $c['page']['id'] . '.md';
         }
         
-        get_page_info();
-
+        
+		get_page_info();
         $template = file_get_contents('content/themes/' . $c['site']['theme'] . '/template.html');
         echo display_theme($template);
 }
