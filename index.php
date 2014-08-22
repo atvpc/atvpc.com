@@ -2,19 +2,10 @@
 
 include 'inc/init.php';
 
-// Set the default page if one isn't specified
-$requested = parse_url($_SERVER['REQUEST_URI']);
-if (empty($_GET['p']) && $requested['path'] == '/') {
-	$c['page']['id'] = 'index';
-}
-elseif (empty($_GET['p'])) {
-	$c['page']['id'] = 'index';
-}
-else {
-	$c['page']['id'] = $_GET['p'];
-}
+// Prevent errors if ?p= isn't set
+$c['page']['id'] = (empty($_GET['p'])) ? 'index' : $_GET['p'];
 
-switch ($c['page']['id']){
+switch ($c['page']['id']) {
     case 'css':
         $css = array('inc/css/normalize.css', 'content/themes/'. $c['site']['theme'] .'/css/style.css');
 
@@ -65,16 +56,21 @@ switch ($c['page']['id']){
             echo minify_code($content, 'js');
         }
         break;
-
-    default:
-        // Unknown Page
-        if (array_search($c['page']['id'] . '.md', ls_dir('content/pages/', 'md')) == FALSE) {
+    case '404':
+		
+		$referer  = parse_url($_SERVER['HTTP_REFERER']);
+		$server   = parse_url($_SERVER['REQUEST_URI']);
+		
+		// Referer is same as this server, we might be able to help...
+		if ($requested['host'] == $server['host']) {
 			
-			$redirect  = parse_ini_file('content/redirect.ini', true);
+			$redirect = parse_ini_file('content/redirect.ini', true);
 			
-			if (strpos($requested['path'], '.php') !== FALSE) {
+			// Referer was a PHP file
+			if (strpos($referer['path'], '.php') !== FALSE) {
 				$file = substr($requested['path'], 1, strpos($requested['path'], '.php') + 3);
 				
+				// Found a match!
 				if (isset($redirect['page'][$file])) {
 					header('HTTP/1.1 301 Moved Permanently');
 					header('Location: http://'. $requested['host'] .'/index.php?p=' . $redirect['page'][$file]);
@@ -84,7 +80,19 @@ switch ($c['page']['id']){
 					die();
 				}
 			}
+		}
+			
+		// If we got to here, the above wasn't successful :-(
+		log_error('404', $_SERVER['REQUEST_URI']);
+		
+		header('HTTP/1.0 404 Not Found');
+		$c['page']['file'] = 'content/pages/404.md';
 
+		break;
+
+    default:    
+        // Unknown Page
+        if (array_search($c['page']['id'] . '.md', ls_dir('content/pages/', 'md')) == FALSE) {
 			log_error('404', $_SERVER['REQUEST_URI']);
 			
             header('HTTP/1.0 404 Not Found');
