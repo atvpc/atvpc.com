@@ -54,16 +54,16 @@ that will last a lifetime!
 	<tr>
 		<td>
 			<a href="content/img/building/rv_building.jpg" title="The Monster R.V." class="gallery" rel="building">
-			<img src="content/img/building/rv_building_thumb.jpg" alt="The Monster R.V." title="The Monster R.V.">
+			<img src="content/img/building/rv_building_thumb.jpg" alt="The Monster Mobile" title="The Monster Mobile">
 			</a>
 		</td>
 		</td><td style="border: 0px">
 			<a href="content/img/building/rv_front.jpg" title="The Monster R.V." class="gallery" rel="building">
-			<img src="content/img/building/rv_front_thumb.jpg" alt="The Monster R.V." title="The Monster R.V.">
+			<img src="content/img/building/rv_front_thumb.jpg" alt="The Monster Mobile" title="The Monster Mobile">
 			</a>
 		</td><td>
 			<a href="content/img/building/rv_side.jpg" title="The Monster R.V." class="gallery" rel="building">
-			<img src="content/img/building/rv_side_thumb.jpg" alt="The Monster R.V." title="The Monster R.V.">
+			<img src="content/img/building/rv_side_thumb.jpg" alt="The Monster Mobile" title="The Monster Mobile">
 			</a>
 		</td>	
 	</tr>
