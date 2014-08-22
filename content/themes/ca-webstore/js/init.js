@@ -10,6 +10,23 @@ loadresource('content/themes/' + THEME_NAME + '/js/stats-hider.js');
 // -=[ LAZY LOADER ]===============================================================================================-
 console.log('INFO: Lazy loading JS & CSS based on elements in page...');
 
+
+// Break out of jail... wait, I mean frames
+loadresource('content/themes/' + THEME_NAME + '/js/break-frames.js');
+
+
+// Load Browser Upgrade Notice
+loadresource('content/themes/' + THEME_NAME + '/css/jreject.css');
+loadresource('content/themes/' + THEME_NAME + '/js/jreject.js'),
+$.reject({ 
+	reject : { msie9: true },      // block these browser versions
+	closeCookie: true,             // use cookies to remmember if window was previously closed
+	imagePath: 'content/themes' + THEME_NAME + 'img/jreject/', // path where images are located
+	overlayBgColor: '#4B000F',     // background color for overlay
+	overlayOpacity: 0.7,           // Background transparency (0-1)
+});
+
+
 // Image Rotators
 if ($('#slider_makes').length != 0 || $('#slider_products').length != 0) {
 	loadresource('content/themes/' + THEME_NAME + '/css/caroufredsel.css');
