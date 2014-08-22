@@ -62,7 +62,7 @@ switch ($c['page']['id']) {
 		$server   = parse_url($_SERVER['REQUEST_URI']);
 		
 		// Referer is same as this server, we might be able to help...
-		if ($requested['host'] == $server['host']) {
+		if ($referer['host'] == $server['host']) {
 			
 			$redirect = parse_ini_file('content/redirect.ini', true);
 			
