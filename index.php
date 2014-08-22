@@ -92,6 +92,7 @@ switch ($c['page']['id']) {
 			log_error('404', $_SERVER['REQUEST_URI']);
 			
             header('HTTP/1.0 404 Not Found');
+            $c['page']['id']   = '404';
             $c['page']['file'] = 'content/pages/404.md';
         }
         else {
