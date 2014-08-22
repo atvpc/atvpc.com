@@ -3,20 +3,29 @@
 
 
 /* TEAM */
-    Web design: Keithieopia
+    Web design: Timothy Keith <timothy@atvpc.com>
     Site: http://keithieopia.com
 
-    Photographer: Bill Deuster
-    Site: http://www.billdeuster.com
+    Graphics Design: Bill Deuster <bdeuser@verizon.net>
+    Site:  http://www.billdeuster.com
+
+	Photographer: Cory Leonard <cory@atvpc.com>
 
     Layout: Frooition
     Site: http://www.frooition.com
 
 
-/* SITE */
-    Last update: see CHANGELOG.md
+/* CONTENT & THEME */
+    Engine: txtbuch
     Standards: HTML5, CSS3
-    Components: jQuery, HTML5 Shiv, jQuery lightbox2 plugin
+    Libraries: jQuery, Modernizr
+    Plugins: Colorbox, jReject, Nivo Slider, carouFredSel
     Images: Silk Icons
+    Fonts: Muli, Oswald Bold, Shortcut
     Software: PHP
     IDE: Geany, GIMP2
+    
+
+/* CHANGELOG */
+	Site: see ./content/CHANGELOG.md
+	Engine: see ./CHANGELOG.md
