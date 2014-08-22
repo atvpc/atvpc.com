@@ -36,7 +36,7 @@ switch ($c['page']['id']){
         break;
 
     case 'js':
-        $js = array('inc/js/libs/modernizr.js', 'inc/js/init.js');
+        $js = array('inc/js/modernizr.js', 'inc/js/init.js');
 
         $content = '';
         foreach ($js as $file) {
