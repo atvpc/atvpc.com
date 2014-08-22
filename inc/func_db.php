@@ -10,7 +10,7 @@ include 'func_sql.php';
 
 function db_log($msg, $sql = ''){
     global $c;
-    $file = $c['dir']['root'] . $c['dir']['log'] . 'db.log';
+    $file = 'content/db/db.log';
 
     if ($sql != '') $msg .= ' [ ' . $sql . ' ]';
 
@@ -94,7 +94,7 @@ function db_connect(){
 
     switch ($c['database']['engine']){
         case 'sqlite':
-            $con_str = 'sqlite:' . $c['dir']['root'] . $c['database']['location'];
+            $con_str = 'sqlite:' . $c['database']['location'];
             break;
 
         case 'mysql':
