@@ -68,10 +68,10 @@ switch ($c['page']['id']) {
 			// Found a match!
 			if (isset($redirect['page'][$file])) {
 				header('HTTP/1.1 301 Moved Permanently');
-				header('Location: http://'. $requested['host'] .'/index.php?p=' . $redirect['page'][$file]);
+				header('Location: /index.php?p=' . $redirect['page'][$file]);
 	
 				echo '<h1>Content Moved</h1>';
-				echo '<p>Sorry, that page has moved. You should be redirected automatically, but if not <a href="http://'. $requested['host'].'/index.php?p=' . $redirect['page'][$file] . '">click here</a>.</p>';
+				echo '<p>Sorry, that page has moved. You should be redirected automatically, but if not <a href="/index.php?p=' . $redirect['page'][$file] . '">click here</a>.</p>';
 				die();
 			}
 		}
