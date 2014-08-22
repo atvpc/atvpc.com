@@ -2,10 +2,13 @@
 
 function log_error($type, $desc) {
 	if (!isset($_SERVER['HTTP_REFERER']) || $_SERVER['HTTP_REFERER'] == '') {
-		$_SERVER['HTTP_REFERER'] = '[unknown]';
+		$referer = '[unknown]';
+	}
+	else {
+		$referer = $_SERVER['HTTP_REFERER'];
 	}
 	
-	$log = date('[Y-m-d H:i:s]') . ' ' . $type . ' at ' . $desc . ' by ' . $_SERVER['REMOTE_ADDR'] . ' from ' . $_SERVER['HTTP_REFERER'] . "\n";
+	$log = date('[Y-m-d H:i:s]') . ' ' . $type . ' at ' . $desc . ' by ' . $_SERVER['REMOTE_ADDR'] . ' from ' . $referer . "\n";
 	file_put_contents('content/log/error.log', $log, FILE_APPEND);
 }
 
