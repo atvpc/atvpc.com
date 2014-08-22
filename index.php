@@ -80,8 +80,10 @@ switch ($c['page']['id']) {
 		log_error('404', $_SERVER['REQUEST_URI']);
 		
 		header('HTTP/1.0 404 Not Found');
+		
 		$c['page']['file'] = 'content/pages/404.md';
-
+        $template = file_get_contents('content/themes/' . $c['site']['theme'] . '/template.html');
+        echo display_theme($template);
 		break;
 
     default:    
