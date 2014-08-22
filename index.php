@@ -3,7 +3,16 @@
 include 'inc/init.php';
 
 // Set the default page if one isn't specified
-$c['page']['id'] = (empty($_GET['p'])) ? 'index' : $_GET['p'];
+$requested = parse_url($_SERVER['REQUEST_URI']);
+if (empty($_GET['p']) && $requested['path'] == '/') {
+	$c['page']['id'] = 'index';
+}
+elseif (empty($_GET['p'])) {
+	$c['page']['id'] = 'index';
+}
+else {
+	$c['page']['id'] = $_GET['p'];
+}
 
 switch ($c['page']['id']){
     case 'css':
@@ -62,7 +71,6 @@ switch ($c['page']['id']){
         if (array_search($c['page']['id'] . '.md', ls_dir('content/pages/', 'md')) == FALSE) {
 			
 			$redirect  = parse_ini_file('content/redirect.ini', true);
-			$requested = parse_url($_SERVER['REQUEST_URI']);
 			
 			if (strpos($requested['path'], '.php') !== FALSE) {
 				$file = substr($requested['path'], 1, strpos($requested['path'], '.php') + 3);
