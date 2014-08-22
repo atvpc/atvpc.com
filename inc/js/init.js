@@ -6,27 +6,13 @@ Modernizr.load([{
     complete: function () {
         if ( !window.jQuery ) {
             console.log('WARNING: Failed to load jQuery from CDN, falling back to local copy');
-            Modernizr.load('inc/js/libs/jquery.js');
+            Modernizr.load('inc/js/jquery.js');
         }
 
         var THEME_NAME = $('#theme-name').text();
 
         // Run this stuff when the DOM is done loading... 
         $(document).ready(function() {
-            // Break out of jail... wait, I mean frames
-            loadresource('inc/js/break-frames.js');
-            
-            // Load Browser Upgrade Notice
-            loadresource('inc/css/jreject.css');
-            loadresource('inc/js/jreject.js'),
-            $.reject({ 
-                reject : { msie9: true },      // block these browser versions
-                closeCookie: true,             // use cookies to remmember if window was previously closed
-                imagePath: 'inc/img/jreject/', // path where images are located
-                overlayBgColor: '#4B000F',     // background color for overlay
-                overlayOpacity: 0.7,           // Background transparency (0-1)
-            });
-
             // Load Theme's JS 
             loadresource('content/themes/' + THEME_NAME + '/js/init.js');
         });
