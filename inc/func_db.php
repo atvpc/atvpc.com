@@ -8,15 +8,6 @@ if (!isset($db)){
 // SQL Statements in seperate file
 include 'func_sql.php';
 
-function db_log($msg, $sql = ''){
-    global $c;
-    $file = 'content/db/db.log';
-
-    if ($sql != '') $msg .= ' [ ' . $sql . ' ]';
-
-    file_put_contents($file, date('[Y-m-d H:i:s] ') . $msg . "\n", FILE_APPEND);
-}
-
 function db_stmt($sql, $bind = NULL){
     global $db;
     global $c;
@@ -41,7 +32,7 @@ function db_stmt($sql, $bind = NULL){
                         $results = $stmt->fetchColumn();
                     }
                     catch(PDOException $e){
-                        db_log($e->getMessage(), $sql);
+                        log_error('SQL', $e->getMessage() . '[' . $sql .']');
                     }
                 }
                 else {
@@ -49,14 +40,14 @@ function db_stmt($sql, $bind = NULL){
                         $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     }
                     catch(PDOException $e){
-                        db_log($e->getMessage(), $sql);
+                        log_error('SQL', $e->getMessage() . '[' . $sql .']');
                     }
                 }
                 return $results;
             }
         }
         catch(PDOException $e){
-            db_log($e->getMessage(), $sql);
+            log_error('SQL', $e->getMessage() . '[' . $sql .']');
         }
     }
     else {
@@ -66,7 +57,7 @@ function db_stmt($sql, $bind = NULL){
                     return $db->query($sql)->fetchColumn();
                 }
                 catch(PDOException $e){
-                    db_log($e->getMessage(), $sql);
+                    log_error('SQL', $e->getMessage() . '[' . $sql .']');
                 }
             }
             else {
@@ -74,7 +65,7 @@ function db_stmt($sql, $bind = NULL){
                     return $db->query($sql)->fetchAll();
                 }
                 catch(PDOException $e){
-                    db_log($e->getMessage(), $sql);
+                    log_error('SQL', $e->getMessage() . '[' . $sql .']');
                 }
             }
         }
@@ -83,7 +74,7 @@ function db_stmt($sql, $bind = NULL){
                 return $db->exec($sql);
             }
             catch(PDOException $e){
-                db_log($e->getMessage(), $sql);
+                log_error('SQL', $e->getMessage() . '[' . $sql .']');
             }
         }
     }
@@ -115,7 +106,7 @@ function db_connect(){
         $db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
     }
     catch(PDOException $e){
-        db_log($e->getMessage());
+        log_error('SQL', $e->getMessage());
     }
 
     if (!isset($e)){

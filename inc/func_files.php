@@ -1,5 +1,14 @@
 <?php
 
+function log_error($type, $desc) {
+	if (!isset($_SERVER['HTTP_REFERER']) || $_SERVER['HTTP_REFERER'] == '') {
+		$_SERVER['HTTP_REFERER'] = '[unknown]';
+	}
+	
+	$log = date('[Y-m-d H:i:s]') . ' ' . $type . ' at ' . $desc . ' by ' . $_SERVER['REMOTE_ADDR'] . ' from ' . $_SERVER['HTTP_REFERER'] . "\n";
+	file_put_contents('content/log/error.log', $log, FILE_APPEND);
+}
+
 function minify_code($source, $extension, $stats = FALSE){
     $source   = win2unix($source);
     $source   = str_replace("\t", '    ', $source);

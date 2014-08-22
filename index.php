@@ -58,7 +58,27 @@ switch ($c['page']['id']){
         break;
 
     default:
-        if (array_search($c['page']['id'] . '.md', ls_dir('content/pages/', 'md')) == FALSE){
+        // Unknown Page
+        if (array_search($c['page']['id'] . '.md', ls_dir('content/pages/', 'md')) == FALSE) {
+			
+			$redirect  = parse_ini_file('content/redirect.ini', true);
+			$requested = parse_url($_SERVER['REQUEST_URI']);
+			
+			if (strpos($requested['path'], '.php') !== FALSE) {
+				$file = substr($requested['path'], 1, strpos($requested['path'], '.php') + 3);
+				
+				if (isset($redirect['page'][$file])) {
+					header('HTTP/1.1 301 Moved Permanently');
+					header('Location: http://'. $requested['host'].'/index.php?p=' . $redirect['page'][$file]);
+		
+					echo '<h1>Content Moved</h1>';
+					echo '<p>Sorry, that page has moved. You should be redirected automatically, but if not <a href="http://'. $requested['host'].'/index.php?p=' . $redirect['page'][$file] . '">click here</a>.</p>';
+					die();
+				}
+			}
+
+			log_error('404', $_SERVER['REQUEST_URI']);
+			
             header('HTTP/1.0 404 Not Found');
             $c['page']['file'] = 'content/pages/404.md';
         }
