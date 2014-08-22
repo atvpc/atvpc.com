@@ -21,7 +21,7 @@ loadresource('content/themes/' + THEME_NAME + '/js/jreject.js'),
 $.reject({ 
 	reject : { msie9: true },      // block these browser versions
 	closeCookie: true,             // use cookies to remmember if window was previously closed
-	imagePath: 'content/themes' + THEME_NAME + 'img/jreject/', // path where images are located
+	imagePath: 'content/themes/' + THEME_NAME + '/img/jreject/', // path where images are located
 	overlayBgColor: '#4B000F',     // background color for overlay
 	overlayOpacity: 0.7,           // Background transparency (0-1)
 });
