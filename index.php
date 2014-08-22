@@ -56,35 +56,26 @@ switch ($c['page']['id']) {
             echo minify_code($content, 'js');
         }
         break;
-    case '404':
+        
+    case '404':	
+		$requested = parse_url($_SERVER['REQUEST_URI']);
+		$redirect  = parse_ini_file('content/redirect.ini', true);
 		
-		// Referer is same as this server, we might be able to help...
-		if (isset($_SERVER['HTTP_REFERER'])) { 
-
-			$referer  = parse_url($_SERVER['HTTP_REFERER']);
-			$server   = parse_url($_SERVER['REQUEST_URI']);
+		// Referer was a PHP file
+		if (strpos($requested['path'], '.php') !== FALSE) {
+			$file = substr($requested['path'], 1, strpos($requested['path'], '.php') + 3);
 			
-			if ($referer['host'] == $server['host']) {
-					
-				$redirect = parse_ini_file('content/redirect.ini', true);
-				
-				// Referer was a PHP file
-				if (strpos($referer['path'], '.php') !== FALSE) {
-					$file = substr($requested['path'], 1, strpos($requested['path'], '.php') + 3);
-					
-					// Found a match!
-					if (isset($redirect['page'][$file])) {
-						header('HTTP/1.1 301 Moved Permanently');
-						header('Location: http://'. $requested['host'] .'/index.php?p=' . $redirect['page'][$file]);
-			
-						echo '<h1>Content Moved</h1>';
-						echo '<p>Sorry, that page has moved. You should be redirected automatically, but if not <a href="http://'. $requested['host'].'/index.php?p=' . $redirect['page'][$file] . '">click here</a>.</p>';
-						die();
-					}
-				}
+			// Found a match!
+			if (isset($redirect['page'][$file])) {
+				header('HTTP/1.1 301 Moved Permanently');
+				header('Location: http://'. $requested['host'] .'/index.php?p=' . $redirect['page'][$file]);
+	
+				echo '<h1>Content Moved</h1>';
+				echo '<p>Sorry, that page has moved. You should be redirected automatically, but if not <a href="http://'. $requested['host'].'/index.php?p=' . $redirect['page'][$file] . '">click here</a>.</p>';
+				die();
 			}
 		}
-			
+
 		// If we got to here, the above wasn't successful :-(
 		log_error('404', $_SERVER['REQUEST_URI']);
 		
