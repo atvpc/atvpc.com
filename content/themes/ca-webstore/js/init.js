@@ -95,11 +95,6 @@ if ($('a.deobfuscate').length != 0) {
     loadresource('content/themes/' + THEME_NAME + '/js/deobfuscate.js');
 }
 
-// Add borders to widgets
-if ($('.widget').length != 0) {
-    loadresource('content/themes/' + THEME_NAME + '/js/widget-borders.js');
-}
-
 // FAQ Dropdowns
 if ($('.faq').length != 0) {
 	loadresource('content/themes/' + THEME_NAME + '/css/faq.css');

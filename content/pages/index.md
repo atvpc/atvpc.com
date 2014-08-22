@@ -2,27 +2,29 @@
 <div style="background-color: #000000">
 
 <aside>
-	<div class="widget">
-		<svg class="h1svg">
-			<defs>
-				<linearGradient id="textgradient" x="0%" y="0%" x2="0%" y2="100%">
-		            <stop stop-color="#33A3E3" offset="0%" />
-		            <stop stop-color="#005797" offset="80%" />
-		            <stop stop-color="#33A3E3" offset="90%" />
-				</linearGradient>
-			</defs>
-	
-			<text x="50%" y="40" text-anchor="middle" fill="url(#textgradient)" stroke="none">Welcome</text>  
-		</svg>
+	<div class="widget-border">
+		<div class="widget-content">
+			<svg class="h1svg">
+				<defs>
+					<linearGradient id="textgradient" x="0%" y="0%" x2="0%" y2="100%">
+			            <stop stop-color="#33A3E3" offset="0%" />
+			            <stop stop-color="#005797" offset="80%" />
+			            <stop stop-color="#33A3E3" offset="90%" />
+					</linearGradient>
+				</defs>
 		
-		<p>
-			ATV Parts Connection specializes in aftermarket parts for ATV's, UTV's, and automotives. We're 
-			located in Jessup, Maryland and have been in the CV and drive-line industry for over 20 years.
-		</p><p>
-			By using our experience and extensive knowledge of the field, we're able to design, improve, 
-			import, and stock parts that meet or exceed the original specifications at much lower costs than 
-			directly from the manufacturer.
-		</p>
+				<text x="50%" y="40" text-anchor="middle" fill="url(#textgradient)" stroke="none">Welcome</text>  
+			</svg>
+			
+			<p>
+				ATV Parts Connection specializes in aftermarket parts for ATV's, UTV's, and automotives. We're 
+				located in Jessup, Maryland and have been in the CV and drive-line industry for over 20 years.
+			</p><p>
+				By using our experience and extensive knowledge of the field, we're able to design, improve, 
+				import, and stock parts that meet or exceed the original specifications at much lower costs than 
+				directly from the manufacturer.
+			</p>
+		</div>
 	</div>
 </aside>
 
