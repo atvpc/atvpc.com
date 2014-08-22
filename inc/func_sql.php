@@ -37,15 +37,6 @@ function sql_getUniqueVisits() {
     return db_stmt('SELECT COUNT(*) AS unique_visits FROM visitors');
 }
 
-function sql_getSiteLastModified() {
-    $sql = 'SELECT strftime("%s", modify_time) FROM pages ORDER BY modify_time DESC LIMIT 1';
-    $result = db_stmt($sql);
-    
-    if (isset($result[0][0])) return $result[0][0];
-    else                      return FALSE;
-    
-}
-
 // -=[ VISITOR LOGGING ]===============================================================================================-
 
 function sql_checkVisitorNew($ip) {

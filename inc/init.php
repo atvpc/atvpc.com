@@ -23,11 +23,6 @@ include 'func_theme.php';
  
 $c['date']['year'] = date('Y');
 
-// Site version
-$c['site']['mtime'] = sql_getSiteLastModified();
-if ($c['site']['mtime'] === FALSE) $c['site']['mtime'] = filemtime('../index.php');
-$c['site']['modified'] = human_time($c['site']['mtime']);
-
 // Site copyright start
 if (isset($c['site']['established']) && $c['site']['established'] != '') { 
     $c['site']['established'] .= '-';
