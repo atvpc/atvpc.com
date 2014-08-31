@@ -1,15 +1,69 @@
 <?php
 
-function log_error($type, $desc) {
-	if (!isset($_SERVER['HTTP_REFERER']) || $_SERVER['HTTP_REFERER'] == '') {
-		$referer = '[unknown]';
-	}
-	else {
-		$referer = $_SERVER['HTTP_REFERER'];
+function log_error($event, $context) {
+	$severity = array(1 => array('name'    => 'Emergency',
+								 'key'     => 'panic',
+								 'desc'    => 'System is unusable',
+								 'example' => 'condition usually affecting multiple apps and sites'),
+					  2 => array('name'    => 'Alert',
+								 'key'     => 'alert',
+								 'desc'    => 'immediate action is required',
+								 'example' => 'entire website down, database unavailable'),
+					  3 => array('name'    => 'Critical',
+								 'key'     => 'crit',
+								 'desc'    => 'critical conditions',
+								 'example' => 'app component unavailable, unexpected exception'),
+					  4 => array('name'    => 'Error',
+								 'key'     => 'err',
+								 'desc'    => 'error conditions',
+								 'example' => 'errors that do not require immediate attention but should be monitored'),
+					  5 => array('name'    => 'Warning',
+								 'key'     => 'warn',
+								 'desc'    => 'unusual or undesirable occurrences that are not errors',
+								 'example' => 'deprecated APIs, poor use of an API, undesirable things that are not necessarily wrong'),
+					  6 => array('name'    => 'Notice',
+								 'key'     => 'notice',
+								 'desc'    => 'normal but significant events',
+								 'example' => 'Events that are unusual but not errors conditions; might be summarized in an email to developers to spot potential problems'),
+					  7 => array('name'    => 'Informational',
+								 'key'     => 'info',
+								 'desc'    => 'Informational messages',
+								 'example' => 'interesting events such as a user logs in, SQL logs, etc'),
+					  8 => array('name'    => 'Debug',
+								 'key'     => 'debug',
+								 'desc'    => 'Debug-level messages',
+								 'example' => 'info useful to developers for debugging the application, not useful during operations.')
+					 );
+	 
+	$msg = '{pri} {time} {ip} ';
+	
+	switch ($event){
+		case 'newuser':
+			$pri = 7;
+			$msg .= 'user {username} created';
+			break;
+			
+		case '404':
+			$pri = 7;
+			$msg .= 'file not found: {file} from {referer}';
+			break;
+			
+		default:
+			$pri = 8;
+			$msg .= '{msg}';
 	}
 	
-	$log = date('[Y-m-d H:i:s]') . ' ' . $type . ' at ' . $desc . ' by ' . $_SERVER['REMOTE_ADDR'] . ' from ' . $referer . "\n";
-	file_put_contents('content/log/error.log', $log, FILE_APPEND);
+	$context['pri']  = $pri;
+	$context['ip']   = $_SERVER['REMOTE_ADDR'];
+	$context['time'] = date('[Y-m-d H:i:s]');
+	
+	// Interpolates context values into the message placeholders
+	foreach ($context as $key => $value){
+		$msg = str_replace('{'. $key .'}', $value, $msg);
+	}
+	
+	$log = $msg . "\n";
+	file_put_contents('content/syslog.log', $log, FILE_APPEND);
 }
 
 function minify_code($source, $extension, $stats = FALSE){

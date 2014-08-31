@@ -77,8 +77,9 @@ switch ($c['page']['id']) {
 		}
 
 		// If we got to here, the above wasn't successful :-(
-		log_error('404', $_SERVER['REQUEST_URI']);
-		
+		log_error('404', array('file'    => $_SERVER['REQUEST_URI'],
+							   'referer' => $_SERVER['HTTP_REFERER']));
+	
 		header('HTTP/1.0 404 Not Found');
 		
 		$c['page']['file'] = 'content/pages/404.md';
@@ -91,7 +92,8 @@ switch ($c['page']['id']) {
     default:    
         // Unknown Page
         if (array_search($c['page']['id'] . '.md', ls_dir('content/pages/', 'md')) == FALSE) {
-			log_error('404', $_SERVER['REQUEST_URI']);
+			log_error('404', array('file'    => $_SERVER['REQUEST_URI'],
+								   'referer' => $_SERVER['HTTP_REFERER']));
 			
             header('HTTP/1.0 404 Not Found');
             $c['page']['id']   = '404';
