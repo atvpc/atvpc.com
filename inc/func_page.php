@@ -10,38 +10,48 @@ function get_page_info(){
     
     $c['page']['hash']    = hash_file('sha256', $c['page']['file']);
 
-    // See if the page is in out DB, if not add it
-    $metainfo = sql_getPage($c['page']['id']);
-    
-    if ($metainfo == FALSE){
-        // Generate & set page title
-        $c['page']['title'] = gen_page_title($c['page']['id']);
-        $c['page']['ctime'] = filemtime($c['page']['file']);
-        $c['page']['mtime'] = NULL;
+    // See if the page is in DB
+    if (file_exists('content/db/metadata/' . $c['page']['id'] . '.dat')) {
+		$meta = read_flatfile('content/db/metadata/' . $c['page']['id'] . '.dat');
+		
+	    $c['page']['title'] = $meta['title'];
+        $c['page']['ctime'] = $meta['ctime'];
+        $c['page']['desc'] =  (empty($meta['desc'])) ? '' : $meta['desc'];
         
-        // Add to metainfo database
-        sql_addPage(array(':id'    => $c['page']['id'], 
-                          ':title' => $c['page']['title'],
-                          ':ctime' => $c['page']['ctime'],
-                          ':hash'  => $c['page']['hash']));
-    }
-    else {
-        $c['page']['title'] = $metainfo['title'];
-        $c['page']['ctime'] = $metainfo['created'];
-        $c['page']['description'] =  (empty($metainfo['description'])) ? '' : $metainfo['description'];
-        
-        if ($c['page']['hash'] != $metainfo['hash']) { // File has changed, update metainfo
-            $c['page']['mtime'] = filemtime($c['page']['file']);
+        // File has changed, update metainfo in the DB
+        if ($c['page']['hash'] != $meta['hash']) { 
+           
+            $meta['mtime'] = filemtime($c['page']['file']);
+            $meta['hash']  = $c['page']['hash'];
+            write_flatfile('content/db/metadata/' . $c['page']['id'] . '.dat', $meta);
             
-            sql_chgPageMTime(array(':id'    => $c['page']['id'],
-                                   ':mtime' => filemtime($c['page']['file']), 
-                                   ':hash'  => $c['page']['hash']));
-                          
+			// Set the new modified time
+            $c['page']['mtime'] = $meta['mtime'];
         }
         else {
-            $c['page']['mtime'] = $metainfo['modified'];
+			// File hasn't changed, get the modified time from the metainfo
+            $c['page']['mtime'] = $meta['mtime'];
         }
-    }
+	}
+    else {
+        // Generate & set page title
+        $c['page']['title'] = gen_page_title($c['page']['id']);
+        $c['page']['desc']  = "";
+        $c['page']['ctime'] = filemtime($c['page']['file']);
+        $c['page']['mtime'] = "";
+        
+        // Add to metainfo
+        $meta = array('id'    => $c['page']['id'], 
+                      'title' => $c['page']['title'],
+                      'desc'  => "",
+                      'ctime' => $c['page']['ctime'],
+                      'mtime' => "",
+                      'hash'  => $c['page']['hash']);
+                      
+        // Write the metainfo to the DB file
+        write_flatfile('content/db/metadata/' . $c['page']['id'] . '.dat', $meta);
+	}
+
 }
 
 function gen_page_title($text){

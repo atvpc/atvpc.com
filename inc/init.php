@@ -10,9 +10,7 @@ $c['page']['stime'] = microtime(TRUE);
 // -=[ INCLUDES ]======================================================================================================-
 include 'func_security.php';
 include 'func_strarr.php';
-include 'func_db.php';
 include 'func_files.php';
-include 'func_ip.php';
 include 'func_datetime.php';
 include 'func_page.php';
 include 'func_theme.php';
@@ -50,9 +48,5 @@ if (isset($c['site']['email']) && $c['site']['email'] != '') {
 
 // Prevent errors if Referer isn't set
 $_SERVER['HTTP_REFERER'] = (empty($_SERVER['HTTP_REFERER'])) ? '[unknown]' : $_SERVER['HTTP_REFERER'];
-
-
-// Poor man's stats, part of func_ip.php
-log_ip();
 
 ?>

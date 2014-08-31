@@ -1,5 +1,13 @@
 <?php
 
+function write_flatfile($file, $data) {
+	file_put_contents($file, serialize($data), LOCK_EX);
+}
+
+function read_flatfile($file) {
+	return unserialize(file_get_contents($file));
+}
+
 function log_error($event, $context) {
 	$severity = array(1 => array('name'    => 'Emergency',
 								 'key'     => 'panic',
