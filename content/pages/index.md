@@ -39,6 +39,7 @@
 	</div>
 	<div id="grunge"></div>
 </div>
+
 <div style="clear: both"></div>
 
 <table>
