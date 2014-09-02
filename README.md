@@ -1,5 +1,6 @@
 txtßüch
 =======
+![txtBuch Logo](https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Sep/02/txtbuch-logo-1019039946-5_avatar.png "txtBuch Logo")
 
 txtßüch (or just "txtBuch") is a simple PHP content management system. The 
 name is pronounced as "textbook".
