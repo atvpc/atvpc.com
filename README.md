@@ -18,4 +18,4 @@ Hint: site config is stored in the content/ directory
 
 License
 -------
-txtßüch is released under The BSD 2-Clause License. See [COPYING.md](https://github.com/keithieopia/txtbuch/blob/master/LICENSE.md) for details.
+txtßüch is released under The BSD 2-Clause License. See [COPYING.md](https://github.com/keithieopia/txtbuch/blob/master/COPYING.md) for details.
