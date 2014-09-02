@@ -157,6 +157,26 @@ a:hover {
                   2px  1px 2px #00528F;
 }
 
+.atvpc a, .atvpc a:link, .atvpc a:visited, .atvpc a:active, .atvpc a:hover {
+    text-decoration: none;
+    color: #1E6997;
+}
+
+.atvpc a:hover {
+    text-shadow: -2px -1px 2px #00528F,
+                  2px  1px 2px #00528F;
+}
+
+.mpp a, .mpp a:link, .mpp a:visited, .mpp a:active, .mpp a:hover {
+    text-decoration: none;
+	color: #972024;
+}
+
+.mpp a:hover {
+    text-shadow: -2px -1px 2px #7E070B,
+                  2px  1px 2px #7E070B;
+}
+
 /* -=[ MISC ]=- */
 
 hr {

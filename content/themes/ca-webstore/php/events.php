@@ -1,5 +1,9 @@
 <?php
 
+	$company = '<span class="atvpc"><a href="./?p=index">ATV Parts Connection</a></span> '
+	         . '&amp; '
+	         . '<span class="mpp"><a href="./?p=dealers">Monster Performance Parts</a></span>';
+
 	$events[] = array('name'  => 'AIMExpo',
 					  'url'   => 'http://www.aimexpousa.com',
 	                  'start' => '2014-10-16',
@@ -26,16 +30,16 @@
 		echo '<a href="' . $event['url'] . '"><img src="' . $img . '" alt="' . $event['name'] . '"></a><br>';
 		
 		if ($event['until'] <= 0) {
-			echo '<span style="color: #1E6997">ATV Parts Connection</span> is currently at<br>' . $event['name'] . '. Stop by and talk to a representative today!';
+			echo $company . ' is currently at ' . $event['name'] . '. Stop by and talk to a representative today!';
 	    }
 		else if ($event['until'] == 1) {
-			echo '<span style="color: #1E6997">ATV Parts Connection</span> will be at<br>' . $event['name'] . ' tomorrow!';
+			echo $company . ' will be at ' . $event['name'] . '<br> tomorrow!';
 		}
 		else if ($event['until'] <= 10) {
-			echo '<span style="color: #1E6997">ATV Parts Connection</span> will be at<br>' . $event['name'] . ' in ' . $event['until'] . ' days!';
+			echo $company . ' will be at ' . $event['name'] . ' in ' . $event['until'] . ' days!';
 		}
 		else {
-			echo '<span style="color: #1E6997">ATV Parts Connection</span> will be at<br>' . $event['name'] . ' on ' . date('F jS', strtotime($event['start'])) . '.';
+			echo $company . ' will be at ' . $event['name'] . ' on ' . date('F jS', strtotime($event['start'])) . '.';
 		}
 		
 	}
