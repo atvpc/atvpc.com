@@ -11,6 +11,8 @@ disguised as a ".dat" file.
 Installation
 ------------
 *Coming soon, I promise...*
+Hint: site config is stored in the content/ directory
+
 
 License
 -------
