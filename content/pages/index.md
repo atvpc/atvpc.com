@@ -16,7 +16,7 @@
 				<text x="50%" y="40" text-anchor="middle" fill="url(#textgradient)" stroke="none">Welcome</text>  
 			</svg>
 			
-			<p>
+			<p itemprop="description">
 				ATV Parts Connection specializes in aftermarket parts for ATV's, UTV's, and automotives. We're 
 				located in Jessup, Maryland and have been in the CV and drive-line industry for over 20 years.
 			</p><p>
