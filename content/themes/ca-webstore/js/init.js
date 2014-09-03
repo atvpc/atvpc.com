@@ -3,8 +3,14 @@ var THEME_NAME = $('#theme-name').text();
 // Load Link Labeler
 loadresource('content/themes/' + THEME_NAME + '/js/label-links.js');
 
-// Load Stats Hider
-loadresource('content/themes/' + THEME_NAME + '/js/stats-hider.js');
+// Load txtBuch Credits Hider
+loadresource('content/themes/' + THEME_NAME + '/js/credits-hider.js');
+
+// Load Piwik Stats
+loadresource('content/themes/' + THEME_NAME + '/js/piwik.js');
+
+// Google Analytics
+loadresource('content/themes/' + THEME_NAME + '/js/google-analytics.js');
 
 
 // -=[ LAZY LOADER ]===============================================================================================-
@@ -117,6 +123,3 @@ if ($('.faq').length != 0) {
 	loadresource('content/themes/' + THEME_NAME + '/css/faq.css');
     loadresource('content/themes/' + THEME_NAME + '/js/faq.js');
 }
-
-// Google Analytics
-loadresource('content/themes/' + THEME_NAME + '/js/analytics.js');
