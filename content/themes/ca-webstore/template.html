@@ -22,7 +22,7 @@
     <body>
         <div style="display: none;" id="theme-name">ca-webstore</div>
 
-        <div id="wrapper-page">
+        <div id="wrapper-page" itemscope itemtype="http://schema.org/LocalBusiness">
             <header role="banner">
                 <a href="index.php?p=index" title="ATV Parts Connection"><img id="logo" src="content/themes/ca-webstore/img/logo.png"></a>
                 
@@ -58,7 +58,7 @@
 	            
 	            <footer>
 	                <div id="footer-info">
-	                    <section>
+	                    <section itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 							<svg class="h2svg">
 								<defs>
 									<linearGradient id="textgradient" x="0%" y="0%" x2="0%" y2="100%">
@@ -71,10 +71,10 @@
 								<text x="0" y="25" text-anchor="start" fill="url(#textgradient)" stroke="none">Address</text>  
 							</svg>
 	                        
-	                        ATV Parts Connection<br>
-	                        10555 Guilford Road<br>
-	                        Suite 113<br>
-	                        Jessup, MD 20794
+	                        <span itemprop="name">ATV Parts Connection</span><br>
+	                        <span itemprop="streetAddress">10555 Guilford Road<br>
+	                        Suite 113</span><br>
+	                        <span itemprop="addressLocality">Jessup</span>, <span itemprop="addressRegion">MD</span> <span itemprop="postalCode">20794</span>
 	                    </section>
 	                    
 	                    <section>
@@ -111,9 +111,9 @@
 							</svg>
 	                        
 	                        <ul>
-	                            <li>Toll-Free: 800-338-2326
+	                            <li>Toll-Free: <span itemprop="telephone">800-338-2326</span>
 	                            <li>Local: 301-498-4326
-	                            <li>{{ site_email }}
+	                            <li><span itemprop="email">{{ site_email }}</span>
 	                        </ul>
 	                    </section>
 	                    
