@@ -2,9 +2,9 @@ About Us
 ========
 
 ATV Parts Connection has been operating since 1989, we have over 20 years worth of experience and customer service. We 
-sell quality ATV and Automotive CV parts to locations all over the world. CV Restoration provides top-notch all complete 
-line of cv axles, cv joints &amp; rebuild kits, cv boot kits, cv halfshafts and other driveline parts along with great 
-customer support&mdash; a combination that can't be beat! 
+sell quality ATV and Automotive CV parts to locations all over the world. CV Restoration provides a complete top-notch 
+line of axles, joints, CV rebuild kits, boot kits, halfshafts and other driveline parts along with great customer 
+support&mdash; a combination that can't be beat! 
 
 Through our commitment, experience, and expertise CV Restoration has established a business relationship with our customers 
 that will last a lifetime!
