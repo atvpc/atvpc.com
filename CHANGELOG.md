@@ -1,3 +1,8 @@
+## 0.5 (2014-09-02)
+    - Switched from SQLite database to serialized arrays stored in .dat files
+    - Simple visitor logger with currently online support
+    - PSR-3 compatible logger
+
 ## 0.4 (2014-08-21)
     - txtbuch core live, running first ecommerce website
     - engine seperated from website content so changes can be tracked 
