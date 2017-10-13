@@ -4,10 +4,7 @@
 
 Source code for the [atvpc.com](http://atvpc.com) website, which runs on a custom CMS called txtBuch.
 
-## txtBuch CMS
-<img src="https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Sep/02/txtbuch-logo-1019039946-5_avatar.png" alt="txtBuch Logo" title="txtßüch" align="left">
-
-txtBuch is a simple flat-file PHP content management system. The database backend uses flat files that are nothing more than a [serialized](http://php.net/manual/en/function.serialize.php) array cunningly disguised as a ".dat" file.
+txtBuch uses PHP and a flat-file database consisting of [serialized](http://php.net/manual/en/function.serialize.php) arrays disguised as a ".dat" file.
 
 
 ## Feedback
