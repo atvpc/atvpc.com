@@ -17,12 +17,12 @@
 			</svg>
 			
 			<p itemprop="description">
-				ATV Parts Connection specializes in aftermarket parts for ATV's, UTV's, and automotives. We're 
-				located in Jessup, Maryland and have been in the CV and drive-line industry for over 20 years.
+				ATV Parts Connection specializes in aftermarket parts for ATVs, UTVs, and automotives. We're 
+				located in Jessup, Maryland and have been in the ATV/ UTV industry for over 20 years.
 			</p><p>
 				By using our experience and extensive knowledge of the field, we're able to design, improve, 
-				import, and stock parts that meet or exceed the original specifications at much lower costs than 
-				directly from the manufacturer.
+				import, and stock parts that meet or exceed OEM specifications at much lower costs than 
+				directly from the dealer.
 			</p>
 		</div>
 	</div>
@@ -60,7 +60,7 @@
 					</svg>
 					<div id="slider_makes" class="fouc">
 						<img alt="Arctic Cat Logo" title="Arctic Cat ATV & UTV Parts" src="content/img/vendors/arctic-cat.jpg" />
-						<img alt="Bombardier Recreational Products Logo" title="Bombardier ATV Parts" src="content/img/vendors/brp.jpg" />
+						<img alt="Bombardier Recreational Products Logo" title="BRP ATV Parts" src="content/img/vendors/brp.jpg" />
 						<img alt="Can-Am Logo" title="Can-Am ATV & UTV Parts" src="content/img/vendors/can-am.jpg" />
 						<img alt="Daihatsu Motor Company Logo" title="Daihatsu Mini Truck Driveline Parts" src="content/img/vendors/daihatsu.jpg" />
 						<img alt="Honda Logo" title="Honda ATV, UTV, and Auto Driveline Parts" src="content/img/vendors/honda.jpg" />
@@ -91,7 +91,7 @@
 					
 					<div id="slider_products" class="fouc">
 						<img alt="Arrowhead Electrical Logo" title="Arrowhead Electrical Products" src="content/img/vendors/arrowhead.jpg" />
-						<img alt="Kali Protectives Logo" title="Kali Helmets and Protective Gear" src="content/img/vendors/kali.jpg" />
+						<img alt="Kali Protectives Logo" title="Kali Protectives" src="content/img/vendors/kali.jpg" />
 						<img alt="Apparel" title="Apparel" src="content/img/products/category/apparel.jpg" />
 						<img alt="Drive Belts" title="Drive Belts" src="content/img/products/category/drive-belts.jpg" />
 						<img alt="Gates Logo" title="Gates Drivebelts" src="content/img/vendors/gates.jpg" />

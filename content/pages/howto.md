@@ -51,13 +51,13 @@ Howtos & Tech Tips
 				<td>
 					<p>A Vehicle Identification Number (VIN) is an unique 17 digit number made out of letters and numbers that contains a lot of information about that vehicle such as where and when it was made.</p>
 					<p>Vehicles made at the end of the year are often labeled as being manufactured in the upcoming year even though the two years use different parts. Split year vehicles also use different parts but are made in the same year. In this case you will need to know the month of the manufacture date. Both these problems are typically not apparent, so a VIN can confirm the exact date of manufacture.</p>
-					<p>The easiest way to find your vehicle's VIN is on the original title or proof of ownership of the vehicle. Otherwise, the VIN is typically printed somewhere on the vehicle. Usually it is embossed on the frame, on a metal plate, or found on a sticker.</p>
+					<p>By law, all ATVs and UTVs must be issued a VIN. Every vehicle made or sold in the US since 1971 has one. Its location is different between each OEM, but can always be found somewhere permanent. Typically, it is stamped on the frame or a metal plate near the frame.</p>
 				    <p>If you cannot find the VIN, try searching online for the location of the VIN on your particular vehicle or contact the manufacturer and ask them for it's location.
 					<p>If you do contact the manufacturer, it's best to ask them to decode it for you. We have access to general tools to decode VINs but they are not as sophisticated and detailed as the manufacturer's decoder</p>
 				</td><td>
 					<h2>Common Locations</h2>
 				    <ul>
-				        <li>Left hand side below the motor (but not on the motor as that is an unrelated number)
+				        <li>Left hand side below the motor (but not on the motor as that is a different serial number)
 				        <li>Top of the steering shaft
 				        <li>Behind the brush guard
 				        <li>Behind the air filter
@@ -115,7 +115,7 @@ Howtos & Tech Tips
 	    <ul>
 	        <li><a href="http://www.ups.com/tracking/tracking.html">UPS</a> - 18 characters long starting with "1Z" followed by a 16 digit number
 	        <li><a href="https://www.fedex.com/fedextrack/">FedEx</a> - 15 digit number
-	        <li><a href="https://www.usps.com/shipping/trackandconfirm.htm">USPS</a> - 13 characters long
+	        <li><a href="https://www.usps.com/shipping/trackandconfirm.htm">USPS</a> - 22 characters long
 	    </ul>
 	
 	    <p>If you have not received the tracking number after the package has shipped, feel free to <a href="./?p=contact">contact us</a>.
@@ -211,7 +211,7 @@ Howtos & Tech Tips
 						<img src="content/img/diagrams/male_female_splines_thumb.jpg" alt="Male versus female splines on u-joint axles" title="Male versus female splines on u-joint axles">
 					</a>
 				</td><td>
-					An U-Joint axle has one CV joint on the outer joint and an u-joint for the inner joint. The u-joint may have male or female splines depending on the axle. Male splines have a rod that goes into the differential. Female splines have an opening in which a rod from the differential goes into. The below illustration compares female versus male splined axles.
+					A U-Joint axle has one CV joint on the outboard and a universal joint and yoke assembly on the inboard. The u-joint yoke may have male or female type splines depending on the axle. Male splines have a rod that goes into the differential. Female splines have an opening in which a rod from the differential goes into. This illustration compares the two.
 				</td>
 			</tr>
 		</table>
@@ -219,12 +219,12 @@ Howtos & Tech Tips
 
 	<dt>Driveshafts</dt>
 	<dd>
-		<p>A driveshaft can refer to many different things such as the complete CV axles or propshafts. Unfortunately, there is no industry standard that defines what a driveshaft is. For this reason, it is best to avoid using the term "driveshaft" to describe any vehicle part. Instead use more specific terms that tend not to be confused such as "complete CV axle" or "propshaft".</p>
+		<p>A driveshaft can refer to one of a few different parts. Industry terms are different from manufacturer to manufacturer. For this reason, it is best to avoid using the term "driveshaft" to describe any vehicle part. Instead, use more specific terms that tend not to be confused such as "complete CV axle" or "propshaft".</p>
     </dd>
 	
 	<dt>Propshafts</dt>
 	<dd>
-		<p>Propshafts are located between the front and rear differentials. Depending on the vehicle, it may have one or two propshafts. All wheel drive vehicles that can change between 2WD and 4WD typically have two propshafts.</p>
+		<p>Propshafts are located between the front and rear differentials. Depending on the vehicle, it may have one or two propshafts. 2x4 vehicles will only have one propshaft, while 4x4 vehicles will have two.</p>
     </dd>
 </dl>
     
@@ -574,7 +574,7 @@ Howtos & Tech Tips
 
     <dt>ATV CV Axle removal and disassembly video</dt>
 	<dd>
-		<iframe width="420" height="315" src="http://www.youtube.com/embed/o8iZpjPG4xM"></iframe>
+		<iframe width="640" height="360" src="https://www.youtube.com/embed/OQ84_YJYEg8?rel=0" frameborder="0" allowfullscreen></iframe>
     </dd>
 
 
