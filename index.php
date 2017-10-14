@@ -1,113 +1,26 @@
-<?php
+<?php // @codingStandardsIgnoreFile
 
-include 'inc/init.php';
-
-// Prevent errors if ?p= isn't set
-$c['page']['id'] = (empty($_GET['p'])) ? 'index' : $_GET['p'];
-
-switch ($c['page']['id']) {
-    case 'css':
-        $css = array('inc/css/normalize.css', 'content/themes/'. $c['site']['theme'] .'/css/style.css');
-
-        $content = '';
-        foreach ($css as $desc => $file) {
-            $content .= trim(file_get_contents($file));
-        }
-
-        $content = win2unix($content);
-
-        if (isset($_GET['display']) && $_GET['display'] == TRUE) {
-            header('Content-Type: text/html');
-            echo minify_code($content, 'css', TRUE);
-        }
-        else {
-            /*
-            $expires = gmdate("D, d M Y H:i:s", time() + $c['cache']['css']);
-    
-            ob_start ('ob_gzhandler');
-            header('Expires: ' . $expires . ' GMT');
-            header('Cache-Control: must-revalidate'); 
-            */
-            header('Content-Type: text/css; charset: UTF-8');
-            echo '/* This style sheet has been minified. To view the original source add &display=TRUE to the URL */';
-            echo "\n\n";
-            echo minify_code($content, 'css');
-        }
-        break;
-
-    case 'js':
-        $js = array('inc/js/modernizr.js', 'inc/js/init.js');
-
-        $content = '';
-        foreach ($js as $file) {
-            $content .= trim(file_get_contents($file));
-        }
-
-        $content = win2unix($content);
-
-        if (isset($_GET['display']) && $_GET['display'] == TRUE) {
-            header('Content-Type: text/html');
-            echo minify_code($content, 'js', TRUE);
-        }
-        else {
-            header('Content-Type: text/javascript');
-            echo '/* This style sheet has been minified. To view the original source add &display=TRUE to the URL */';
-            echo "\n\n";
-            echo minify_code($content, 'js');
-        }
-        break;
-        
-    case '404':	
-		$requested = parse_url($_SERVER['REQUEST_URI']);
-		$redirect  = parse_ini_file('content/redirect.ini', true);
-		
-		// Referer was a PHP file
-		if (strpos($requested['path'], '.php') !== FALSE) {
-			$file = substr($requested['path'], 1, strpos($requested['path'], '.php') + 3);
-			
-			// Found a match!
-			if (isset($redirect['page'][$file])) {
-				header('HTTP/1.1 301 Moved Permanently');
-				header('Location: /index.php?p=' . $redirect['page'][$file]);
-	
-				echo '<h1>Content Moved</h1>';
-				echo '<p>Sorry, that page has moved. You should be redirected automatically, but if not <a href="/index.php?p=' . $redirect['page'][$file] . '">click here</a>.</p>';
-				die();
-			}
-		}
-
-		// If we got to here, the above wasn't successful :-(
-		log_error('404', array('file'    => $_SERVER['REQUEST_URI'],
-							   'referer' => $_SERVER['HTTP_REFERER']));
-	
-		header('HTTP/1.0 404 Not Found');
-		
-		$c['page']['file'] = 'content/pages/404.md';
-		
-		get_page_info();
-        $template = file_get_contents('content/themes/' . $c['site']['theme'] . '/template.html');
-        echo display_theme($template);
-		break;
-
-    default:    
-        // Unknown Page
-        if (array_search($c['page']['id'] . '.md', ls_dir('content/pages/', 'md')) == FALSE) {
-			log_error('404', array('file'    => $_SERVER['REQUEST_URI'],
-								   'referer' => $_SERVER['HTTP_REFERER']));
-			
-            header('HTTP/1.0 404 Not Found');
-            $c['page']['id']   = '404';
-            $c['page']['file'] = 'content/pages/404.md';
-        }
-        else {
-            $c['page']['file'] = 'content/pages/' . $c['page']['id'] . '.md';
-        }
-        
-        
-		get_page_info();
-        $template = file_get_contents('content/themes/' . $c['site']['theme'] . '/template.html');
-        echo display_theme($template);
+// check PHP platform requirements
+if (PHP_VERSION_ID < 50306) {
+    die('Pico requires PHP 5.3.6 or above to run');
+}
+if (!extension_loaded('dom')) {
+    die('Pico requires the PHP extension "dom" to run');
+}
+if (!extension_loaded('mbstring')) {
+    die('Pico requires the PHP extension "mbstring" to run');
 }
 
+// load dependencies
+require_once(__DIR__ . '/vendor/autoload.php');
 
-?>
+// instance Pico
+$pico = new Pico(
+    __DIR__,    // root dir
+    'config/',  // config dir
+    'plugins/', // plugins dir
+    'themes/'   // themes dir
+);
+
+// run application
+echo $pico->run();
