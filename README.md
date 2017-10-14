@@ -1,6 +1,6 @@
 # ATV Parts Connection Website
 
-<img src="https://raw.githubusercontent.com/keithieopia/atvpc.com/master/content/themes/ca-webstore/img/logo.png" alt="ATV Parts Connection Logo" title="ATVPC" align="right">
+<img src="https://raw.githubusercontent.com/atvpc/atvpc.com/master/content/themes/ca-webstore/img/logo.png" alt="ATV Parts Connection Logo" title="ATVPC" align="right">
 
 Source code for the [atvpc.com](http://atvpc.com) website, which runs on a custom CMS called txtBuch.
 
