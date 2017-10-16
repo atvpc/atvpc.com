@@ -27,7 +27,7 @@ $config['site_title'] = 'ATV Parts Connection';              // Site title
 /*
  * THEME
  */
-$config['theme'] = 'atvpc';                // Set the theme (defaults to "default")
+$config['theme'] = 'atvpc-bootstrap';                // Set the theme (defaults to "default")
 // $config['twig_config'] = array(              // Twig settings
 //     'cache' => false,                        // To enable Twig caching change this to a path to a writable directory
 //     'autoescape' => false,                   // Auto-escape Twig vars

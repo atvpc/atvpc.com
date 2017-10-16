@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="publisher" href="https://plus.google.com/b/103602236030149683509">
+    <link type="text/plain" rel="author" href="//humans.txt">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
+    {% if meta.description %}
+        <meta name="description" content="{{ meta.description|striptags }}">
+    {% endif %}{% if meta.robots %}
+        <meta name="robots" content="{{ meta.robots }}">
+    {% endif %}
+
+    <link rel="stylesheet" href="{{ theme_url }}/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ theme_url }}/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ theme_url }}/style.css">
+</head>
+
+<body>
+<div class="container">
+
+<div class="row">
+    <div class="col-sm-3">
+        <a href="/"><img id="logo" src="{{ theme_url }}/img/logo.png" alt="ATV Parts Connection Logo"></a>
+    </div>
+    <div class="col-sm-6 text-center">
+        <div class="row">
+            America's Connection for ATV Parts
+        </div>
+        <div class="row">
+            Monday&ndash;Friday: 8am&ndash;6pm &amp; Saturday: 9am&ndash;3pm EST
+        </div>
+        <div class="row">
+            800-338-2326
+        </div>
+      </div>
+      <div id="store-hours" class="col-sm-3">
+        <div id="store-hours-status" class="row text-center"><!-- propagated by store-hours.js --></div>
+        <div id="store-hours-shipping" class="row text-center"><!-- propagated by store-hours.js --></div>
+    </div>
+</div>
+
+
+
+<nav class="navbar navbar-inverse">
+    <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+             {% for page in pages if page.title %}
+                <li class="nav-item{% if page.id == current_page.id %} active{% endif %}">
+                    <a class="nav-link" href="{{ page.url }}">{{ page.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+
+        <form class="navbar-form navbar-right" role="search">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search">
+                <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div><!-- /input-group-btn -->
+            </div><!-- /input-group -->
+        </form>
+    </div><!-- /navbar-collapse -->
+</nav>
+
+
+
+<div class="row">
+<!-- TODO: replace with /{/{ content /}/} -->
+
+    <div class="col-sm-9">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean risus turpis, semper vitae dui non, pharetra blandit nunc. Morbi in nulla finibus ex varius cursus ut vitae lacus. Ut id nisl id justo elementum bibendum id quis odio. Phasellus molestie ut urna hendrerit consectetur. Pellentesque at porttitor tortor. Ut congue odio non mi fringilla tempor. Quisque non bibendum mi. Integer ac sem ultrices, venenatis odio porttitor, ullamcorper neque. Nulla facilisi. Nullam accumsan libero non luctus mattis. Donec velit dolor, lacinia vel tempor eget, dignissim eget neque.
+    </div>
+    <div class="col-sm-3">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida turpis at euismod egestas. Praesent dapibus congue elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas luctus venenatis semper. Maecenas sollicitudin rhoncus dui a elementum. 
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-6">
+        Pellentesque sollicitudin condimentum orci, vitae iaculis nisl rhoncus in. Suspendisse nec porta nulla, vel malesuada nunc. Etiam at enim sit amet turpis consectetur bibendum non aliquam nisi. Nulla non tortor mattis, consectetur felis ut, blandit lorem. Nunc sodales tellus diam. 
+    </div>
+    <div class="col-sm-6">
+        Ut consectetur luctus arcu at cursus. Duis ac tellus ac eros semper maximus a sit amet lacus. Integer commodo felis at neque tempor, eu feugiat nisi pellentesque. Vivamus iaculis, tortor in posuere iaculis, massa sem luctus enim, tincidunt congue augue nisi ut felis. Sed accumsan commodo diam non cursus.
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-3">
+        Suspendisse ut felis sapien. In nec rutrum tortor. Vestibulum rhoncus iaculis lorem, id egestas ligula hendrerit et.
+    </div>
+    <div class="col-sm-3">
+        Integer ultrices dolor sem, id ornare turpis feugiat a. Suspendisse lobortis ex et nunc imperdiet, eu aliquam mauris maximus. 
+    </div>
+    <div class="col-sm-3">
+        Pellentesque quam lorem, posuere vel felis at, porta rutrum tellus. Curabitur dignissim, nisl non tristique vehicula. 
+    </div>
+    <div class="col-sm-3">
+        Lectus nisi volutpat lectus, mattis tincidunt lacus leo at neque. Cras in eleifend ante, a tincidunt velit. Cras massa nisl.
+    </div>
+<!-- END TODO: replace with /{/{ content /}/} -->
+</div>
+
+<div class="row footer-bar">
+    <div class="col-sm-9">
+        Copyright © 2007&ndash;{{ "now"|date('Y') }} <a href="mailto:sales@atvpartsconnection.com">CV Restoration, LLC</a>. All Rights Reserved.
+    </div>
+    <div class="col-sm-3">
+        <ul class="social pull-right">
+            <li><a href="//www.facebook.com/pages/ATV-Parts-Connection/227990890564556" title="Visit our Facebook page"><i class="fa fa-facebook"></i></a>
+            <li><a href="//google.com/+Atvpc" title="Visit our Google+ page" rel="publisher"><i class="fa fa-google-plus"></i></a>
+            <li><a href="//twitter.com/atvpartsconnect" title="Visit our Twitter profile"><i class="fa fa-twitter"></i></a>
+            <li><a href="//www.amazon.com/gp/aag/main?seller=A1YR0DBBU4DM4B" title="Visit our Amazon storefront"><i class="fa fa-amazon"></i></a>
+            <li><a href="//stores.ebay.com/ATV-Parts-Connection" title="Visit our eBay store"><i class="fa fa-shopping-cart"></i></a>
+        </ul>
+    </div>
+</div>
+
+<div class="row text-center fineprint">
+    <p>
+        ATV Parts Connection, Monster Performance Parts, the Monster Axle logo, and ATV Parts Connection graphics are the servicemarks, trademarks, or registered trademarks owned by ATV Parts Connection.<br>
+        All other servicemarks and trademarks are the property of their respective owner.
+    </p>
+
+    <!-- TODO: add privacy policy and tos links-->
+</div>
+
+</div><!-- /container -->
+
+<script src="{{ theme_url }}/js/jquery.min.js"></script>
+<script src="{{ theme_url }}/js/bootstrap.min.js"></script>
+<script src="{{ theme_url }}/js/moment.min.js"></script>
+<script src="{{ theme_url }}/js/moment-timezone-with-data.min.js"></script>
+<script src="{{ theme_url }}/js/store-hours.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+/* ---------- IMPORTS ---------- */
+@import 'fonts.css';
+
+
+/* ---------- PAGE ---------- */
+
+body {
+    background: #000000 url('img/bg.jpg') no-repeat top center;
+    margin-top: 1em;
+}
+
+
+.navbar {
+    margin-top: 1em;
+}
+
+/* ---------- STORE HOURS---------- */
+
+#store-hours {
+    font-family: 'Flavors';
+    text-transform: uppercase;
+}
+
+#store-hours-status {
+	font-size: 4em;
+	line-height: 1em;
+    text-shadow: 2px 2px #444;
+}
+
+#store-hours-shipping {
+	font-size: 1.25em;
+	line-height: 1.25em;
+    width: 10em;
+    margin: auto;
+	color: #a55200;
+
+}
+
+.store-hours-open { color: #008b45; }
+.store-hours-warn { color: #d96c00; }
+.store-hours-closed { color: #8b0000; }
+
+/* ---------- FOOTER BAR ---------- */
+.footer-bar {
+    margin-top: 1em;
+    
+    height: 3em;
+    line-height: 3em;
+
+    background: #1E6997; /* rgb(30, 105, 151) - for old browsers */
+    background: linear-gradient(to bottom, rgba(30, 105, 151, 1) 0%,     /* #1E6997 */
+                                           rgba(50, 162, 228, .9) 100%); /* #32A2E4 */
+
+    border: 1px solid #1C85C2; /* rgb(28,133,194) */
+    border-radius: 1em;
+
+    color: #000;
+}
+
+.footer-bar a {
+    color: inherit;
+}
+
+/* ---------- SOCIAL ---------- */
+
+.social {
+    list-style-type: none;
+}
+
+.social li {
+    display: inline;
+}
+
+/* ---------- FINEPRINT ---------- */
+.fineprint {
+    font-size: .8em;
+    padding: 0 5em;
+    color: #444;
+}

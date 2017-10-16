@@ -1,0 +1,5 @@
+@font-face {
+    font-family: "Flavors";
+    src: url("fonts/flavors-latin-400.woff2") format("woff2"),
+         url("fonts/flavors-latin-400.woff") format("woff");
+}
