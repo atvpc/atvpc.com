@@ -1,5 +1,8 @@
-About Us
-========
+---
+Title: About Us
+Description: Who we are and what we do
+---
+
 
 ATV Parts Connection has been operating since 1989, we have over 20 years worth of experience and customer service. We 
 sell quality ATV and Automotive CV parts to locations all over the world. CV Restoration provides a complete top-notch 
