@@ -1,3 +1,9 @@
+---
+Title: Products
+Description: Products and brands we carry
+---
+
+
 <a name="axles"></a>Constant Velocity Axles
 ============================================
 Our aftermarket constant velocity axles are designed to be a direct replacement for your ATV's stock axles. They are 

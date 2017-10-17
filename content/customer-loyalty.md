@@ -1,5 +1,8 @@
-Customer Loyalty
-================
+---
+Title: Customer Loyalty
+Description: Discounts for frequent customers
+---
+
 As a reward for customer loyalty, special discounts are available for our repeat customers.
 
 At the bottom of your sales receipt will be a coupon for a certain percentage off your next order. Make sure you retain 

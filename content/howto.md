@@ -1,5 +1,9 @@
-Howtos & Tech Tips
-==================
+---
+Title: Howtos
+Description: Frequently asked questions, howtos, and tips
+---
+
+# Howtos & Tech Tips
 
 ## Ordering
 		

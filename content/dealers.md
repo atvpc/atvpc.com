@@ -1,5 +1,8 @@
-Dealer Program
-==============
+---
+Title: Dealer Program
+Description: Monster performance parts and other distributor, dealer, and vendor programs
+---
+
 Special pricing and discount bulk rates are available through our dealer program. The program has three tiers: 
 non-stocking dealers, stocking dealers, and warehouse distributors.
 

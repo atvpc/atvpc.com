@@ -1,3 +1,8 @@
+---
+Title: Store Policies
+Description: Warranty, returns, and shipping policies
+---
+
 <a name="returns"></a>New Product Returns
 ==============================
 Satisfaction is our goal. If for some reason, customers are not satisfied with a purchase, either through this website or over the phone, we will gladly accept returns of unused products up to 60 days after the original date of purchase. 
