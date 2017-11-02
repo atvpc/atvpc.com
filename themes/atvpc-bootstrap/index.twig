@@ -46,37 +46,58 @@
 </div>
 
 
-
-<nav class="navbar navbar-inverse">
-    <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-             {% for page in pages if page.title %}
-                <li class="nav-item{% if page.id == current_page.id %} active{% endif %}">
-                    <a class="nav-link" href="{{ page.url }}">{{ page.title }}</a>
-                </li>
-            {% endfor %}
-        </ul>
-
-        <form class="navbar-form navbar-right" role="search">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search">
-                <div class="input-group-btn">
-                    <button class="btn btn-default" type="submit">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </div><!-- /input-group-btn -->
-            </div><!-- /input-group -->
-        </form>
-    </div><!-- /navbar-collapse -->
-</nav>
-
-
-
 <div class="row">
+    <nav class="navbar">
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                {% for page in pages if page.title %}
+                    <li class="nav-item{% if page.id == current_page.id %} active{% endif %}">
+                        <a class="nav-link" href="{{ page.url }}">{{ page.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+
+            <form class="navbar-form navbar-right" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div><!-- /input-group-btn -->
+                </div><!-- /input-group -->
+            </form>
+        </div><!-- /navbar-collapse -->
+    </nav>
+</div>
+
+
+<div class="row content">
 <!-- TODO: replace with /{/{ content /}/} -->
 
     <div class="col-sm-9">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean risus turpis, semper vitae dui non, pharetra blandit nunc. Morbi in nulla finibus ex varius cursus ut vitae lacus. Ut id nisl id justo elementum bibendum id quis odio. Phasellus molestie ut urna hendrerit consectetur. Pellentesque at porttitor tortor. Ut congue odio non mi fringilla tempor. Quisque non bibendum mi. Integer ac sem ultrices, venenatis odio porttitor, ullamcorper neque. Nulla facilisi. Nullam accumsan libero non luctus mattis. Donec velit dolor, lacinia vel tempor eget, dignissim eget neque.
+        <div id="action-shots-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="img-responsive" src="content/images/action-shots/0.jpg">
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="content/images/action-shots/1.jpg">
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="content/images/action-shots/2.jpg">
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="content/images/action-shots/3.jpg">
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="content/images/action-shots/4.jpg">
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="content/images/action-shots/5.jpg">
+                </div>
+            </div>
+        </div>
     </div>
     <div class="col-sm-3">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida turpis at euismod egestas. Praesent dapibus congue elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas luctus venenatis semper. Maecenas sollicitudin rhoncus dui a elementum. 
@@ -89,7 +110,7 @@
         
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img class="img-responsive d-inline-block" alt="Arctic Cat Logo" title="Arctic Cat ATV & UTV Parts" src="content/images/slider/vendors/arctic-cat.jpg">
+                    <img class="img-responsive" alt="Arctic Cat Logo" title="Arctic Cat ATV & UTV Parts" src="content/images/slider/vendors/arctic-cat.jpg">
                     <img class="img-responsive" alt="Bombardier Recreational Products Logo" title="BRP ATV Parts" src="content/images/slider/vendors/brp.jpg">
                     <img class="img-responsive" alt="Can-Am Logo" title="Can-Am ATV & UTV Parts" src="content/images/slider/vendors/can-am.jpg">
                     <img class="img-responsive" alt="Daihatsu Motor Company Logo" title="Daihatsu Mini Truck Driveline Parts" src="content/images/slider/vendors/daihatsu.jpg">

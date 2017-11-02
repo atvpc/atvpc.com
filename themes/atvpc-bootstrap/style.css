@@ -9,12 +9,48 @@ body {
     margin-top: 1em;
 }
 
-
-.navbar {
-    margin-top: 1em;
+.content {
+    background-color: #000;
 }
 
-/* ---------- CAROUSEL ---------- */
+/* ---------- NAVBAR ---------- */
+
+.navbar {
+
+    border-radius: 0; /* override bootstrap styling */
+    margin: 0; /* override bootstrap styling */
+
+    margin-top: 1em;
+    background: #1E6997; /* rgb(30, 105, 151) - for old browsers */
+    background: linear-gradient(to bottom, rgba(30, 105, 151, 1) 0%,     /* #1E6997 */
+                                           rgba(50, 162, 228, .9) 100%); /* #32A2E4 */
+
+    border: 1px solid #1C85C2; /* rgb(28,133,194) */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* ---------- ACTION SHOTS CAROUSEL ---------- */
+
+#action-shots-carousel {
+    position: relative;
+    width: 700px;
+    height: 400px;
+}
+
+#action-shots-carousel::before {
+    position: absolute;
+    z-index: 100;
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url('img/grunge-frame.png');
+}
+
+/* ---------- PRODUCT / VENDOR CAROUSEL ---------- */
 #vendor-carousel img,
 #product-carousel img {
     display: inline-block;
