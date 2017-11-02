@@ -1,10 +1,23 @@
-# ATV Parts Connection Website
+<p align="center">
+    <img src="https://raw.githubusercontent.com/atvpc/atvpc.com/master/content/themes/ca-webstore/img/logo.png" alt="ATV Parts Connection Logo">
+</p>
+<p align="center">
+    <a href="https://github.com/atvpc/atvpc.com/blob/master/LICENSE">
+        <img src="https://img.shields.io/github/license/atvpc/atvpc.com.svg" alt="License Badge">
+    </a>
+    <a href="https://github.com/atvpc/atvpc.com/releases">
+        <img src="https://img.shields.io/github/tag/atvpc/atvpc.com.svg" alt="Current Version">
+    </a>
+    <a href="https://gemnasium.com/github.com/atvpc/atvpc.com">
+        <img src="https://gemnasium.com/badges/github.com/atvpc/atvpc.com.svg" alt="Dependency Status">
+    </a>
 
-<img src="https://raw.githubusercontent.com/atvpc/atvpc.com/master/content/themes/ca-webstore/img/logo.png" alt="ATV Parts Connection Logo" title="ATVPC" align="right">
+    <a href="https://www.codacy.com/app/timothykeith/atvpc.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=atvpc/atvpc.com&amp;utm_campaign=Badge_Grade">
+        <img src="https://api.codacy.com/project/badge/Grade/c18d8f710dc744fb940f1124b0f9378e" alt="Codacy Badge">
+    </a>
+</p>
 
-Source code for the [atvpc.com](http://atvpc.com) website, which runs on a custom CMS called txtBuch.
-
-txtBuch uses PHP and a flat-file database consisting of [serialized](http://php.net/manual/en/function.serialize.php) arrays disguised as a ".dat" file.
+Source code for the [atvpc.com](http://atvpc.com) website, which runs on [Pico](https://github.com/picocms/Pico).
 
 
 ## Feedback
