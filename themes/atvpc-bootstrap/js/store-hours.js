@@ -49,7 +49,7 @@ var holidays = {
 /* ---------- DO NOT EDIT BELOW ---------- */
 
 function dayName(day) {
-    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     return days[day];
 }
 
@@ -67,14 +67,14 @@ function prettyTime(time) {
         }
     }
     else {
-        ampm = "pm"
+        ampm = "pm";
 
         if (hours > 12) {
             hours = hours - 12
         }
     }
 
-    return hours + ":" + minutes + ampm
+    return hours + ":" + minutes + ampm;
 }
 
 
@@ -84,14 +84,14 @@ $(function() {
     var now_est = moment(now).tz('America/New_York')
 
     var day = moment(now_est).day();
-    var time = moment(now_est).format('HHmm')
-    var holiday_exact_date = moment(now_est).format('YYYY-MM-DD');
-    var holiday_every_year = '0000-' + moment(now_est).format('MM-DD');
+    var time = moment(now_est).format("HHmm");
+    var holiday_exact_date = moment(now_est).format("YYYY-MM-DD");
+    var holiday_every_year = "0000-" + moment(now_est).format("MM-DD");
 
     /* OPEN / CLOSED STATUS */
-    var status = null;
-    var style = null;
-    var hover = null;
+    var status = "";
+    var style = "";
+    var hover = "";
 
     if (typeof holidays[holiday_exact_date] != 'undefined') { 
         /* floating day holidays, like easter and thanksgiving */
@@ -140,6 +140,8 @@ $(function() {
     }
 
     /* SHIPPING STATUS */
+    var shipping = "";
+
     if ( status == "Closed" ) {
         shipping = "Online orders ship next business day";
     }
@@ -153,8 +155,8 @@ $(function() {
     }
 
     /* HTML OUTPUT */
-    $('#store-hours').prop('title', hover);
-    $('#store-hours-status').addClass(style);
-    $('#store-hours-status').html(status);
-    $('#store-hours-shipping').html(shipping); 
+    $("#store-hours").prop("title", hover);
+    $("#store-hours-status").addClass(style);
+    $("#store-hours-status").html(status);
+    $("#store-hours-shipping").html(shipping);
 });
