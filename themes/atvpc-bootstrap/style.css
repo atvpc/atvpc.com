@@ -30,6 +30,10 @@ body {
     border-top-right-radius: 10px;
 }
 
+.nav-link {
+    color: #FFF;
+}
+
 /* ---------- ACTION SHOTS CAROUSEL ---------- */
 
 #action-shots-carousel {
