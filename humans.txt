@@ -1,7 +1,6 @@
 /* the humans responsible & colophon */
 /* humanstxt.org */
 
-
 /* TEAM */
     The Big Cheese aka The C.V. Man:
         Danny Walburn <danny@atvpc.com>
@@ -14,7 +13,6 @@
         
     Graphics Design: 
         Bill Deuster <bdeuser@verizon.net> - http://www.billdeuster.com
-
 
 /* SUPPORTING COMPANIES */
     Early Prototype: 
