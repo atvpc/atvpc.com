@@ -12,7 +12,7 @@
         <img src="https://gemnasium.com/badges/github.com/atvpc/atvpc.com.svg" alt="Dependency Status">
     </a>
 
-    <a href="https://www.codacy.com/app/timothykeith/atvpc.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=atvpc/atvpc.com&amp;utm_campaign=Badge_Grade">
+    <a href="https://www.codacy.com/app/timothykeith/atvpc.com">
         <img src="https://api.codacy.com/project/badge/Grade/c18d8f710dc744fb940f1124b0f9378e" alt="Codacy Badge">
     </a>
 </p>
