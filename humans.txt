@@ -3,29 +3,32 @@
 
 
 /* TEAM */
-    Web design: Timothy Keith <timothy@atvpc.com>
-    Site: http://keithieopia.com
+    The Big Cheese aka The C.V. Man:
+        Danny Walburn <danny@atvpc.com>
 
-    Graphics Design: Bill Deuster <bdeuser@verizon.net>
-    Site:  http://www.billdeuster.com
+    Project Manager, UI Testing, Photography: 
+        Cory Leonard <cory@atvpc.com>
 
-	Photographer: Cory Leonard <cory@atvpc.com>
+    Front-End Development: 
+        Timothy Keith <timothy@atvpc.com> - http://keithieopia.com
+        
+    Graphics Design: 
+        Bill Deuster <bdeuser@verizon.net> - http://www.billdeuster.com
 
-    Layout: Frooition
-    Site: http://www.frooition.com
 
+/* SUPPORTING COMPANIES */
+    Early Prototype: 
+        Frooition - http://www.frooition.com
+
+    Host:
+        Webfaction - https://webfaction.com
 
 /* CONTENT & THEME */
-    Engine: txtbuch
-    Standards: HTML5, CSS3
-    Libraries: jQuery, Modernizr
-    Plugins: Colorbox, jReject, Nivo Slider, carouFredSel
-    Images: Silk Icons
-    Fonts: Muli, Oswald Bold, Shortcut
-    Software: PHP
-    IDE: Geany, GIMP2
-    
+    Engine: Pico CMS
+    Libraries: jQuery, Bootstrap
+    Fonts: Font Awesome
+    Software: Kate, GIMP, OptiPNG, jpegoptim, yarn
+    Misc: git, rsync, GNU make, awk/sed
 
 /* CHANGELOG */
-	Site: see ./content/CHANGELOG.md
-	Engine: see ./CHANGELOG.md
+	see: CHANGELOG.md
