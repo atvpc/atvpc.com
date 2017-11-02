@@ -11,6 +11,7 @@ update:
 > rsync -avh node_modules/moment-timezone/builds/moment-timezone-with-data.min.js themes/atvpc-bootstrap/js/
 > rsync -avh node_modules/typeface-flavors/files/* themes/atvpc-bootstrap/fonts/
 > rsync -avh node_modules/font-awesome/css/font-awesome.min.css themes/atvpc-bootstrap/
+> sed -i -e "s/url('..\//url('/g" themes/atvpc-bootstrap/font-awesome.min.css
 > rsync -avh node_modules/font-awesome/fonts/* themes/atvpc-bootstrap/fonts/
 
 server: update
