@@ -54,7 +54,7 @@ function dayName(day) {
 }
 
 function prettyTime(time) {
-    time        = String(time)
+    time        = String(time);
     var hours   = time.slice(0, -2);
     var minutes = time.slice(-2);
     var ampm    = null;
@@ -62,7 +62,7 @@ function prettyTime(time) {
     if (hours < 12) {
         ampm = "am";
 
-        if (hours == 0) {
+        if (hours === 0) {
             hours = 12;
         }
     }
@@ -70,7 +70,7 @@ function prettyTime(time) {
         ampm = "pm";
 
         if (hours > 12) {
-            hours = hours - 12
+            hours = hours - 12;
         }
     }
 
@@ -78,28 +78,28 @@ function prettyTime(time) {
 }
 
 
-$(function() {
+$( document ).ready(function() {
 
     var now = new Date().getTime();
-    var now_est = moment(now).tz('America/New_York')
+    var nowEST = moment(now).tz('America/New_York');
 
-    var day = moment(now_est).day();
-    var time = moment(now_est).format("HHmm");
-    var holiday_exact_date = moment(now_est).format("YYYY-MM-DD");
-    var holiday_every_year = "0000-" + moment(now_est).format("MM-DD");
+    var day = moment(nowEST).day();
+    var time = moment(nowEST).format("HHmm");
+    var holiday_exact_date = moment(nowEST).format("YYYY-MM-DD");
+    var holiday_every_year = "0000-" + moment(nowEST).format("MM-DD");
 
     /* OPEN / CLOSED STATUS */
     var status = "";
     var style = "";
     var hover = "";
 
-    if (typeof holidays[holiday_exact_date] != 'undefined') { 
+    if (typeof holidays[holiday_exact_date] != "undefined") { 
         /* floating day holidays, like easter and thanksgiving */
         status = "Closed";
         style  = "store-hours-closed";
         hover  = "Sorry, we're closed for " + holidays[holiday_exact_date];
     }
-    else if (typeof holidays[holiday_every_year] != 'undefined') { 
+    else if (typeof holidays[holiday_every_year] != "undefined") { 
         /* holidays on the same day, like christmas */
         status = "Closed";
         style  = "store-hours-closed";
@@ -107,7 +107,7 @@ $(function() {
     }
     else {
         /* regular days, non-holiday */
-        if (hours[day].open == hours[day].close) {
+        if (hours[day].open === hours[day].close) {
             status = "Closed";
             style  = "store-hours-closed";
             hover = "Sorry, we're closed on " + dayName(day) + "s";
@@ -142,11 +142,11 @@ $(function() {
     /* SHIPPING STATUS */
     var shipping = "";
 
-    if ( status == "Closed" ) {
+    if ( status === "Closed" ) {
         shipping = "Online orders ship next business day";
     }
     else {
-        if (hours[day].shipping == 0 || time >= hours[day].shipping) {
+        if (hours[day].shipping === 0 || time >= hours[day].shipping) {
             shipping = "Orders ship next business day";
         }
         else {
