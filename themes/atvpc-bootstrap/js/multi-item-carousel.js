@@ -1,12 +1,12 @@
 $(function() {
 
 
-$('.carousel[data-type="multi"] .item').each(function() {
+$(".carousel[data-type='multi'] .item").each(function() {
 	var next = $(this).next();
 	if (!next.length) {
 		next = $(this).siblings(':first');
 	}
-	next.children(':first-child').clone().appendTo($(this));
+	next.children(":first-child").clone().appendTo($(this));
 
 	for (var i = 0; i < 2; i++) {
 		next = next.next();
@@ -14,7 +14,7 @@ $('.carousel[data-type="multi"] .item').each(function() {
 			next = $(this).siblings(':first');
 		}
 
-		next.children(':first-child').clone().appendTo($(this));
+		next.children(":first-child").clone().appendTo($(this));
 	}
 });
 
@@ -24,11 +24,11 @@ $('.carousel[data-type="multi"] .item').each(function() {
 
         if ( $(this).hasClass( "ltr" ) ) {
             */
-$('.carousel[data-type="right"]').each(function(){
+$(".carousel[data-type='right']").each(function(){
             // find carousel
             $(this).carousel();
 
-            var carousel = $(this).data('bs.carousel');
+            var carousel = $(this).data("bs.carousel");
 
             // pause the cycle
             carousel.pause();
@@ -40,11 +40,13 @@ $('.carousel[data-type="right"]').each(function(){
 
             // Override the bootstrap carousel prototype function, adding a different one won't work
             carousel.cycle = function (e) {
-                if (!e) this.paused = false
+                if (!e) this.paused = false;
+
                 if (this.interval) clearInterval(this.interval);
+
                 this.options.interval
                 && !this.paused
-                && (this.interval = setInterval($.proxy(this.prev, this), this.options.interval))
+                && (this.interval = setInterval($.proxy(this.prev, this), this.options.interval));
                 return this;
             };
 
