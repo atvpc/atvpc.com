@@ -4,7 +4,7 @@ $(function() {
 $(".carousel[data-type='multi'] .item").each(function() {
 	var next = $(this).next();
 	if (!next.length) {
-		next = $(this).siblings(':first');
+		next = $(this).siblings(":first");
 	}
 	next.children(":first-child").clone().appendTo($(this));
 
@@ -34,15 +34,15 @@ $(".carousel[data-type='right']").each(function(){
             carousel.pause();
 
             // At first, reverse the order of the items in the carousel because we're moving backwards
-            $(this).find('> .carousel-inner > .item:not(:first-child)').each(function() {
+            $(this).find("> .carousel-inner > .item:not(:first-child)").each(function() {
                 $(this).prependTo(this.parentNode);
             });
 
             // Override the bootstrap carousel prototype function, adding a different one won't work
             carousel.cycle = function (e) {
-                if (!e) this.paused = false;
+                if (!e) { this.paused = false; }
 
-                if (this.interval) clearInterval(this.interval);
+                if (this.interval) { clearInterval(this.interval); }
 
                 this.options.interval
                 && !this.paused
