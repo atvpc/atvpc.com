@@ -81,29 +81,29 @@ function prettyTime(time) {
 $( document ).ready(function() {
 
     var now = new Date().getTime();
-    var nowEST = moment(now).tz('America/New_York');
+    var nowEST = moment(now).tz("America/New_York");
 
     var day = moment(nowEST).day();
     var time = moment(nowEST).format("HHmm");
-    var holiday_exact_date = moment(nowEST).format("YYYY-MM-DD");
-    var holiday_every_year = "0000-" + moment(nowEST).format("MM-DD");
+    var holidayExactDate = moment(nowEST).format("YYYY-MM-DD");
+    var holidayEveryYear = "0000-" + moment(nowEST).format("MM-DD");
 
     /* OPEN / CLOSED STATUS */
     var status = "";
     var style = "";
     var hover = "";
 
-    if (typeof holidays[holiday_exact_date] != "undefined") { 
+    if (typeof holidays[holidayExactDate] != "undefined") { 
         /* floating day holidays, like easter and thanksgiving */
         status = "Closed";
         style  = "store-hours-closed";
-        hover  = "Sorry, we're closed for " + holidays[holiday_exact_date];
+        hover  = "Sorry, we're closed for " + holidays[holidayExactDate];
     }
-    else if (typeof holidays[holiday_every_year] != "undefined") { 
+    else if (typeof holidays[holidayEveryYear] != "undefined") { 
         /* holidays on the same day, like christmas */
         status = "Closed";
         style  = "store-hours-closed";
-        hover  = "Sorry, we're closed for " + holidays[holiday_every_year];
+        hover  = "Sorry, we're closed for " + holidays[holidayEveryYear];
     }
     else {
         /* regular days, non-holiday */

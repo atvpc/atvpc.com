@@ -11,7 +11,7 @@ $(".carousel[data-type='multi'] .item").each(function() {
 	for (var i = 0; i < 2; i++) {
 		next = next.next();
 		if (!next.length) {
-			next = $(this).siblings(':first');
+			next = $(this).siblings(":first");
 		}
 
 		next.children(":first-child").clone().appendTo($(this));
