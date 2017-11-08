@@ -2,6 +2,8 @@
 @import 'fonts.css';
 
 
+.col-centered { float: none; margin: 0 auto; }
+
 /* ---------- PAGE ---------- */
 
 body {
@@ -18,9 +20,8 @@ body {
 .navbar {
 
     border-radius: 0; /* override bootstrap styling */
-    margin: 0; /* override bootstrap styling */
+    margin: 1em 0 0 0;/* override bootstrap styling */
 
-    margin-top: 1em;
     background: #1E6997; /* rgb(30, 105, 151) - for old browsers */
     background: linear-gradient(to bottom, rgba(30, 105, 151, 1) 0%,     /* #1E6997 */
                                            rgba(50, 162, 228, .9) 100%); /* #32A2E4 */
@@ -52,6 +53,39 @@ body {
     height: 100%;
     width: 100%;
     background: url('img/grunge-frame.png');
+}
+
+/* ---------- BOXES ---------- */
+
+.box {
+
+}
+
+.box h1 {
+    margin-bottom: 0;
+
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Oswald;
+    line-height: 1.5em;
+    color: #1C85C2;
+
+    background: #000 url('img/bg-box.jpg') top left repeat-x;
+    
+    border: 2px solid #1C85C2;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 0;
+
+}
+
+.box-body {
+    color: #FFF;
+    font-size: 1.2em;
+    
+    padding: 5px 20px;
+    border: 2px solid #1C85C2;
+    border-image: linear-gradient(to bottom, #1C85C2, black) 1 100%;
 }
 
 /* ---------- PRODUCT / VENDOR CAROUSEL ---------- */
