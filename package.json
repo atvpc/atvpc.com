@@ -4,7 +4,6 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
     "moment-timezone": "^0.5.13",
-    "typeface-flavors": "^0.0.40",
-    "typeface-frijole": "^0.0.40"
+    "typeface-oswald": "^0.0.43"
   }
 }
