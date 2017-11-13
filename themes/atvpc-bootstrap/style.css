@@ -9,10 +9,18 @@
 body {
     background: #000000 url('img/bg.jpg') no-repeat top center;
     margin-top: 1em;
+    color: #FFF;
 }
 
 .content {
     background-color: #000;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: Oswald;
+    line-height: 1.5em;
+    color: #1C85C2;
 }
 
 /* ---------- NAVBAR ---------- */
@@ -31,8 +39,9 @@ body {
     border-top-right-radius: 10px;
 }
 
+
 .nav-link {
-    color: #FFF;
+    color: inherit;
 }
 
 /* ---------- ACTION SHOTS CAROUSEL ---------- */
@@ -57,18 +66,10 @@ body {
 
 /* ---------- BOXES ---------- */
 
-.box {
-
-}
-
 .box h1 {
     margin-bottom: 0;
 
     text-align: center;
-    text-transform: uppercase;
-    font-family: Oswald;
-    line-height: 1.5em;
-    color: #1C85C2;
 
     background: #000 url('img/bg-box.jpg') top left repeat-x;
     
@@ -120,10 +121,31 @@ body {
 .store-hours-warn { color: #d96c00; }
 .store-hours-closed { color: #8b0000; }
 
+/* ---------- FOOTER ---------- */
+
+.footer {
+    border-top: 1px solid #1E6997;
+    margin-top: 4em;
+}
+
+
+.footer ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer li:before {
+    content: '»';
+    color: #1C85C2;
+    padding-right: 5px;
+}
+
 /* ---------- FOOTER BAR ---------- */
+
 .footer-bar {
     margin-top: 1em;
-    
+
     height: 3em;
     line-height: 3em;
 
