@@ -141,6 +141,35 @@ h1 {
     padding-right: 5px;
 }
 
+/* ---------- TESIMONIALS ---------- */
+
+.testimonial-quote {
+    font-size: 1.2em;
+    line-height: 1em;
+    font-style: italic;
+}
+
+.testimonial-quote::before {
+    content: '\201C\2006';
+    font-weight: bold;
+    color: #444;
+}
+
+.testimonial-quote::after {
+    content: '\2006\201D';
+    font-weight: bold;
+    color: #444;
+}
+
+.testimonial-author::before {
+    content: '\2015\00A0';
+    color: #444;
+}
+
+.testimonial-author {
+    margin-top: 1em;
+}
+
 /* ---------- FOOTER BAR ---------- */
 
 .footer-bar {
