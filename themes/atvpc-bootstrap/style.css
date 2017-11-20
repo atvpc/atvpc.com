@@ -98,7 +98,7 @@ h1 {
 /* ---------- STORE HOURS---------- */
 
 #store-hours {
-    font-family: 'Flavors';
+    font-family: 'Shortcut';
     text-transform: uppercase;
 }
 
@@ -113,13 +113,12 @@ h1 {
 	line-height: 1.25em;
     width: 10em;
     margin: auto;
-	color: #a55200;
-
+	color: #744926; /* color: #a55200; */
 }
 
-.store-hours-open { color: #008b45; }
-.store-hours-warn { color: #d96c00; }
-.store-hours-closed { color: #8b0000; }
+.store-hours-open { color: #26AA30; /* color: #008b45; */ }
+.store-hours-warn { color: #FF6600; /* color: #d96c00; */ }
+.store-hours-closed { color: #6D0010; /* color: #8b0000; */ }
 
 /* ---------- FOOTER ---------- */
 

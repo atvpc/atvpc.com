@@ -3,3 +3,9 @@
     src: url("fonts/oswald-latin-600.woff2") format("woff2"),
          url("fonts/oswald-latin-600.woff") format("woff");
 }
+
+@font-face {
+    font-family: "Shortcut";
+    src: url("fonts/shortcut.woff2") format("woff2"),
+         url("fonts/shortcut.woff") format("woff");
+}
