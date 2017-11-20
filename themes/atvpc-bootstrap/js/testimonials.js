@@ -34,7 +34,7 @@ var testimonials = [
 ];
 
 function newTestimonial() {
-    var testimonial = testimonials[Math.floor(Math.random() * testimonials.length)]
+    var testimonial = testimonials[Math.floor(Math.random() * testimonials.length)];
 
     var quote =  "<span class='testimonial-quote'>" + testimonial[0] + "</span>";
     var author = "<span class='testimonial-author pull-right'>" + testimonial[1] + "</span>";
@@ -51,8 +51,7 @@ function aniTestimonial() {
 $( document ).ready(function() {
 
     // Make sure testimonials exists on the page before creating timers
-    if( $('#testimonials').length ) {
-        console.log( "testimonials present on page" );
+    if( $( "#testimonials" ).length ) {
 
         // Populate the testimonial on first page load
         $( "#testimonials" ).html( newTestimonial() );
