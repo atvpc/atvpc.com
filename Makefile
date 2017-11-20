@@ -14,7 +14,7 @@ update:
 > sed -i -e "s/url('..\//url('/g" themes/atvpc-bootstrap/font-awesome.min.css
 > rsync -ah node_modules/font-awesome/fonts/* themes/atvpc-bootstrap/fonts/
 
-server: update
+server:
 > php -S 127.0.0.1:8000 &
 > sleep 5s && xdg-open "http://127.0.0.1:8000"
 
