@@ -13,6 +13,7 @@ update:
 > rsync -ah node_modules/font-awesome/css/font-awesome.min.css themes/atvpc-bootstrap/
 > sed -i -e "s/url('..\//url('/g" themes/atvpc-bootstrap/font-awesome.min.css
 > rsync -ah node_modules/font-awesome/fonts/* themes/atvpc-bootstrap/fonts/
+> rm themes/atvpc-bootstrap/fonts/FontAwesome.otf
 
 server:
 > php -S 127.0.0.1:8000 &
