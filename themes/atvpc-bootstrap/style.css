@@ -227,3 +227,21 @@ h1 {
     padding: 0 5em;
     color: #444;
 }
+
+/* ---------- MISC ---------- */
+
+.awareness {
+    margin: 1em 0;
+}
+
+.awareness img {
+    width: 12em;
+    opacity: .33;
+    filter: grayscale(1);
+    transition: opacity .25s ease-in-out;
+}
+
+.awareness img:hover {
+    opacity: 1;
+    filter: none;
+}
