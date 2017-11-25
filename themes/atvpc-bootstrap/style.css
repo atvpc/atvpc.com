@@ -18,7 +18,7 @@ body {
 
 h1 {
     text-transform: uppercase;
-    font-family: Oswald;
+    font-family: 'Oswald';
     line-height: 1.5em;
     color: #1C85C2;
 }
@@ -93,6 +93,26 @@ h1 {
 #vendor-carousel img,
 #product-carousel img {
     display: inline-block;
+}
+
+/* ---------- HEADER ---------- */
+
+.info {
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    color: #E2E2E2;
+    text-shadow: 2px 2px #444;
+}
+
+.tagline {
+    font-size: 2em;
+    line-height: 1em;
+}
+
+.phone {
+    font-size: 2.5em;
+    line-height: 1.5em;
+    color: #1C85C2;
 }
 
 /* ---------- STORE HOURS---------- */
