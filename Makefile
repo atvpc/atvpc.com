@@ -16,8 +16,9 @@ update:
 > rm themes/atvpc-bootstrap/fonts/FontAwesome.otf
 
 server:
-> php -S 127.0.0.1:8000 &
-> sleep 5s && xdg-open "http://127.0.0.1:8000"
+> lsof -i -P -n | grep -q 'php.*LISTEN' || php -S '127.0.0.1:8000' &
+> xdg-open 'http://127.0.0.1:8000'
+
 
 #build: yarn
 #> rm -r public/
