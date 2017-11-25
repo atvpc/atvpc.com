@@ -30,7 +30,26 @@ var testimonials = [
     ["Easy transaction and a perfect replacement for a good price.", "eBay User"],
     ["Shipping was faster than expected and I\"m pleased with the product", "eBay User"],
     ["Right on the money... will do business with them again...", "eBay User"],
-    ["I\'m very satisfyied with my purchase. Shipping was very prompt as well. Thanks", "eBay User"]
+    ["I\'m very satisfyied with my purchase. Shipping was very prompt as well. Thanks", "eBay User"],
+    ["Better than stock. Great customer service", "eBay User"],
+    ["At the house before I knew it. Great quality product", "eBay User"],
+    ["Polaris drive shafts arrived. Fantastic service, thank you", "eBay User"],
+    ["The parts are a direct fit and only took 20 mins to put in", "eBay User"],
+    ["perfect fit, good quality rubber, fast shipping and good price", "eBay User"],
+    ["Great Product! Got ATV up and running! Thanks", "eBay User"],
+    ["Great item. Great buyer. Will definitely get my axles here again!!!", "eBay User"],
+    ["Excellent seller, prompt delivery and part worked great on our Yamaha", "eBay User"],
+    ["I would recommend this product and complement the seller on the speedy delivery", "eBay User"],
+    ["Extremely happy customer. Excellent packaging and order details spot on!", "eBay User"],
+    ["Bought two kits. Parts were spot-on! Easy transaction, fast shipping.", "eBay User"],
+    ["Solid construction. Perfect fit.", "eBay User"],
+    ["fast shipment and the U-joints where a perfect fit, thanks.", "eBay User"],
+    ["Outstanding! Quick sales and quick receipt of items. The parts are correct.", "eBay User"],
+    ["Excellent service, answered all questions, fast delivery, recommended!!!", "eBay User"],
+    ["Arrived sooner than expected. Great seller!", "eBay User"],
+    ["Excellent Customer support, would definitely purchase from them again.", "eBay User"],
+    ["Fast shipping arrived before estimated delivery date.", "eBay User"],
+    ["Product was delivered very fast and is better than factory at a way less cost.", "eBay User"]
 ];
 
 function newTestimonial() {
