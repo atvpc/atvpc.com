@@ -10,7 +10,7 @@
 
     Front-End Development: 
         Timothy Keith <timothy@atvpc.com> - http://keithieopia.com
-        
+
     Graphics Design: 
         Bill Deuster <bdeuser@verizon.net> - http://www.billdeuster.com
 
@@ -24,7 +24,7 @@
 /* CONTENT & THEME */
     Engine: Pico CMS
     Libraries: jQuery, Bootstrap
-    Fonts: Font Awesome
+    Fonts: Font Awesome, Shortcut (Misprinted Type), Oswald
     Software: Kate, GIMP, OptiPNG, jpegoptim, yarn
     Misc: git, rsync, GNU make, awk/sed
 
