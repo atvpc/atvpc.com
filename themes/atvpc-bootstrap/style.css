@@ -4,6 +4,35 @@
 
 .col-centered { float: none; margin: 0 auto; }
 
+/* ---------- IMG GALLERY ---------- */
+
+.img-container {
+    position: relative;
+    display: inline-block;
+    margin: 1em;
+    transition: all 0.3s ease-out;
+}
+
+.img-thumb {
+    max-height: 20em;
+}
+
+.img-container:hover {
+    transform: scale(1.5);
+	z-index:10;
+}
+
+.caption {
+    position: absolute;
+    bottom: .5em;
+    right: .5em;
+
+    font-family: 'Oswald';
+    color: #E2E2E2;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #444;
+}
+
 /* ---------- PAGE ---------- */
 
 body {
@@ -17,11 +46,19 @@ body {
     font-size: 1.2em;
 }
 
-h1 {
-    text-transform: uppercase;
+h1, h2, h3 {
     font-family: 'Oswald';
+    text-transform: uppercase;
     line-height: 1.5em;
+}
+
+h1 {
     color: #1C85C2;
+}
+
+h2, h3 {
+    color: #E2E2E2;
+    text-shadow: 2px 2px #444;
 }
 
 /* ---------- NAVBAR ---------- */
