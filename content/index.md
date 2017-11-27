@@ -1,154 +1,124 @@
-<!-- Below div is just used on this page to cover mud splash background -->
-<div style="background-color: #000000">
-
-<aside>
-	<div class="widget-border">
-		<div class="widget-content">
-			<svg class="h1svg">
-				<defs>
-					<linearGradient id="textgradient" x="0%" y="0%" x2="0%" y2="100%">
-			            <stop stop-color="#33A3E3" offset="0%" />
-			            <stop stop-color="#005797" offset="80%" />
-			            <stop stop-color="#33A3E3" offset="90%" />
-					</linearGradient>
-				</defs>
-		
-				<text x="50%" y="40" text-anchor="middle" fill="url(#textgradient)" stroke="none">Welcome</text>  
-			</svg>
-			
-			<p itemprop="description">
-				ATV Parts Connection specializes in aftermarket parts for ATVs, UTVs, and automotives. We're 
-				located in Jessup, Maryland and have been in the ATV/ UTV industry for over 20 years.
-			</p><p>
-				By using our experience and extensive knowledge of the field, we're able to design, improve, 
-				import, and stock parts that meet or exceed OEM specifications at much lower costs than 
-				directly from the dealer.
-			</p>
-		</div>
-	</div>
-</aside>
-
-<div id="action_shots">
-	<div id="slider" class="nivoSlider fouc">
-		<img src="content/images/action-shots/0.jpg" />
-		<img src="content/images/action-shots/1.jpg" />
-		<img src="content/images/action-shots/2.jpg" />
-		<img src="content/images/action-shots/3.jpg" />
-		<img src="content/images/action-shots/4.jpg" />
-		<img src="content/images/action-shots/5.jpg" />
-	</div>
-	<div id="grunge"></div>
+<div class="row content">
+    <div class="col-sm-8">
+        <div id="action-shots-carousel" class="carousel slide col-centered" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="img-responsive" src="content/images/action-shots/0.jpg">
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="content/images/action-shots/1.jpg">
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="content/images/action-shots/2.jpg">
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="content/images/action-shots/3.jpg">
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="content/images/action-shots/4.jpg">
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="content/images/action-shots/5.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4 box">
+        <h1>Welcome</h1>
+        <div class="box-body">
+            <p>
+                ATV Parts Connection specializes in aftermarket parts for ATVs, UTVs, and automotives. We're located in Jessup, Maryland and have been in the ATV/ UTV industry for over 20 years.
+            </p>
+            <p>
+                By using our experience and extensive knowledge of the field, we're able to design, improve, import, and stock parts that meet or exceed OEM specifications at much lower costs than directly from the dealer.
+            </p>
+        </div>
+    </div>
 </div>
 
-<div style="clear: both"></div>
+<div class="row">
+    <div class="col-md-6 box">
+        <h1>We Carry Parts For</h1>
 
-<table>
-	<tr>
-		<td>
-			<div id="box_makes" class="widget-border">
-				<div class="widget-content">
-					<svg class="h1svg">
-						<defs>
-							<linearGradient id="textgradient" x="0%" y="0%" x2="0%" y2="100%">
-					            <stop stop-color="#33A3E3" offset="0%" />
-					            <stop stop-color="#005797" offset="80%" />
-					            <stop stop-color="#33A3E3" offset="90%" />
-							</linearGradient>
-						</defs>
-					
-						<text x="50%" y="40" text-anchor="middle" fill="url(#textgradient)" stroke="none">We Carry Parts For</text>  
-					</svg>
-					<div id="slider_makes" class="fouc">
-						<img alt="Arctic Cat Logo" title="Arctic Cat ATV & UTV Parts" src="content/images/vendors/arctic-cat.jpg" />
-						<img alt="Bombardier Recreational Products Logo" title="BRP ATV Parts" src="content/images/vendors/brp.jpg" />
-						<img alt="Can-Am Logo" title="Can-Am ATV & UTV Parts" src="content/images/vendors/can-am.jpg" />
-						<img alt="Daihatsu Motor Company Logo" title="Daihatsu Mini Truck Driveline Parts" src="content/images/vendors/daihatsu.jpg" />
-						<img alt="Honda Logo" title="Honda ATV, UTV, and Auto Driveline Parts" src="content/images/vendors/honda.jpg" />
-						<img alt="Kawasaki Logo" title="Kawasaki ATV & UTV Parts" src="content/images/vendors/kawasaki.jpg" />
-						<img alt="Kubota Logo" title="Kubota UTV Parts" src="content/images/vendors/kubota.jpg" />
-						<img alt="Kymco Logo" title="Kymco ATV Electrical Parts" src="content/images/vendors/kymco.jpg" />
-						<img alt="Mitsubishi Logo" title="Mitsubishi Auto Driveline Parts" src="content/images/vendors/mitsubishi.jpg" />
-						<img alt="Polaris Logo" title="Polaris ATV Parts" src="content/images/vendors/polaris.jpg" />
-						<img alt="Suzuki Logo" title="Suzuki ATV & Auto Driveline Parts"  src="content/images/vendors/suzuki.jpg" />
-						<img alt="Yamaha Logo" title="Yamaha ATV Parts" src="content/images/vendors/yamaha.jpg" />
-					</div>
-				</div>
-			</div>
-		</td><td>
-			<div id="box_products" class="widget-border">
-				<div class="widget-content">
-					<svg class="h1svg">
-						<defs>
-							<linearGradient id="textgradient" x="0%" y="0%" x2="0%" y2="100%">
-					            <stop stop-color="#33A3E3" offset="0%" />
-					            <stop stop-color="#005797" offset="80%" />
-					            <stop stop-color="#33A3E3" offset="90%" />
-							</linearGradient>
-						</defs>
-					
-						<text x="50%" y="40" text-anchor="middle" fill="url(#textgradient)" stroke="none">Products We Sell</text>  
-					</svg>
-					
-					<div id="slider_products" class="fouc">
-						<img alt="Arrowhead Electrical Logo" title="Arrowhead Electrical Products" src="content/images/vendors/arrowhead.jpg" />
-						<img alt="Kali Protectives Logo" title="Kali Protectives" src="content/images/vendors/kali.jpg" />
-						<img alt="Apparel" title="Apparel" src="content/images/products/category/apparel.jpg" />
-						<img alt="Drive Belts" title="Drive Belts" src="content/images/products/category/drive-belts.jpg" />
-						<img alt="Gates Logo" title="Gates Drivebelts" src="content/images/vendors/gates.jpg" />
-						<img alt="Driveline" title="Driveline" src="content/images/products/category/driveline.jpg" />
-						<img alt="Electrical Units" title="Electrical Units" src="content/images/products/category/electrical-units.jpg" />
-						<img alt="Suspension" title="Suspension" src="content/images/products/category/suspension.jpg" />
-						<img alt="Tools" title="Tools" src="content/images/products/category/tools.jpg" />
-						<img alt="Monster Performance Parts Logo" title="Monster Axles" src="content/images/vendors/monster-parts.jpg" />
-					</div>
-				</div>
-			</div>
-		</td>
-	</tr>
-</table>
+        <div id="vendor-carousel" class="box-body carousel slide text-center" data-ride="carousel">
 
-<table>
-	<tr>
-		<td style="width: 50%">
-			<div class="widget-border">
-				<div class="widget-content events">
-					<svg class="h1svg">
-						<defs>
-							<linearGradient id="textgradient" x="0%" y="0%" x2="0%" y2="100%">
-					            <stop stop-color="#33A3E3" offset="0%" />
-					            <stop stop-color="#005797" offset="80%" />
-					            <stop stop-color="#33A3E3" offset="90%" />
-							</linearGradient>
-						</defs>
-				
-						<text x="50%" y="40" text-anchor="middle" fill="url(#textgradient)" stroke="none">Upcoming Events</text>  
-					</svg>
-											
-					{{ inc_events }}
-				</div>
-			</div>
-		</td><td style="width: 50%">
-			<div class="widget-border">
-				<div class="widget-content events">
-					<svg class="h1svg">
-						<defs>
-							<linearGradient id="textgradient" x="0%" y="0%" x2="0%" y2="100%">
-					            <stop stop-color="#33A3E3" offset="0%" />
-					            <stop stop-color="#005797" offset="80%" />
-					            <stop stop-color="#33A3E3" offset="90%" />
-							</linearGradient>
-						</defs>
-				
-						<text x="50%" y="40" text-anchor="middle" fill="url(#textgradient)" stroke="none">Community Outreach</text>  
-					</svg>
-					
-					<a href="http://www.steps4doug.org/"><img src="content/images/events/steps4doug.jpg" alt="Steps 4 Doug" height="120"></a><br>
-					<span style="color: #1E6997">ATV Parts Connection</span> supports <span style="color: #008e3c">Steps</span> <span style="color: #FFFFFF">4</span> <span style="color: #0061a3">Doug</span><br> and general awareness for ALS.
-				</div>
-			</div>
-       </td>
-	</tr>
-</table>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="img-responsive" alt="Arctic Cat Logo" title="Arctic Cat ATV & UTV Parts" src="content/images/slider/vendors/arctic-cat.jpg">
+                    <img class="img-responsive" alt="Bombardier Recreational Products Logo" title="BRP ATV Parts" src="content/images/slider/vendors/brp.jpg">
+                    <img class="img-responsive" alt="Can-Am Logo" title="Can-Am ATV & UTV Parts" src="content/images/slider/vendors/can-am.jpg">
+                    <img class="img-responsive" alt="Daihatsu Motor Company Logo" title="Daihatsu Mini Truck Driveline Parts" src="content/images/slider/vendors/daihatsu.jpg">
+                </div>
+                <div class="item">
+                    <img class="img-responsive" alt="Honda Logo" title="Honda ATV, UTV, and Auto Driveline Parts" src="content/images/slider/vendors/honda.jpg">
+                    <img class="img-responsive" alt="Kawasaki Logo" title="Kawasaki ATV & UTV Parts" src="content/images/slider/vendors/kawasaki.jpg">
+                    <img class="img-responsive" alt="Kubota Logo" title="Kubota UTV Parts" src="content/images/slider/vendors/kubota.jpg">
+                    <img class="img-responsive" alt="Kymco Logo" title="Kymco ATV Electrical Parts" src="content/images/slider/vendors/kymco.jpg">
+                </div>
+                <div class="item">
+                    <img class="img-responsive" alt="Mitsubishi Logo" title="Mitsubishi Auto Driveline Parts" src="content/images/slider/vendors/mitsubishi.jpg">
+                    <img class="img-responsive" alt="Polaris Logo" title="Polaris ATV Parts" src="content/images/slider/vendors/polaris.jpg">
+                    <img class="img-responsive" alt="Suzuki Logo" title="Suzuki ATV & Auto Driveline Parts"  src="content/images/slider/vendors/suzuki.jpg">
+                    <img class="img-responsive" alt="Yamaha Logo" title="Yamaha ATV Parts" src="content/images/slider/vendors/yamaha.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 box">
+        <h1>Products We Sell</h1>
 
-<br><br><!-- Helps cover mudsplash -->
-</div><!-- End mud splash cover div -->
+        <div id="product-carousel" class="box-body carousel slide text-center" data-ride="carousel" data-type="right">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="img-responsive" alt="Arrowhead Electrical Logo" title="Arrowhead Electrical Products" src="content/images/slider/products/arrowhead.jpg">
+                    <img class="img-responsive" alt="Kali Protectives Logo" title="Kali Protectives" src="content/images/slider/products/kali.jpg">
+                    <img class="img-responsive" alt="Apparel" title="Apparel" src="content/images/slider/products/apparel.jpg">
+                    <img class="img-responsive" alt="Drive Belts" title="Drive Belts" src="content/images/slider/products/drive-belts.jpg">
+                </div>
+                <div class="item">
+                    <img class="img-responsive" alt="Gates Logo" title="Gates Drivebelts" src="content/images/slider/products/gates.jpg">
+                    <img class="img-responsive" alt="Driveline" title="Driveline" src="content/images/slider/products/driveline.jpg">
+                    <img class="img-responsive" alt="Electrical Units" title="Electrical Units" src="content/images/slider/products/electrical-units.jpg">
+                    <img class="img-responsive" alt="Suspension" title="Suspension" src="content/images/slider/products/suspension.jpg">
+                </div>
+                <div class="item">
+                    <img class="img-responsive" alt="Tools" title="Tools" src="content/images/slider/products/tools.jpg">
+                    <img class="img-responsive" alt="Monster Performance Parts Logo" title="Monster Axles" src="content/images/slider/products/monster-parts.jpg">
+                    <!-- DUPLICATES -->
+                    <img class="img-responsive" alt="Arrowhead Electrical Logo" title="Arrowhead Electrical Products" src="content/images/slider/products/arrowhead.jpg">
+                    <img class="img-responsive" alt="Kali Protectives Logo" title="Kali Protectives" src="content/images/slider/products/kali.jpg">
+                </div>
+            </div><!-- /carousel-inner -->
+        </div><!-- /product-carousel -->
+    </div><!-- /col-md-6 -->
+</div><!-- /row -->
+
+<div class="row footer">
+    <div class="col-sm-3">
+        <h1>Address</h1>
+        ATV Parts Connection<br>
+        10555 Guilford Road<br>
+        Suite 113<br>
+        Jessup, MD 20794
+    </div>
+    <div class="col-sm-3">
+        <h1>Hours</h1>
+        <ul>
+            <li>Monday - Friday: 8am - 6pm
+            <li>Saturday: 9am - 3pm
+            <li>Sunday: Closed
+        </ul>
+    </div>
+    <div class="col-sm-3">
+        <h1>Contact</h1>
+        <ul>
+            <li>Toll-Free: 800-338-2326
+            <li>Local: 301-498-4326
+            <li><a href="mailto:sales@atvpartsconnection.com">sales@atvpartsconnection.com</a>
+        </ul>
+    </div>
+    <div class="col-sm-3">
+        <h1>Testimonials</h1>
+        <div id="testimonials"><!-- Populated by JS --></div>
+    </div>
+</div>
