@@ -39,9 +39,9 @@ Heavy Duty: designed for rough terrain.
 * Superior quality thermoplastic type CV boots
 * Designed for encountering sticks, rocks, and debris when off-roading
 
-*See what others are saying! Read the HD series axle review from [WeekendATV](http://weekendatv.com/2011/12/review-monster-axles/)*  <sup>&lsaquo;[Mirror](./?p=review-weekendatv)&rsaquo;</sup> 
+&#10033; **See what others are saying!** Read the HD series<sup>&#42;</sup> axle review from [WeekendATV](http://weekendatv.com/2011/12/review-monster-axles/) <sup>&lsaquo;[Mirror](./?p=review-weekendatv)&rsaquo;</sup> 
 
-*Note that the HD series was formerly known as "Monster Axles".*
+<sup>&#42; *Note that the HD series was formerly known as "Monster Axles"*</sup>
 
 ### Monster XP Series
 
@@ -59,7 +59,7 @@ Monster Extreme Performance: designed for high performance lifted vehicles. <!--
 * Puncture resistant material with a multi-rib design CV boots
 * Designed for high powered, highly modified, mud racing ATVs
 
-*See what others are saying! Read the XP series axle review from [ATV-UTVTECH](./?p=review-atv-utvtech) <sup>&lsaquo;originally on atv-utvtech.com&rsaquo;</sup> 
+&#10033; **See what others are saying!** Read the XP series axle review from [ATV-UTVTECH](./?p=review-atv-utvtech) <sup>&lsaquo;originally on atv-utvtech.com&rsaquo;</sup>
 
 ---
 
