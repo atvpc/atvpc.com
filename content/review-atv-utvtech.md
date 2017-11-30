@@ -68,7 +68,7 @@ Grab a set of Monster Axles today and make your axle nightmares a thing of the p
 
 ---
 
-Article used with permission by Rex Ostrander of ATV-UTVTECH.COM, a division on Ostrander Tech Enterprises, LLC.
+Article and images used with permission by Rex Ostrander of ATV-UTVTECH.COM, a division on Ostrander Tech Enterprises, LLC.
 
 <br>
 <div class="clearfix"></div>
