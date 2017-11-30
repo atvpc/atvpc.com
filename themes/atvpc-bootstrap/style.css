@@ -15,6 +15,7 @@
 
 .img-thumb {
     max-height: 20em;
+    max-width: 25vw;
 }
 
 .img-container:hover {
