@@ -53,6 +53,20 @@
     color: #1C85C2;
 }
 
+/* ---------- TABLE ---------- */
+thead {
+    font-family: 'Oswald';
+    text-transform: uppercase;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #222;
+}
+
+.table tbody tr td { /* reset bootstrap */
+    border-top: 0;
+}
+
 /* ---------- PAGE ---------- */
 
 body {
@@ -138,7 +152,7 @@ hr {
     text-align: center;
 
     background: #000 url('img/bg-box.jpg') top left repeat-x;
-    
+
     border: 2px solid #1C85C2;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
