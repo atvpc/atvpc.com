@@ -57,3 +57,4 @@ $config['theme'] = 'atvpc-bootstrap';                // Set the theme (defaults 
  * CUSTOM
  */
 // $config['custom_setting'] = 'Hello';         // Can be accessed by {{ config.custom_setting }} in a theme
+$config['PicoMenuHiding.enabled'] = true;
