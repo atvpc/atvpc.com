@@ -1,5 +1,5 @@
 ---
-Title: Monster XP Axle Review By ATV-UTVTECH.COM
+Title: atv-utvtech.com review of Monster XP Series Axles
 Hiding: 1
 ---
 
@@ -62,7 +62,7 @@ No matter how rough we were with the Rhino the Monster axles held up great. We e
 
 Since that initial ride we have covered nearly every type of terrain &#8211; rocks, mud, deep sand, rut-filled trails &#8211; nothing we have thrown at the Monster Axles have even fazed them. They continue to this day, nearly a year later to take everything we dish out and beg for more. These mighty axles have proven themselves to be a truly monstrous step forward in axle design. Not to mention the fact that Danny proved to us beyond the shadow of a doubt that Monster Axle wants to be a serious player in the Heavy Duty axle market. His commitment to getting the product right before releasing it to the public is excellent, and he has our deepest respect for that.
 
-So if you’re having issues with your wimpy stock axles but don’t want the headaches associated with some aftermarket axles that tend to pop out of the differential under extreme conditions then you need a set of Monster Axles from Danny at [monsteraxles.com](http://monsteraxles.com).
+So if you’re having issues with your wimpy stock axles but don’t want the headaches associated with some aftermarket axles that tend to pop out of the differential under extreme conditions then you need a set of Monster Axles from Danny.
 
 Grab a set of Monster Axles today and make your axle nightmares a thing of the past!
 
