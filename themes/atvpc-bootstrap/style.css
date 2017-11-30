@@ -34,6 +34,25 @@
     text-shadow: 2px 2px #444;
 }
 
+/* ---------- LISTS ---------- */
+
+.content ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.content li {
+    padding-left: 2em;
+    text-indent: -1em;
+}
+
+.content li:before {
+    content: "»";
+    padding-right: 5px;
+    color: #1C85C2;
+}
+
 /* ---------- PAGE ---------- */
 
 body {
@@ -62,6 +81,12 @@ h1 {
 h2, h3 {
     color: #E2E2E2;
     text-shadow: 2px 2px #444;
+}
+
+hr {
+    border-top: 1px dotted #444;
+    height: 0;
+    margin: 2em 1em;
 }
 
 /* ---------- NAVBAR ---------- */
