@@ -1,8 +1,53 @@
-/* ---------- IMPORTS ---------- */
-@import 'fonts.css';
+/* ---------- FONTS ---------- */
+@font-face {
+    font-family: "Oswald";
+    src: url("fonts/oswald-latin-600.woff2") format("woff2"),
+         url("fonts/oswald-latin-600.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Shortcut";
+    src: url("fonts/shortcut.woff2") format("woff2"),
+         url("fonts/shortcut.woff") format("woff");
+}
 
 
-.col-centered { float: none; margin: 0 auto; }
+/* ---------- PAGE ---------- */
+
+body {
+    background: #000000 url('img/bg.jpg') no-repeat top center;
+    margin-top: 1em;
+    color: #FFF;
+}
+
+main {
+    background-color: #000;
+    font-size: 1.2em;
+    padding: 0 1em 2em 1em;
+    min-height: 60vh;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    line-height: 1.5em;
+}
+
+h1 {
+    color: #1C85C2;
+}
+
+h2, h3 {
+    color: #E2E2E2;
+    text-shadow: 2px 2px #444;
+}
+
+hr {
+    border-top: 1px dotted #444;
+    height: 0;
+    margin: 2em 1em;
+}
+
 
 /* ---------- IMG GALLERY ---------- */
 
@@ -36,18 +81,18 @@
 
 /* ---------- LISTS ---------- */
 
-.content ul {
+main ul {
     list-style: none;
     margin-left: 0;
     padding-left: 0;
 }
 
-.content li {
+main li {
     padding-left: 2em;
     text-indent: -1em;
 }
 
-.content li:before {
+main li:before {
     content: "»";
     padding-right: 5px;
     color: #1C85C2;
@@ -65,42 +110,6 @@ thead {
 
 .table tbody tr td { /* reset bootstrap */
     border-top: 0;
-}
-
-/* ---------- PAGE ---------- */
-
-body {
-    background: #000000 url('img/bg.jpg') no-repeat top center;
-    margin-top: 1em;
-    color: #FFF;
-}
-
-.content {
-    background-color: #000;
-    font-size: 1.2em;
-    
-    min-height: 60vh;
-}
-
-h1, h2, h3 {
-    font-family: 'Oswald';
-    text-transform: uppercase;
-    line-height: 1.5em;
-}
-
-h1 {
-    color: #1C85C2;
-}
-
-h2, h3 {
-    color: #E2E2E2;
-    text-shadow: 2px 2px #444;
-}
-
-hr {
-    border-top: 1px dotted #444;
-    height: 0;
-    margin: 2em 1em;
 }
 
 /* ---------- NAVBAR ---------- */
