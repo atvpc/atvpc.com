@@ -117,10 +117,61 @@
 
 <script src="{{ theme_url }}/js/jquery.min.js"></script>
 <script src="{{ theme_url }}/js/bootstrap.min.js"></script>
-<script src="{{ theme_url }}/js/multi-item-carousel.js"></script>
-<script src="{{ theme_url }}/js/moment.min.js"></script>
-<script src="{{ theme_url }}/js/moment-timezone-with-data.min.js"></script>
-<script src="{{ theme_url }}/js/store-hours.js"></script>
-<script src="{{ theme_url }}/js/testimonials.js"></script>
+
+<script>
+    function findBootstrapEnvironment() {
+        var envs = ['xs', 'sm', 'md', 'lg'];
+
+        var $el = $('<div>');
+        $el.appendTo($('body'));
+
+        for (var i = envs.length - 1; i >= 0; i--) {
+            var env = envs[i];
+
+            $el.addClass('hidden-'+env);
+            if ($el.is(':hidden')) {
+                $el.remove();
+                return env;
+            }
+        }
+    }
+
+    $( document ).ready(function() {
+        if( $('.carousel').length ) {
+            $.ajax({
+                type: "GET",
+                url: "{{ theme_url }}/js/multi-item-carousel.js",
+                dataType: "script"
+            });
+        }
+
+        if ( $('#testimonials').length ) {
+            $.ajax({
+                type: "GET",
+                url: "{{ theme_url }}/js/testimonials.js",
+                dataType: "script"
+            });
+        }
+
+        env = findBootstrapEnvironment();
+        if (env == "md" || env == "lg") {
+            $.ajax({
+                type: "GET",
+                url: "{{ theme_url }}/js/moment.min.js",
+                dataType: "script"
+            });
+            $.ajax({
+                type: "GET",
+                url: "{{ theme_url }}/js/moment-timezone-with-data.min.js",
+                dataType: "script"
+            });
+            $.ajax({
+                type: "GET",
+                url: "{{ theme_url }}/js/store-hours.js",
+                dataType: "script"
+            });
+        }
+    });
+</script>
 </body>
 </html>
