@@ -1,31 +1,24 @@
 $(function() {
+    // shows 4 items at a time
+    $(".carousel[data-type='multi'] .item").each(function() {
+        var next = $(this).next();
+        if (!next.length) {
+            next = $(this).siblings(":first");
+        }
+        next.children(":first-child").clone().appendTo($(this));
 
+        for (var i = 0; i < 2; i++) {
+            next = next.next();
+            if (!next.length) {
+                next = $(this).siblings(":first");
+            }
 
-$(".carousel[data-type='multi'] .item").each(function() {
-	var next = $(this).next();
-	if (!next.length) {
-		next = $(this).siblings(":first");
-	}
-	next.children(":first-child").clone().appendTo($(this));
+            next.children(":first-child").clone().appendTo($(this));
+        }
+    });
 
-	for (var i = 0; i < 2; i++) {
-		next = next.next();
-		if (!next.length) {
-			next = $(this).siblings(":first");
-		}
-
-		next.children(":first-child").clone().appendTo($(this));
-	}
-});
-
-
-/*
-    $('.carousel').each(function(){
-
-        if ( $(this).hasClass( "ltr" ) ) {
-            */
-$(".carousel[data-type='right']").each(function(){
-            // find carousel
+    // reverses direction of carousel
+    $(".carousel[data-type='right']").each(function(){
             $(this).carousel();
 
             var carousel = $(this).data("bs.carousel");
@@ -53,5 +46,4 @@ $(".carousel[data-type='right']").each(function(){
             // begin the cycle again
             carousel.cycle();
     });
-
 });
