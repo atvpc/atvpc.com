@@ -1,4 +1,4 @@
-<div class="row content">
+<div class="row">
     <div class="col-sm-8">
         <div id="action-shots-carousel" class="carousel slide col-centered" data-ride="carousel">
             <div class="carousel-inner" role="listbox">

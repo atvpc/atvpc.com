@@ -70,17 +70,21 @@
     </nav>
 </div>
 
-{% if is_front_page %}
-    {{ content }}
-{% else %}
-    <div class="row content">
-        <div class="col-sm-12">
-            {% if meta.title %}<h1>{{ meta.title }}</h1>{% endif %}
-            {{ content }}
-        </div>
-    </div>
-{% endif %}
+<main class="row">
+    {% if is_front_page %}
 
+        {{ content }}
+
+    {% else %}
+        <div class="row">
+            <div class="col-sm-12">
+                {% if meta.title %}<h1>{{ meta.title }}</h1>{% endif %}
+                {{ content }}
+            </div>
+        </div>
+    {% endif %}
+</main>
+    
 <div class="row footer-bar">
     <div class="col-sm-9">
         Copyright © 2007&ndash;{{ "now"|date('Y') }} <a href="mailto:sales@atvpartsconnection.com">CV Restoration, LLC</a>. All Rights Reserved.
