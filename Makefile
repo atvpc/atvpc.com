@@ -3,8 +3,12 @@
 .RECIPEPREFIX = >
 
 YUICOMPRESSOR := $(shell command -v yui-compressor 2> /dev/null)
+YARN := $(shell command -v yarn 2> /dev/null)
 
 update:
+ifndef YARN
+> $(error "yarn is not installed")
+endif
 > yarn upgrade
 > rsync -ah node_modules/bootstrap/dist/css/bootstrap.min.css themes/atvpc-bootstrap/
 > rsync -ah node_modules/bootstrap/dist/js/bootstrap.min.js themes/atvpc-bootstrap/js/
