@@ -136,42 +136,61 @@
         }
     }
 
+    function scriptLoad(src) {
+        $.ajax({
+            type: "GET",
+            url: src,
+            dataType: "script"
+        });
+    }
+
+    // Selectively load JS if relevant class found on page
+    function loadIfFound(selector, src) {
+        if( $( selector ).length ) {
+            if (src.constructor === Array) {
+                $.each( src, function( index, value ) {
+                    scriptLoad( value );
+                });
+            }
+            else {
+                scriptLoad( src );
+            }
+        }
+    }
+
     $( document ).ready(function() {
-        if( $('.carousel').length ) {
-            $.ajax({
-                type: "GET",
-                url: "{{ theme_url }}/js/multi-item-carousel.js",
-                dataType: "script"
-            });
-        }
 
-        if ( $('#testimonials').length ) {
-            $.ajax({
-                type: "GET",
-                url: "{{ theme_url }}/js/testimonials.js",
-                dataType: "script"
-            });
-        }
+        loadIfFound(".carousel", "{{ theme_url }}/js/multi-item-carousel.js");
+        loadIfFound("#testimonials", "{{ theme_url }}/js/testimonials.js");
 
+        // Only load when not on mobile
         env = findBootstrapEnvironment();
         if (env == "md" || env == "lg") {
+            loadIfFound("#store-hours", ["{{ theme_url }}/js/moment.min.js", "{{ theme_url }}/js/moment-timezone-with-data.min.js", "{{ theme_url }}/js/store-hours.js"]);
+        }
+
+        // Google Analytics (don't load if on dev server)
+        host = window.location.hostname;
+        if (host != "127.0.0.1" && host != "localhost") {
             $.ajax({
                 type: "GET",
-                url: "{{ theme_url }}/js/moment.min.js",
+                url: "https://www.googletagmanager.com/gtag/js?id=UA-53852617-1",
                 dataType: "script"
             });
-            $.ajax({
-                type: "GET",
-                url: "{{ theme_url }}/js/moment-timezone-with-data.min.js",
-                dataType: "script"
-            });
-            $.ajax({
-                type: "GET",
-                url: "{{ theme_url }}/js/store-hours.js",
-                dataType: "script"
-            });
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-53852617-1');
         }
     });
 </script>
 </body>
 </html>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src=""></script>
+<script>
+
+</script>
