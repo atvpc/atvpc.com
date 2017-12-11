@@ -24,6 +24,6 @@ moment-timezone@^0.5.13:
   version "2.19.4"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.19.4.tgz#17e5e2c6ead8819c8ecfad83a0acccb312e94682"
 
-typeface-oswald@^0.0.43:
-  version "0.0.43"
-  resolved "https://registry.yarnpkg.com/typeface-oswald/-/typeface-oswald-0.0.43.tgz#55b03f7fd2a37a928d730cbc1e0355d43b4b2cab"
+typeface-oswald@^0.0.45:
+  version "0.0.45"
+  resolved "https://registry.yarnpkg.com/typeface-oswald/-/typeface-oswald-0.0.45.tgz#b15d5c021a8f0d69b4666deed57e568b36157b89"
