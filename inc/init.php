@@ -14,7 +14,6 @@ include 'func_files.php';
 include 'func_datetime.php';
 include 'func_page.php';
 include 'func_theme.php';
-include 'func_ip.php';
 
 /* -=[ SET CONSTANTS ]=================================================================================================-
  * Set constants that require the above included
@@ -47,9 +46,4 @@ if (isset($c['site']['email']) && $c['site']['email'] != '') {
     }
 }
 
-// Prevent errors if Referer isn't set
-$_SERVER['HTTP_REFERER'] = (empty($_SERVER['HTTP_REFERER'])) ? '[no referer]' : $_SERVER['HTTP_REFERER'];
-
-// Basic hit counter and currently online
-log_ip();
 ?>
