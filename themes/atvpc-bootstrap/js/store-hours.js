@@ -77,9 +77,7 @@ function prettyTime(time) {
     return hours + ":" + minutes + ampm;
 }
 
-
-$( document ).ready(function() {
-
+function storeHours() {
     var now = new Date().getTime();
     var nowEST = moment(now).tz("America/New_York");
 
@@ -159,4 +157,13 @@ $( document ).ready(function() {
     $("#store-hours-status").addClass(style);
     $("#store-hours-status").html(status);
     $("#store-hours-shipping").html(shipping);
+}
+
+
+$( document ).ready(function() {
+    $.getScript("themes/atvpc-bootstrap/js/moment.min.js", function() {
+        $.getScript("themes/atvpc-bootstrap/js/moment-timezone-with-data.min.js", function() {
+            storeHours();
+        });
+    });
 });

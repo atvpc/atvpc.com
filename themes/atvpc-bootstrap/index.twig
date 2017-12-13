@@ -110,7 +110,7 @@
 </div>
 
 <div class="row text-center awareness">
-    <a href="http://stepsfordoug.org"><img src="content/img/steps4doug.jpg" title="ATV Parts Connection supports Steps 4 Doug and general awareness for ALS"></a>
+    <a href="http://stepsfordoug.org"><img src="img/steps4doug.jpg" title="ATV Parts Connection supports Steps 4 Doug and general awareness for ALS"></a>
 </div>
 
 </div><!-- /container -->
@@ -147,14 +147,7 @@
     // Selectively load JS if relevant class found on page
     function loadIfFound(selector, src) {
         if( $( selector ).length ) {
-            if (src.constructor === Array) {
-                $.each( src, function( index, value ) {
-                    scriptLoad( value );
-                });
-            }
-            else {
-                scriptLoad( src );
-            }
+            scriptLoad( src );
         }
     }
 
@@ -166,7 +159,7 @@
         // Only load when not on mobile
         env = findBootstrapEnvironment();
         if (env == "md" || env == "lg") {
-            loadIfFound("#store-hours", ["{{ theme_url }}/js/moment.min.js", "{{ theme_url }}/js/moment-timezone-with-data.min.js", "{{ theme_url }}/js/store-hours.js"]);
+            loadIfFound("#store-hours", "{{ theme_url }}/js/store-hours.js");
         }
 
         // Google Analytics (don't load if on dev server)
@@ -187,10 +180,3 @@
 </script>
 </body>
 </html>
-
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src=""></script>
-<script>
-
-</script>
