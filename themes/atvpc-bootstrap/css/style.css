@@ -1,21 +1,21 @@
 /* ---------- FONTS ---------- */
 @font-face {
     font-family: "Oswald";
-    src: url("fonts/oswald-latin-600.woff2") format("woff2"),
-         url("fonts/oswald-latin-600.woff") format("woff");
+    src: url("../fonts/oswald-latin-600.woff2") format("woff2"),
+         url("../fonts/oswald-latin-600.woff") format("woff");
 }
 
 @font-face {
     font-family: "Shortcut";
-    src: url("fonts/shortcut.woff2") format("woff2"),
-         url("fonts/shortcut.woff") format("woff");
+    src: url("../fonts/shortcut.woff2") format("woff2"),
+         url("../fonts/shortcut.woff") format("woff");
 }
 
 
 /* ---------- PAGE ---------- */
 
 body {
-    background: #000000 url('img/bg.jpg') no-repeat top center;
+    background: #000000 url("../img/bg.jpg") no-repeat top center;
     margin-top: 1em;
     color: #FFF;
 }
@@ -150,7 +150,7 @@ thead {
     left: 0;
     height: 100%;
     width: 100%;
-    background: url('img/grunge-frame.png');
+    background: url("../img/grunge-frame.png");
 }
 
 /* ---------- BOXES ---------- */
@@ -160,7 +160,7 @@ thead {
 
     text-align: center;
 
-    background: #000 url('img/bg-box.jpg') top left repeat-x;
+    background: #000 url("../img/bg-box.jpg") top left repeat-x;
 
     border: 2px solid #1C85C2;
     border-top-left-radius: 10px;

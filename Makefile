@@ -16,8 +16,8 @@ endif
 > rsync -ah node_modules/moment/min/moment.min.js themes/atvpc-bootstrap/js/
 > rsync -ah node_modules/moment-timezone/builds/moment-timezone-with-data.min.js themes/atvpc-bootstrap/js/
 > rsync -ah node_modules/typeface-oswald/files/* themes/atvpc-bootstrap/fonts/
-> rsync -ah node_modules/font-awesome/css/font-awesome.min.css themes/atvpc-bootstrap/
-> sed -i -e "s/url('..\//url('/g" themes/atvpc-bootstrap/css/font-awesome.min.css
+> rsync -ah node_modules/font-awesome/css/font-awesome.min.css themes/atvpc-bootstrap/css/
+#> sed -i -e "s/url('..\//url('/g" themes/atvpc-bootstrap/css/font-awesome.min.css
 > rsync -ah node_modules/font-awesome/fonts/* themes/atvpc-bootstrap/fonts/
 > rm themes/atvpc-bootstrap/fonts/FontAwesome.otf
 
