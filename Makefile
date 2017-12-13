@@ -33,5 +33,5 @@ endif
 > yui-compressor themes/atvpc-bootstrap/style.css -o themes/atvpc-bootstrap/style.min.css
 > sed -i -e "s/style.css/style.min.css/g" themes/atvpc-bootstrap/index.twig
 
-#push: build
-#> rsync -avz -e ssh --progress public/ timothy@keithieopia.com:/srv/http/keithieopia
+upload:
+> git push atvpc-dev
