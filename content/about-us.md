@@ -16,12 +16,12 @@ that will last a lifetime!
     <h2>Storefront</h2>
 
     <div class="img-container">
-        <img class="img-responsive img-rounded img-thumb" src="content/img/building/storefront.jpg">
+        <img class="img-responsive img-rounded img-thumb" src="img/building/storefront.jpg">
         <span class="caption">Storefront</span>
     </div>
 
     <div class="img-container">
-        <img class="img-responsive img-rounded img-thumb" src="content/img/building/rv_building.jpg">
+        <img class="img-responsive img-rounded img-thumb" src="img/building/rv_building.jpg">
         <span class="caption">The Monster R.V.</span>
     </div>
 </div>
@@ -31,22 +31,22 @@ that will last a lifetime!
     <h2>Warehouse</h2>
 
     <div class="img-container">
-        <img class="img-responsive img-rounded img-thumb" src="content/img/building/warehouse_front.jpg">
+        <img class="img-responsive img-rounded img-thumb" src="img/building/warehouse_front.jpg">
         <span class="caption">Front</span>
     </div>
 
     <div class="img-container">
-        <img class="img-responsive img-rounded img-thumb" src="content/img/building/warehouse_aisle.jpg">
+        <img class="img-responsive img-rounded img-thumb" src="img/building/warehouse_aisle.jpg">
         <span class="caption">Aisleway</span>
     </div>
 
     <div class="img-container">
-        <img class="img-responsive img-rounded img-thumb" src="content/img/building/warehouse_upstairs.jpg">
+        <img class="img-responsive img-rounded img-thumb" src="img/building/warehouse_upstairs.jpg">
         <span class="caption">Second Story</span>
     </div>
 
     <div class="img-container">
-        <img class="img-responsive img-rounded img-thumb" src="content/img/building/warehouse_back.jpg">
+        <img class="img-responsive img-rounded img-thumb" src="img/building/warehouse_back.jpg">
         <span class="caption">Back</span>
     </div>
 </div>
@@ -56,17 +56,17 @@ that will last a lifetime!
     <h2>The Monster Mobile</h2>
 
     <div class="img-container">
-        <img class="img-responsive img-rounded img-thumb" src="content/img/building/rv_building.jpg">
+        <img class="img-responsive img-rounded img-thumb" src="img/building/rv_building.jpg">
         <span class="caption">On-site</span>
     </div>
 
     <div class="img-container">
-        <img class="img-responsive img-rounded img-thumb" src="content/img/building/rv_front.jpg">
+        <img class="img-responsive img-rounded img-thumb" src="img/building/rv_front.jpg">
         <span class="caption">Front</span>
     </div>
 
     <div class="img-container">
-        <img class="img-responsive img-rounded img-thumb" src="content/img/building/rv_side.jpg">
+        <img class="img-responsive img-rounded img-thumb" src="img/building/rv_side.jpg">
         <span class="caption">Side</span>
     </div>
 </div>

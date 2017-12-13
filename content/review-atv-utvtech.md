@@ -4,7 +4,7 @@ Hiding: 1
 ---
 
 <div class="img-container pull-right">
-    <img class="img-responsive img-rounded img-thumb" src="content/img/reviews/atv-utvtech/1.jpg">
+    <img class="img-responsive img-rounded img-thumb" src="img/reviews/atv-utvtech/1.jpg">
     <span class="caption">&copy; Rex Ostrander</span>
 </div>
 
@@ -15,7 +15,7 @@ To our knowledge this slip joint design is exclusive to Monster Axle and is a de
 <div class="clearfix"></div>
 
 <div class="img-container pull-right">
-    <img class="img-responsive img-rounded img-thumb" src="content/img/reviews/atv-utvtech/2.jpg">
+    <img class="img-responsive img-rounded img-thumb" src="img/reviews/atv-utvtech/2.jpg">
     <span class="caption">&copy; Rex Ostrander</span>
 </div>
 
@@ -29,7 +29,7 @@ Within a few days we had the axles at our shop and quickly installed in the Rhin
 With the axles now installed in the Rhino we loaded it up and headed on the 8 hour drive from our shop to Baraga, Michigan for our annual trail ride in Michigan’s rugged Upper Peninsula – a remote area filled with rock covered ridges and mud filled valleys is a perfect site for our testing needs.
 
 <div class="img-container pull-left">
-    <img class="img-responsive img-rounded img-thumb" src="content/img/reviews/atv-utvtech/3.jpg">
+    <img class="img-responsive img-rounded img-thumb" src="img/reviews/atv-utvtech/3.jpg">
     <span class="caption">&copy; Rex Ostrander</span>
 </div>
 
@@ -44,19 +44,19 @@ Once back to cell service I gave Danny a call and told him what had happened. He
 For the initial test run we took our Yamaha Rhino to a local riding area not far from the shop to try out the Monster Axles on some snow covered hills &#8211; nothing like spinning on slippery snow and ice then grabbing in the soft sand below to snap an axle!
 
 <div class="img-container">
-    <img class="img-responsive img-rounded img-thumb" src="content/img/reviews/atv-utvtech/4.jpg">
+    <img class="img-responsive img-rounded img-thumb" src="img/reviews/atv-utvtech/4.jpg">
     <span class="caption">&copy; Rex Ostrander</span>
 </div>
 
 <div class="img-container">
-    <img class="img-responsive img-rounded img-thumb" src="content/img/reviews/atv-utvtech/5.jpg">
+    <img class="img-responsive img-rounded img-thumb" src="img/reviews/atv-utvtech/5.jpg">
     <span class="caption">&copy; Rex Ostrander</span>
 </div>
 
 No matter how rough we were with the Rhino the Monster axles held up great. We even went so far as to purposely sink the rear of the Rhino in the soft sand beneath the snow until it bottomed out and the tires spun freely. The huge lugs of our 29.5" Outlaw tires dug deep and fast in the heavy sand but the axles continued to hold solid. Not only did the axles hold up to the punishment we put them through but with their unique sliding splined main shaft they did not pop out once the entire day. Considering the angles the axles have to run at it would not have been unusual to have at least one pop out, but with the Monsters that issue seems to be a thing of the past!
 
 <div class="img-container pull-right">
-    <img class="img-responsive img-rounded img-thumb" src="content/img/reviews/atv-utvtech/6.jpg">
+    <img class="img-responsive img-rounded img-thumb" src="img/reviews/atv-utvtech/6.jpg">
     <span class="caption">&copy; Rex Ostrander</span>
 </div>
 
