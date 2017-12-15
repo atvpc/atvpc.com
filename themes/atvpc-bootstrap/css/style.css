@@ -48,6 +48,9 @@ hr {
     margin: 2em 1em;
 }
 
+main a, main a:hover, main a:visited {
+    color: #1C85C2;
+}
 
 /* ---------- IMG GALLERY ---------- */
 
@@ -127,7 +130,6 @@ thead {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-
 
 .nav-link {
     color: inherit;
@@ -314,6 +316,10 @@ thead {
     font-size: .8em;
     padding: 0 5em;
     color: #444;
+}
+
+.fineprint a, .fineprint a:hover, .fineprint a:visited {
+    color: #00528F;
 }
 
 /* ---------- MISC ---------- */
