@@ -8,15 +8,14 @@ Description: Warranty, returns, and shipping policies
 
 Satisfaction is our goal. If for some reason, customers are not satisfied with a purchase, either through this website or over the phone, we will gladly accept returns of unused products up to 60 days after the original date of purchase. Refunds will only be given for products returned unused and undamaged. If a product is used, damaged, or otherwise not subject to resale, the product must be submitted for warranty.
 
-If you need to return an item, please contact us for a RMA form. You will need to fill that form out and include it in the return package. Once it has been received, we will contact you to confirm your refund.
+If you need to return an item, you will need to fill out a [RMA form](/uploads/web-rma-form.docx) (also available as a [PDF](/uploads/web-rma-form.pdf)). The RMA form must be filled out in full and include in the return package. Once we received your return, we will contact you to confirm your refund.
 
 Refunds of unused products will be given barring an inspection of the item. All **correctly** shipped returns are processed and refunded before those that are not. (Returns May be subject to a restocking fee; shipping charges are non-refundable.)
 
 &#10033; *Please understand, even though a listing may have offered free shipping, we are still charged by the courier. As such, refunds will be issued, less our incurred shipping costs.*
 
-
-<a name="warranty"></a>Warranty Policy
-=======================================
+## Warranty Policy
+<a name="warranty"></a>
 
 Unless otherwise established, the following repair/replace warranty applies to the following products:
 
@@ -51,12 +50,11 @@ Instruction manuals may not be included. Installation by a professional is recom
 
 On all warranty claims, the buyer is responsible for providing the original ticket number</p>
 
-To report a defective product the customer must fill out in full a return authorization form and include it with the return shipment being sent back to ATV Parts Connection.
+To report a defective product the customer must fill out in full a [RMA form](/uploads/web-rma-form.docx) (also available as a [PDF](/uploads/web-rma-form.pdf)) and include it with the return shipment being sent back to ATV Parts Connection.
 
-## Shipping
 <a name="shipping"></a>
 
-### Domestic
+## Domestic Shipping
 A shipping surcharge is applied for domestic shipping addresses outside the contiguous US, even if the item is advertised with free shipping.
 
 * Customers are responsible for providing a valid shipping address.
@@ -64,7 +62,7 @@ A shipping surcharge is applied for domestic shipping addresses outside the cont
 * All shipments will be sent to the address provided at the time of sale
 * We will be glad to correct any shipping address before an order goes out, however once a package is shipped, it is the customer's responsibility to make any necessary address changes.
 
-### International
+## International Shipping
 We use the US Postal Service or UPS for all international orders. Please inquire about additional shipping costs by calling us at 1.800.338.2326 (Country Code for the United States is "1").
 
 *Transit Time*: Typically between 6-10 days; customs, clearance and local postal services notwithstanding.
