@@ -1,3 +1,6 @@
+## 2.1.2 (2017-12-15)
+- Security fix: the http referrer for all visitors is stored in a plaintext .dat file. Malicious PHP code could be injected if the webserver is set to interprete all file extensions for PHP code (non-standard setup)
+
 ## 2.1.1 (2017-10-13)
 - Minor changes to content by Cory
 - Relicensed under the MIT License
