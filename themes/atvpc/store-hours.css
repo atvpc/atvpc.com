@@ -1,4 +1,4 @@
-#hours {	
+#store-hours {	
 	float: right;
 	margin-top: 5px;
 	
@@ -7,17 +7,19 @@
 	text-transform: uppercase;
 }
 
-#hours_status {
+#store-hours-status {
 	font-size: 52px;
 	line-height: 52px;
 }
 
-#hours_shipping {
+#store-hours-shipping {
 	font-size: 18px;
 	line-height: 18px;
 	color: #744926; /*#DA804B;*/
+	width: 200px;
+    margin: auto;
 }
 
-.open { color: #26AA30; }
-.warn { color: #FF6600; }
-.closed { color: #6D0010; }
+.store-hours-open { color: #26AA30; }
+.store-hours-warn { color: #FF6600; }
+.store-hours-closed { color: #6D0010; }
