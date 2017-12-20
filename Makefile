@@ -12,6 +12,8 @@ endif
 > yarn upgrade
 > rsync -ah node_modules/bootstrap/dist/css/bootstrap.min.css themes/atvpc-bootstrap/css/
 > rsync -ah node_modules/bootstrap/dist/js/bootstrap.min.js themes/atvpc-bootstrap/js/
+> rsync -ah node_modules/bootstrap-drawer/dist/css/bootstrap-drawer.min.css themes/atvpc-bootstrap/css/
+> rsync -ah node_modules/bootstrap-drawer/dist/js/drawer.min.js themes/atvpc-bootstrap/js/
 > rsync -ah node_modules/jquery/dist/jquery.min.js themes/atvpc-bootstrap/js/
 > rsync -ah node_modules/moment/min/moment.min.js themes/atvpc-bootstrap/js/
 > rsync -ah node_modules/moment-timezone/builds/moment-timezone-with-data.min.js themes/atvpc-bootstrap/js/

@@ -20,6 +20,12 @@ body {
     color: #FFF;
 }
 
+@media screen and (max-width: 992px) {
+    body {
+    background-image: none;
+    }
+}
+
 main {
     background-color: #000;
     font-size: 1.2em;
@@ -320,6 +326,32 @@ thead {
 
 .fineprint a, .fineprint a:hover, .fineprint a:visited {
     color: #00528F;
+}
+
+/* ---------- DRAWER ---------- */
+
+.drawer {
+    border-right: 2px solid #1E6997;
+    color: #FFF;
+}
+
+.drawer-heading { border-bottom: 0; }
+
+.drawer-contents {
+    background: #000 url("../img/bg-box.jpg") top left repeat-x;
+}
+
+.drawer-footer {
+    color: #444;
+}
+
+.drawer-nav li.active a {
+    color: #FFF;
+    background-color: #1E6997;
+}
+
+.drawer-nav li a {
+     color: #1C85C2;
 }
 
 /* ---------- MISC ---------- */

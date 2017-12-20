@@ -17,110 +17,133 @@
     {% endif %}
 
     <link rel="stylesheet" href="{{ theme_url }}/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ theme_url }}/css/bootstrap-drawer.min.css">
     <link rel="stylesheet" href="{{ theme_url }}/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ theme_url }}/css/style.min.css">
 </head>
 
-<body>
-<div class="container">
+<body class="has-drawer">
+    <div id="menuDrawer" class="hidden-md hidden-lg drawer dw-xs-10 dw-sm-6 dw-md-4 fold" aria-labelledby="menuDrawer">
+        <div class="drawer-controls">
+            <a href="#menuDrawer" data-toggle="drawer" aria-foldedopen="false" aria-controls="menuDrawer" class="btn btn-primary btn-sm">
+                <i class="fa fa-bars" aria-hidden="true"></i> 
+            </a>
+        </div>
+        <div class="drawer-contents">
+            <div class="drawer-heading text-center"></div>
+            <div class="drawer-body"></div>
 
-<header class="row">
-    <div class="col-md-3 col-sm-2 col-xs-2">
-        <a href="/"><img id="logo" src="{{ theme_url }}/img/logo.png" alt="ATV Parts Connection Logo"></a>
-    </div>
-    <div class="col-md-6 col-sm-10 col-xs-10 text-center info">
-        <div class="row tagline hidden-sm hidden-xs">
-            America's Connection for ATV Parts
-        </div>
-        <div class="row hours hidden-sm hidden-xs">
-            Monday&ndash;Friday: 8am&ndash;6pm &amp; Saturday: 9am&ndash;3pm EST
-        </div>
-        <div class="row phone">
-            800-338-2326
-        </div>
-        <div class="row hours hidden-md hidden-lg">
-            Monday&ndash;Friday: 8am&ndash;6pm<br>
-            Saturday: 9am&ndash;3pm EST
-        </div>
-      </div>
-      <div id="store-hours" class="col-md-3 hidden-sm hidden-xs">
-        <div id="store-hours-status" class="row text-center"><!-- propagated by store-hours.js --></div>
-        <div id="store-hours-shipping" class="row text-center"><!-- propagated by store-hours.js --></div>
-    </div>
-</header>
-
-<div class="row">
-    <nav class="navbar">
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
+            <ul class="drawer-nav">
                 {% for page in pages if page.title %}
-                    <li class="nav-item{% if page.id == current_page.id %} active{% endif %}">
-                        <a class="nav-link" href="{{ page.url }}">{{ page.title }}</a>
+                    <li role="presentation"{% if page.id == current_page.id %} class="active"{% endif %}>
+                        <a href="{{ page.url }}">{{ page.title }}</a>
                     </li>
                 {% endfor %}
             </ul>
 
-            <form class="navbar-form navbar-right" role="search">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                    <div class="input-group-btn">
-                        <button class="btn btn-default" type="submit">
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </div><!-- /input-group-btn -->
-                </div><!-- /input-group -->
-            </form>
-        </div><!-- /navbar-collapse -->
-    </nav>
-</div>
+            <div class="drawer-footer"></div>
+        </div>
+    </div>
 
-<main class="row">
-    {% if is_front_page %}
+    <div class="container">
 
-        {{ content }}
+        <header class="row">
+            <div class="col-md-3 col-sm-3 col-xs-3">
+                <a href="/"><img id="logo" src="{{ theme_url }}/img/logo.png" alt="ATV Parts Connection Logo"></a>
+            </div>
+            <div class="col-md-6 col-sm-8 col-xs-8 text-center info">
+                <div class="row tagline hidden-sm hidden-xs">
+                    America's Connection for ATV Parts
+                </div>
+                <div class="row hours hidden-sm hidden-xs">
+                    Monday&ndash;Friday: 8am&ndash;6pm &amp; Saturday: 9am&ndash;3pm EST
+                </div>
+                <div class="row phone">
+                    800-338-2326
+                </div>
+                <div class="row hours hidden-md hidden-lg">
+                    Monday&ndash;Friday: 8am&ndash;6pm<br>
+                    Saturday: 9am&ndash;3pm EST
+                </div>
+            </div>
+            <div id="store-hours" class="col-md-3 hidden-sm hidden-xs">
+                <div id="store-hours-status" class="row text-center"><!-- propagated by store-hours.js --></div>
+                <div id="store-hours-shipping" class="row text-center"><!-- propagated by store-hours.js --></div>
+            </div>
+        </header>
 
-    {% else %}
-        <div class="row">
-            <div class="col-sm-12">
-                {% if meta.title %}<h1>{{ meta.title }}</h1>{% endif %}
+        <div class="row hidden-sm hidden-xs">
+            <nav class="navbar" role="navigation">
+                <div class="collapse navbar-collapse" id="main-navbar">
+                    <ul class="nav navbar-nav">
+                        {% for page in pages if page.title %}
+                            <li class="nav-item{% if page.id == current_page.id %} active{% endif %}">
+                                <a class="nav-link" href="{{ page.url }}">{{ page.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+
+                    <form class="navbar-form navbar-right" role="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div><!-- /input-group-btn -->
+                        </div><!-- /input-group -->
+                    </form>
+                </div><!-- /navbar-collapse -->
+            </nav>
+        </div>
+
+        <main class="row">
+            {% if is_front_page %}
+
                 {{ content }}
+
+            {% else %}
+                <div class="row">
+                    <div class="col-sm-12">
+                        {% if meta.title %}<h1>{{ meta.title }}</h1>{% endif %}
+                        {{ content }}
+                    </div>
+                </div>
+            {% endif %}
+        </main>
+            
+        <div class="row footer-bar">
+            <div class="col-sm-9">
+                Copyright © 2007&ndash;{{ "now"|date('Y') }} <a href="mailto:sales@atvpartsconnection.com">CV Restoration, LLC</a>. All Rights Reserved.
+            </div>
+            <div class="col-sm-3">
+                <ul class="social pull-right">
+                    <li><a href="//www.facebook.com/pages/ATV-Parts-Connection/227990890564556" title="Visit our Facebook page"><i class="fa fa-facebook"></i></a>
+                    <li><a href="//google.com/+Atvpc" title="Visit our Google+ page" rel="publisher"><i class="fa fa-google-plus"></i></a>
+                    <li><a href="//twitter.com/atvpartsconnect" title="Visit our Twitter profile"><i class="fa fa-twitter"></i></a>
+                    <li><a href="//www.amazon.com/gp/aag/main?seller=A1YR0DBBU4DM4B" title="Visit our Amazon storefront"><i class="fa fa-amazon"></i></a>
+                    <li><a href="//stores.ebay.com/ATV-Parts-Connection" title="Visit our eBay store"><i class="fa fa-shopping-cart"></i></a>
+                </ul>
             </div>
         </div>
-    {% endif %}
-</main>
-    
-<div class="row footer-bar">
-    <div class="col-sm-9">
-        Copyright © 2007&ndash;{{ "now"|date('Y') }} <a href="mailto:sales@atvpartsconnection.com">CV Restoration, LLC</a>. All Rights Reserved.
-    </div>
-    <div class="col-sm-3">
-        <ul class="social pull-right">
-            <li><a href="//www.facebook.com/pages/ATV-Parts-Connection/227990890564556" title="Visit our Facebook page"><i class="fa fa-facebook"></i></a>
-            <li><a href="//google.com/+Atvpc" title="Visit our Google+ page" rel="publisher"><i class="fa fa-google-plus"></i></a>
-            <li><a href="//twitter.com/atvpartsconnect" title="Visit our Twitter profile"><i class="fa fa-twitter"></i></a>
-            <li><a href="//www.amazon.com/gp/aag/main?seller=A1YR0DBBU4DM4B" title="Visit our Amazon storefront"><i class="fa fa-amazon"></i></a>
-            <li><a href="//stores.ebay.com/ATV-Parts-Connection" title="Visit our eBay store"><i class="fa fa-shopping-cart"></i></a>
-        </ul>
-    </div>
-</div>
 
-<div class="row text-center fineprint">
-    <p>
-        ATV Parts Connection, Monster Performance Parts, the Monster Axle logo, and ATV Parts Connection graphics are the servicemarks, trademarks, or registered trademarks owned by ATV Parts Connection.<br>
-        All other servicemarks and trademarks are the property of their respective owner.
-    </p>
+        <div class="row text-center fineprint">
+            <p>
+                ATV Parts Connection, Monster Performance Parts, the Monster Axle logo, and ATV Parts Connection graphics are the servicemarks, trademarks, or registered trademarks owned by ATV Parts Connection.<br>
+                All other servicemarks and trademarks are the property of their respective owner.
+            </p>
 
-    [ <a href="/?tos">Terms of Service</a> ] [ <a href="/?privacy">Privacy Policy</a> ]
-</div>
+            [ <a href="/?tos">Terms of Service</a> ] [ <a href="/?privacy">Privacy Policy</a> ]
+        </div>
 
-<div class="row text-center awareness">
-    <a href="http://stepsfordoug.org"><img src="img/steps4doug.jpg" title="ATV Parts Connection supports Steps 4 Doug and general awareness for ALS"></a>
-</div>
-
-</div><!-- /container -->
+        <div class="row text-center awareness">
+            <a href="http://stepsfordoug.org"><img src="img/steps4doug.jpg" title="ATV Parts Connection supports Steps 4 Doug and general awareness for ALS"></a>
+        </div>
+    </div><!-- /container -->
 
 <script src="{{ theme_url }}/js/jquery.min.js"></script>
 <script src="{{ theme_url }}/js/bootstrap.min.js"></script>
+<script src="{{ theme_url }}/js/drawer.min.js"></script>
 
 <script>
     function findBootstrapEnvironment() {
