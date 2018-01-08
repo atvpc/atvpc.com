@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-sm-8">
+    <div class="col-md-8 hidden-sm hidden-xs">
         <div id="action-shots-carousel" class="carousel slide col-centered" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
@@ -23,7 +23,7 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-4 box">
+    <div class="col-md-4 col-sm-12 box">
         <h1>Welcome</h1>
         <div class="box-body">
             <p>
@@ -37,7 +37,7 @@
 </div>
 
 <div class="row">
-    <div class="col-md-6 box">
+    <div class="col-md-6 hidden-sm hidden-xs box">
         <h1>We Carry Parts For</h1>
 
         <div id="vendor-carousel" class="box-body carousel slide text-center" data-ride="carousel">
@@ -64,7 +64,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-6 box">
+    <div class="col-md-6 hidden-sm hidden-xs box">
         <h1>Products We Sell</h1>
 
         <div id="product-carousel" class="box-body carousel slide text-center" data-ride="carousel" data-type="right">
