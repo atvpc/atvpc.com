@@ -122,251 +122,228 @@ To track your package, type the tracking number into <a href="http://www.google.
 
 ## Terminology
 
-<dl class="faq">
-    <dt>Complete CV axle</dt>
-    <dd>
-		<table>
-			<tr>
-				<td>
-					<a href="content/img/diagrams/cv_axle.jpg" class="gallery" rel="cvaxle" title="Labeled components of a CV axle">
-						<img src="content/img/diagrams/cv_axle_thumb.jpg" alt="Labeled components of a CV axle" title="Labeled components of a CV axle">
-					</a>
-				</td><td>
-					A CV axle is located between the wheel and differential, sometimes it is incorrectly called a halfshaft. On four wheel vehicles there are four CV axles. A CV axle includes the inner and outer CV joints completely assembled onto a axle shaft.
-				</td>
-			</tr>
-		</table>
-    </dd>
-    
-    <dt id="halfshaft">Halfshaft</dt>
-    <dd>
-		<table>
-			<tr>
-				<td>
-					<a href="content/img/diagrams/axle_types.jpg" class="gallery" rel="halfshaft" title="Differences between a half-shaft, CV axle, and u-joint axle">
-						<img src="content/img/diagrams/axle_types_thumb.jpg" alt="Differences between a half-shaft, CV axle, and u-joint axle" title="Differences between a half-shaft, CV axle, and u-joint axle">
-					</a>
-				</td><td>
-					<p>A halfshaft only has the outer CV joint assembled onto an axle shaft. The user then has to assemble a inner joint that they already have onto the halfshaft to make a complete CV axle.</p>
-					<p>Compare this to a complete CV axle which has both the outer and inner joints fully assembled.</p>
-				</td>
-			</tr>
-		</table>
-	</dd>
-    
-	<dt>Inner vs outer joints</dt>
-    <dd>
-		<table>
-			<tr>
-				<td>
-					<a href="content/img/diagrams/cv_axle.jpg" class="gallery" rel="innervsouter" title="Labeled components of a CV axle">
-						<img src="content/img/diagrams/cv_axle_thumb.jpg" alt="Labeled components of a CV axle" title="Labeled components of a CV axle">
-					</a>
-				</td><td>
-					A CV axle includes two CV joints: the inner and outer joints. The inner joint is the side closest to the differential, whereas the outer joint is the one closest to the wheel.
-				</td>
-			</tr>
-		</table>
-	</dd>
-    
-	<dt id="cv-joint">CV Joints</dt>
-	<dd>
-		<table>
-			<tr>
-				<td>
-					<a href="content/img/diagrams/cv_joint.jpg" class="gallery" rel="cvjoint" title="Labeled components of a CV joint">
-						<img src="content/img/diagrams/cv_joint_thumb.jpg" alt="Labeled components of a CV joint" title="Labeled components of a CV joint">
-					</a>
-				</td><td>
-					A <strong>C</strong>onstant <strong>V</strong>elocity joint (CV Joint) is one of the types of joints used on a vehicle's axle. The other type, called an U-Joint is different from a CV Joint, however most u-joint axles also have one CV joint (however a few axles use only u-joints). A CV joint is made up of the housing, race, cage, and balls.
-				</td>
-			</tr>
-		</table>
-    </dd>
+<table>
+	<tr>
+     	<td>
+        	<h4>CV Joints</h4>
+			A <strong>C</strong>onstant <strong>V</strong>elocity joint (CV Joint) is one of the types of joints used on a vehicle's axle. The other type, called an U-Joint is different from a CV Joint, however most u-joint axles also have one CV joint (however a few axles use only u-joints). A CV joint is made up of the housing, race, cage, and balls.
+        </td>
+        <td>
+			<div class="img-container">
+                <img class="img-responsive img-rounded img-thumb" src="img/diagrams/cv_joint.jpg">
+                <span class="caption"></span>
+            </div>
+        </td>
+     </tr><tr>
+    	<td>
+            <h4>Inner vs outer joints</h4>
+    		A CV axle includes two CV joints: the inner and outer joints. The inner joint is the side closest to the differential, whereas the outer joint is the one closest to the wheel.
+    	</td>
+		<td>
+			<div class="img-container">
+                <img class="img-responsive img-rounded img-thumb" src="img/diagrams/cv_axle.jpg">
+                <span class="caption"></span>
+            </div>
+        </td>
+     </tr><tr>
+     	<td>
+    		<h4>Halfshaft</h4>
+			A halfshaft only has the outer CV joint assembled onto an axle shaft. The user then has to assemble a inner joint that they already have onto the halfshaft to make a complete CV axle. Compare this to a complete CV axle which has both the outer and inner joints fully assembled.<br><br>
+            
+            <h4>Complete CV axle</h4>
+            A CV axle is located between the wheel and differential, sometimes it is incorrectly called a halfshaft. On four wheel vehicles there are four CV axles. A CV axle includes the inner and outer CV joints completely assembled onto a axle shaft.<br><br>
+            
+            <h4>U-Joints</h4>
+    		A complete CV axle has two CV joints for the inner and outer joints. An u-joint axle has one CV joint on the outer joint and an u-joint for the inner joint.
+        </td><td>
+			<div class="img-container">
+                <img class="img-responsive img-rounded img-thumb" src="img/diagrams/axle_types.jpg">
+                <span class="caption"></span>
+            </div>
+        </td>
+     </tr><tr>
+     	<td>
+			<h4>Female vs male splines on U-Joint Axles</h4>
+   			A U-Joint axle has one CV joint on the outboard and a universal joint and yoke assembly on the inboard. The u-joint yoke may have male or female type splines depending on the axle. Male splines have a rod that goes into the differential. Female splines have an opening in which a rod from the differential goes into. This illustration compares the two.
+        </td><td>
+			<div class="img-container">
+                <img class="img-responsive img-rounded img-thumb" src="img/diagrams/male_female_splines.jpg">
+                <span class="caption"></span>
+            </div>
+        </td>
+     </tr>
+</table>
 
-	<dt>CV Joints vs U-Joints</dt>
-	<dd>
-		<table>
-			<tr>
-				<td>
-					<a href="img/diagrams/axle_types.jpg" class="gallery" rel="cvvsujoint" title="Differences between a half-shaft, CV axle, and u-joint axle">
-						<img src="content/img/diagrams/axle_types_thumb.jpg" alt="Differences between a half-shaft, CV axle, and u-joint axle" title="Differences between a half-shaft, CV axle, and u-joint axle">
-					</a>
-				</td><td>
-					A complete CV axle has two CV joints for the inner and outer joints. An u-joint axle has one CV joint on the outer joint and an u-joint for the inner joint.
-				</td>
-			</tr>
-		</table>
-	</dd>
-	
-	<dt>Female vs male splines on U-Joint Axles</dt>
-	<dd>
-		<table>
-			<tr>
-				<td>
-					<a href="content/img/diagrams/male_female_splines.jpg" class="gallery" rel="malevsfemale" title="Male versus female splines on u-joint axles">
-						<img src="content/img/diagrams/male_female_splines_thumb.jpg" alt="Male versus female splines on u-joint axles" title="Male versus female splines on u-joint axles">
-					</a>
-				</td><td>
-					A U-Joint axle has one CV joint on the outboard and a universal joint and yoke assembly on the inboard. The u-joint yoke may have male or female type splines depending on the axle. Male splines have a rod that goes into the differential. Female splines have an opening in which a rod from the differential goes into. This illustration compares the two.
-				</td>
-			</tr>
-		</table>
-	</dd>
+#### Driveshafts
 
-	<dt>Driveshafts</dt>
-	<dd>
-		<p>A driveshaft can refer to one of a few different parts. Industry terms are different from manufacturer to manufacturer. For this reason, it is best to avoid using the term "driveshaft" to describe any vehicle part. Instead, use more specific terms that tend not to be confused such as "complete CV axle" or "propshaft".</p>
-    </dd>
-	
-	<dt>Propshafts</dt>
-	<dd>
-		<p>Propshafts are located between the front and rear differentials. Depending on the vehicle, it may have one or two propshafts. 2x4 vehicles will only have one propshaft, while 4x4 vehicles will have two.</p>
-    </dd>
-</dl>
-    
-    
-## Returns
+A driveshaft can refer to one of a few different parts. Industry terms are different from manufacturer to manufacturer. For this reason, it is best to avoid using the term "driveshaft" to describe any vehicle part. Instead, use more specific terms that tend not to be confused such as "complete CV axle" or "propshaft".
 
-<dl class="faq">
-    <dt>What is your warranty policy?</dt>
-    <dd>
-		ATV Parts Connection proudly stands behind our products with an fair, brief, and easy to understand, warranty policy. You can find it on our <a href="./?p=policies#warranty">store policies</a> page.
-    </dd>
-    
-    <dt>What is your return policy?</dt>
-    <dd>
-		Our returns policy can be found with our easy to understand warranty policy on the <a href="./?p=policies#warranty">store policies</a> page.
-    </dd>
-    
-	<dt>The item I recieved is a different color than the picture</dt>
-	<dd>
-		<p>We use a variety of different manufacturers who sometimes use different color schemes (typically brown or black) for products. Depending on availability of the product, the color may be different from the one that is pictured in the listing.</p>
-		<p>Often a part will be a different color if the part was not in stock and was automatically upgraded to a better grade part that was in stock. For example, an out of stock OE Type CV Axle might be substituted with a Heavy Duty CV Axle at no additional cost to the customer.</p>
-	</dd>
+<br>
 
-	<dt>The part I ordered does not fit on my vehicle</dt>
-	<dd>
-		<p>We strive to correctly ship every order. Unfortunately, rare circumstances do arise such as incorrectly shipped parts. In the event this occurs, make sure you have access to the following information before <a href="./p=contact">contacting us</a>:</p>
+#### Propshafts
+
+Propshafts are located between the front and rear differentials. Depending on the vehicle, it may have one or two propshafts. 2x4 vehicles will only have one propshaft, while 4x4 vehicles will have two.</p>
+
+
+---
+    
+### Returns: What is your warranty and returns policy?
+
+ATV Parts Connection proudly stands behind our products with an fair, brief, and easy to understand, warranty policy. You can find it on our [store policies](/?policies#warranty") page. 
+ 
+
+### Returns: The item I recieved is a different color than the picture
+
+We use a variety of different manufacturers who sometimes use different color schemes (typically brown or black) for products. Depending on availability of the product, the color may be different from the one that is pictured in the listing.
+
+Often a part will be a different color if the part was not in stock and was automatically upgraded to a better grade part that was in stock. For example, an out of stock OE Type CV Axle might be substituted with a Heavy Duty CV Axle at no additional cost to the customer.
+
+### Returns: The part I ordered does not fit on my vehicle</dt>
+
+We strive to correctly ship every order. Unfortunately, rare circumstances do arise such as incorrectly shipped parts. In the event this occurs, make sure you have access to the following information before [contacting us](/?contact):
 		
-		<ul>
-			<li><strong>Sales Number</strong> - the sales number will allow us to quickly pull up your order from our computer system. You can find it at the top right of your sales receipt
-			<li><strong>Year, Make, Model</strong> - The fitment information will allow us to confirm what is the correct part for your vehicle. The model should include the engine size. For instance, "Polaris Sportsman 500" might refer to 3 different vehicles which take different parts: "Polaris Sportsman 500", "Polaris Sportsman 500 H.O.", and "Polaris Sportsman 500 X2".
-			<li><strong>Packaging</strong> - Most packaging we use have a part number on one of the ends that can be compared to the actual part ordered. 
-			<li><strong>VIN</strong> - The Vehicle Identification Number can provide useful information that can help in determining the correct part.
-			<li><strong>Pictures</strong> - We might need to see a comparison of the part received versus the original to determine the correct part.
-		</ul>
-	</dd>
-</dl>
-    
+* **Sales Number** - the sales number will allow us to quickly pull up your order from our computer system. You can find it at the top right of your sales receipt
+* **Year, Make, Model** - The fitment information will allow us to confirm what is the correct part for your vehicle. The model should include the engine size. For instance, "Polaris Sportsman 500" might refer to 3 different vehicles which take different parts: "Polaris Sportsman 500", "Polaris Sportsman 500 H.O.", and "Polaris Sportsman 500 X2".
+* **Packaging** - Most packaging we use have a part number on one of the ends that can be compared to the actual part ordered. 
+* **VIN** - The Vehicle Identification Number can provide useful information that can help in determining the correct part.
+* **Pictures** - We might need to see a comparison of the part received versus the original to determine the correct part.
+
 ## Changing Bands on a Boot
 
-<dl class="faq">
-    <dt>Installing Pinch-Type Bands</dt>
-	<dd>
-	    <table>
-			<tr>
-				<td>
-					<a href="content/img/howto/pinch-type-bands/tools.jpg" class="gallery" rel="pinchtype" title="Things you will need">
-						<img src="content/img/howto/pinch-type-bands/tools_thumb.jpg" alt="Things you will need" title="Things you will need">
-					</a>
-				</td><td>
-					When installing your new pinch type bands, you will need either a tile snipper or a band crimping tool.
-				</td>
-			</tr><tr>
-				<td>
-					<a href="content/img/howto/pinch-type-bands/1.jpg" class="gallery" rel="pinchtype" title="Needed tools">
-						<img src="content/img/howto/pinch-type-bands/1_thumb.jpg" alt="Needed tools" title="Needed tools">
-					</a>
-				</td><td>
-					<p>Start by wrapping the band around your boot once its seated on your joint.</p>
-					<p>While this guide shows the inner joint, this guide works with the outer too.</p>
-					<p>Looking at the band, you will notice it has notches and tabs. Hand tighten the band by squeezing the band and locking your tabs into your notches as tight as possible.</p>
-				</td>
-			</tr><tr>
-				<td>
-					<a href="content/img/howto/pinch-type-bands/2.jpg" class="gallery" rel="pinchtype" title="Squeeze the band">
-						<img src="content/img/howto/pinch-type-bands/2_thumb.jpg" alt="Squeeze the band" title="Squeeze the band">
-					</a>
-				</td><td>
-					Notice there is a little box tab that protrudes out more than the other tabs. You will want to take your tool and pinch the sides of that little box.
-				</td>
-			</tr><tr>
-				<td>
-					<a href="content/img/howto/pinch-type-bands/3.jpg" class="gallery" rel="pinchtype" title="Pinch the box tab">
-						<img src="content/img/howto/pinch-type-bands/3_thumb.jpg" alt="Pinch the box tab" title="Pinch the box tab">
-					</a>
-				</td><td>
-					Once you have pinched the box tab, it should mushroom up as seen in the picture.
-				</td>
-			</tr><tr>
-				<td>
-					<a href="content/img/howto/pinch-type-bands/4.jpg" class="gallery" rel="pinchtype" title="Hammer the tab flat">
-						<img src="content/img/howto/pinch-type-bands/4_thumb.jpg" alt="Hammer the tab flat" title="Hammer the tab flat">
-					</a>
-				</td><td>
-					The last thing you want to do is grab a small tac hammer and just tap down the mushroomed tab till its flat, just in case there are clearence issues.
-				</td>
-			</tr>
-		</table>
-	</dd>
+
+### Installing Pinch-Type Bands
+
+<table>
+	<tr>
+    	<td>
+        	<h4>Needed Tools</h4>
+            When installing your new pinch type bands, you will need either a tile snipper or a band crimping tool.
+		</td><td>
+        	<div class="img-container">
+                <img class="img-responsive img-rounded img-thumb" src="img/howto/pinch-type-bands/tools.jpg">
+                <span class="caption">Tools Needed</span>
+            </div>
+	    </td>
+	</tr><tr>
+		<td>
+        	<h4>Step 1</h4>
+			Start by wrapping the band around your boot once its seated on your joint.
+			While this guide shows the inner joint, this guide works with the outer too.
+			Looking at the band, you will notice it has notches and tabs. Hand tighten the band by squeezing the band and locking your tabs into your notches as tight as possible.
+        </td><td>
+        	<div class="img-container">
+                <img class="img-responsive img-rounded img-thumb" src="img/howto/pinch-type-bands/1.jpg">
+                <span class="caption">Hand Tighten</span>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+        	<h4>Step 2</h4>
+        	Notice there is a little box tab that protrudes out more than the other tabs. You will want to take your tool and pinch the sides of that little box.
+        </td><td>
+        	<div class="img-container">
+                <img class="img-responsive img-rounded img-thumb" src="img/howto/pinch-type-bands/2.jpg">
+                <span class="caption">Pitch the box tab</span>
+            </div>
+        </td>
+    </tr><tr>
+		<td>
+        	<h4>Step 3</h4>
+            Once you have pinched the box tab, it should mushroom up as seen in the picture.
+        </td>
+        <td>
+        	<div class="img-container">
+                <img class="img-responsive img-rounded img-thumb" src="img/howto/pinch-type-bands/3.jpg">
+                <span class="caption">After Pinching</span>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+        	<h4>Step 4</h4>
+			The last thing you want to do is grab a small tac hammer and just tap down the mushroomed tab till its flat, just in case there are clearence issues.
+        </td><td>
+        	<div class="img-container">
+                <img class="img-responsive img-rounded img-thumb" src="img/howto/pinch-type-bands/4.jpg">
+                <span class="caption">Hammer tab flat</span>
+            </div>
+        </td>
+	</tr>
+</table>
 
 
-    <dt>Using the Economy Banding Tool</dt>
-    <dd>
-		<table>
-			<tr>
-				<td>
-					<a href="content/img/howto/economy-banding-tool/1.jpg" class="gallery" rel="economy" title="Slip tail under buckle and draw tight">
-						<img src="content/img/howto/economy-banding-tool/1_thumb.jpg" alt="Slip tail under buckle and draw tight" title="Slip tail under buckle and draw tight">
-					</a>
-				</td><td>
-				    Wrap the clamp around the CV boot and thread the tail through the buckle. Draw it tight.
-				</td>
-			</tr><tr>
-				<td>    
-					<a href="content/img/howto/economy-banding-tool/2.jpg" class="gallery" rel="economy" title="Bend excess back to hold">
-						<img src="content/img/howto/economy-banding-tool/2_thumb.jpg" alt="Bend excess back to hold" title="Bend excess back to hold">
-					</a>
-				</td><td>
-					Helpful Tip: Bend the excess tail backwards to hold it in place.
-				</td>
-			</tr><tr>
-				<td>
-					<a href="content/img/howto/economy-banding-tool/3.jpg" class="gallery" rel="economy" title="Attach banding tool">
-						<img src="content/img/howto/economy-banding-tool/3_thumb.jpg" alt="Attach banding tool" title="Attach banding tool">
-					</a>
-				</td>
-				<td>
-				    Insert the tail of the clamp into the head of the banding tool and slide it through the slot of the winding mandrel.
-				</td>
-			</tr><tr>
-				<td>
-					<a href="content/img/howto/economy-banding-tool/4.jpg" class="gallery" rel="economy" title="Tighten the banding tool">
-						<img src="content/img/howto/economy-banding-tool/4_thumb.jpg" alt="Tighten the banding tool" title="Tighten the banding tool">
-					</a>
-				</td><td>
-				    Tension the clamp with a clockwise motion using a &frac34;&quot; socket wrench.
-				</td>
-			</tr><tr>
-				<td>
-					<a href="content/img/howto/economy-banding-tool/5.jpg" class="gallery" rel="economy" title="Bend the clamp back">
-						<img src="content/img/howto/economy-banding-tool/5_thumb.jpg" alt="Bend the clamp back" title="Bend the clamp back">
-						</a>
-				</td><td>
-				    After sufficient tension has been applied (the clamp is tight enough to hold the boot from turning on the joint but not too tight that the boot is damaged), lever the tool back over the buckle to put a bend in the clamp to hold the tension (you may want to tap it with a hammer to put a good crease).
-				</td>
-			</tr><tr>
-				<td>
-					<a href="content/img/howto/economy-banding-tool/6.jpg" class="gallery" rel="economy" title="Tap down the ears to hold the tail in place">
-						<img src="content/img/howto/economy-banding-tool/6_thumb.jpg" alt="Tap down the ears to hold the tail in place" title="Tap down the ears to hold the tail in place">
-					</a>
-				</td><td>
-				    Complete clamp installation by tapping down the tail of the clamp against the buckle and then tapping down the buckle ears to hold the clamp tail. Cut off excess band with the tin cutter.
-				</td>
-			</tr> 
-		</table>
-    </dd>
+
+
+### Using the Economy Banding Tool
+
+<table>
+	<tr>
+		<td>
+        	<h4>Step 1</h4>
+            Wrap the clamp around the CV boot and thread the tail through the buckle. Draw it tight.
+        </td><td>
+        	<div class="img-container">
+                <img class="img-responsive img-rounded img-thumb" src="img/howto/economy-banding-tool/1.jpg">
+                <span class="caption">Slip tail under buckle and draw tight</span>
+            </div>
+        </td>
+    </tr><tr>
+		<td>
+        	<h4>Step 2</h4>
+            Helpful Tip: Bend the excess tail backwards to hold it in
+        </td><td>
+        	<div class="img-container">
+                <img class="img-responsive img-rounded img-thumb" src="img/howto/economy-banding-tool/2.jpg">
+                <span class="caption">Bend excess back to hold</span>
+            </div>
+    	</td>
+	</tr><tr>
+		<td>
+        	<h4>Step 3</h4>
+            Insert the tail of the clamp into the head of the banding tool and slide it through the slot of the winding mandrel.
+        </td><td>
+        	<div class="img-container">
+                <img class="img-responsive img-rounded img-thumb" src="img/howto/economy-banding-tool/3.jpg">
+                <span class="caption">Attach banding tool</span>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+        	<h4>Step 4</h4>
+            Tension the clamp with a clockwise motion using a &frac34;&quot; socket wrench.
+        </td><td>
+			<div class="img-container">
+                <img class="img-responsive img-rounded img-thumb" src="img/howto/economy-banding-tool/4.jpg">
+                <span class="caption">Tighten the banding tool</span>
+            </div>
+        </td>
+	</tr><tr>
+		<td>
+        <h4>Step 5</h4>
+        After sufficient tension has been applied (the clamp is tight enough to hold the boot from turning on the joint but not too tight that the boot is damaged), lever the tool back over the buckle to put a bend in the clamp to hold the tension (you may want to tap it with a hammer to put a good crease).
+    	</td><td>
+			<div class="img-container">
+                <img class="img-responsive img-rounded img-thumb" src="img/howto/economy-banding-tool/5.jpg">
+                <span class="caption">Bend back clamp</span>
+            </div>
+    	</td>
+    </tr><tr>
+		<td>
+        	<h4>Step 6</h4>
+            Complete clamp installation by tapping down the tail of the clamp against the buckle and then tapping down the buckle ears to hold the clamp tail. Cut off excess band with the tin cutter.
+        </td><td>
+        	<div class="img-container">
+                <img class="img-responsive img-rounded img-thumb" src="img/howto/economy-banding-tool/6.jpg">
+                <span class="caption">Tap down the ears</span>
+            </div>
+        </td>
+	</tr>
+</table>
+
+
+
+
+
+
 
 
     <dt>Using the professional banding tool</dt>
