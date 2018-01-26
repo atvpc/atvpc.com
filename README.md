@@ -29,7 +29,7 @@ Submit bug reports via GitHub's [Issue Tracker](https://github.com/atvpc/atvpc.c
 
 
 ## Copyright & License
-Copyright &copy; 2014 &ndash; 2017 Timothy Keith and CV Restoration, LLC, except where otherwise noted.
+Copyright &copy; 2014 &ndash; 2018 Timothy Keith and CV Restoration, LLC, except where otherwise noted.
 
 *ATV Parts Connection, Monster Performance Parts, the Monster Axle logo, and ATV Parts Connection graphics are the servicemarks, trademarks, or registered trademarks owned by ATV Parts Connection. All other servicemarks and trademarks are the property of their respective owner.*
 
