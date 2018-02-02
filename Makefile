@@ -18,13 +18,13 @@ endif
 	rsync -ah node_modules/font-awesome/fonts/* themes/atvpc-bootstrap/fonts/
 	rm themes/atvpc-bootstrap/fonts/FontAwesome.otf
 
-serve: compress
-	lsof -i -P -n | grep -q 'php.*LISTEN' || php -S '127.0.0.1:8000' &
-	xdg-open 'http://127.0.0.1:8000'
-
-compress:
+build:
 	node_modules/clean-css-cli/bin/cleancss -o themes/atvpc-bootstrap/css/style.min.css themes/atvpc-bootstrap/css/style.css
 	sed -i -e "s/style.css/style.min.css/g" themes/atvpc-bootstrap/index.twig
+
+serve: build
+	lsof -i -P -n | grep -q 'php.*LISTEN' || php -S '127.0.0.1:8000' &
+	xdg-open 'http://127.0.0.1:8000'
 
 upload:
 	git push atvpc-dev
