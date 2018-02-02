@@ -23,6 +23,7 @@
             </div>
         </div>
     </div>
+    
     <div class="col-md-4 col-sm-12 box">
         <h1>Welcome</h1>
         <div class="box-body">
@@ -64,6 +65,7 @@
             </div>
         </div>
     </div>
+    
     <div class="col-md-6 hidden-sm hidden-xs box">
         <h1>Products We Sell</h1>
 
@@ -88,20 +90,20 @@
                     <img class="img-responsive" alt="Arrowhead Electrical Logo" title="Arrowhead Electrical Products" src="img/slider/products/arrowhead.jpg">
                     <img class="img-responsive" alt="Kali Protectives Logo" title="Kali Protectives" src="img/slider/products/kali.jpg">
                 </div>
-            </div><!-- /carousel-inner -->
-        </div><!-- /product-carousel -->
-    </div><!-- /col-md-6 -->
-</div><!-- /row -->
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="row footer">
-    <div class="col-sm-3">
+    <div class="col-md-3">
         <h1>Address</h1>
         ATV Parts Connection<br>
         10555 Guilford Road<br>
         Suite 113<br>
         Jessup, MD 20794
     </div>
-    <div class="col-sm-3">
+    <div class="col-md-3">
         <h1>Hours</h1>
         <ul>
             <li>Monday - Friday: 8am - 6pm
@@ -109,16 +111,19 @@
             <li>Sunday: Closed
         </ul>
     </div>
-    <div class="col-sm-3">
+    <div class="col-md-3">
         <h1>Contact</h1>
         <ul>
             <li>Toll-Free: 800-338-2326
             <li>Local: 301-498-4326
-            <li><a href="mailto:sales@atvpartsconnection.com">sales@atvpartsconnection.com</a>
+            <li><a href="mailto:sales@atvpc.com">sales@atvpc.com</a>
         </ul>
     </div>
-    <div class="col-sm-3">
+    <div class="col-md-3">
         <h1>Testimonials</h1>
         <div id="testimonials"><!-- Populated by JS --></div>
     </div>
 </div>
+
+
+
