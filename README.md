@@ -10,8 +10,8 @@ txtBuch uses PHP and a flat-file database consisting of [serialized](http://php.
 ## Feedback
 I have no active role in the business operations at ATV Part Connection, I simply maintain the website. However, if you have suggestions for the website or technical issues with it or its code, I would love your feedback.
 
-- General business inquiries should be directed to: [sales@atvpartsconnection.com](mailto:sales@atvpartsconnection.com)
-- For technical issues with the website or its code: [timothy@atvpc.com](timothy@atvpc.com)
+- General business inquiries should be directed to: [sales@atvpc.com](mailto:sales@atvpc.com)
+- For technical issues with the website or its code: [timothy@atvpc.com](mailto:timothy@atvpc.com)
 
 ## Bug Reports
 Submit bug reports via GitHub's [Issue Tracker](https://github.com/keithieopia/atvpc.com/issues)
