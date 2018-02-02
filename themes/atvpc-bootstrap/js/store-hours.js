@@ -161,9 +161,5 @@ function storeHours() {
 
 
 $( document ).ready(function() {
-    $.getScript("themes/atvpc-bootstrap/js/moment.min.js", function() {
-        $.getScript("themes/atvpc-bootstrap/js/moment-timezone-with-data.min.js", function() {
-            storeHours();
-        });
-    });
+    storeHours();
 });
