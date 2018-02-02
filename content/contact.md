@@ -3,7 +3,7 @@ Title: Contact Us
 Description: Phone number, email, physical address, map, and hours
 ---
 
-Feel free to call us for any questions at: 1-800-338-2326 or send us a email: [sales@atvpartsconnection.com](mailto:sales@atvpartsconnection.com)
+Feel free to call us for any questions at: 1-800-338-2326 or send us a email: [sales@atvpc.com](mailto:sales@atvpc.com)
 
 We're open Monday through Friday from 9am to 6pm EST and Saturday from 9am to 3pm EST.
 
