@@ -8,7 +8,7 @@ Description: Warranty, returns, and shipping policies
 
 Satisfaction is our goal. If for some reason, customers are not satisfied with a purchase, either through this website or over the phone, we will gladly accept returns of unused products up to 60 days after the original date of purchase. Refunds will only be given for products returned unused and undamaged. If a product is used, damaged, or otherwise not subject to resale, the product must be submitted for warranty.
 
-If you need to return an item, you will need to fill out a [RMA form](/uploads/web-rma-form.docx) (also available as a [PDF](/uploads/web-rma-form.pdf)). The RMA form must be filled out in full and include in the return package. Once we received your return, we will contact you to confirm your refund.
+If you need to return an item, you will need to fill out a [RMA form](/uploads/rma/web-rma-form.docx) (also available as a [PDF](/uploads/rma/web-rma-form.pdf)). The RMA form must be filled out in full and include in the return package. Once we received your return, we will contact you to confirm your refund.
 
 Refunds of unused products will be given barring an inspection of the item. All **correctly** shipped returns are processed and refunded before those that are not. (Returns May be subject to a restocking fee; shipping charges are non-refundable.)
 
@@ -50,7 +50,7 @@ Instruction manuals may not be included. Installation by a professional is recom
 
 On all warranty claims, the buyer is responsible for providing the original ticket number</p>
 
-To report a defective product the customer must fill out in full a [RMA form](/uploads/web-rma-form.docx) (also available as a [PDF](/uploads/web-rma-form.pdf)) and include it with the return shipment being sent back to ATV Parts Connection.
+To report a defective product the customer must fill out in full a [RMA form](/uploads/rma/web-rma-form.docx) (also available as a [PDF](/uploads/rma/web-rma-form.pdf)) and include it with the return shipment being sent back to ATV Parts Connection.
 
 <a name="shipping"></a>
 
