@@ -77,14 +77,51 @@ function prettyTime(time) {
     return hours + ":" + minutes + ampm;
 }
 
-function storeHours() {
-    var now = new Date().getTime();
-    var nowEST = moment(now).tz("America/New_York");
+function isDST(estDate) {
+    var month = estDate.getMonth() + 1;
+    var day = estDate.getDate();
+    var dow = estDate.getDay();
+    
+    //January, february, and december are out.
+    if (month < 3 || month > 11) { return false; }
+    
+    //April to October are in
+    if (month > 3 && month < 11) { return true; }
+        
+    var previousSunday = day - dow;
+    
+    //In march, we are DST if our previous sunday was on or after the 8th.
+    if (month == 3) { return previousSunday >= 8; }
+        
+    //In november we must be before the first sunday to be dst.
+    //That means the previous sunday must be before the 1st.
+    return previousSunday <= 0;
+}
 
-    var day = moment(nowEST).day();
-    var time = moment(nowEST).format("HHmm");
-    var holidayExactDate = moment(nowEST).format("YYYY-MM-DD");
-    var holidayEveryYear = "0000-" + moment(nowEST).format("MM-DD");
+function storeHours() {
+
+    var now = new Date(); 
+    var now_utc = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
+
+    console.log("Local Time: " + now.toLocaleString());
+    console.log("UTC:        " + now_utc.toLocaleString());
+
+    var now_est = new Date(now_utc);
+    now_est.setTime( now_utc.getTime() - 1000*60*60*5 );
+    
+    if (isDST(now_est) === true) {
+        now_est.setTime( now_utc.getTime() - 1000*60*60*4 );
+        console.log("EDT:        " + now_est.toLocaleString());
+    }
+    else {
+        console.log("EST:        " + now_est.toLocaleString());
+    }
+    
+    
+    var time = now_est.getHours() +""+ now_est.getMinutes() // HHMM ( +""+ prevents from being added together)
+    var day = now_est.getDay();
+    var holidayExactDate = now_est.toISOString().slice(0,10); // YYYY-MM-DD
+    var holidayEveryYear = "0000-" + now_est.toISOString().slice(5,10); // 0000-MM-DD
 
     /* OPEN / CLOSED STATUS */
     var status = "";
