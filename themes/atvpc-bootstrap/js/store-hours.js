@@ -117,8 +117,8 @@ function storeHours() {
         console.log("EST:        " + now_est.toLocaleString());
     }
     
-    
-    var time = now_est.getHours() +""+ now_est.getMinutes() // HHMM ( +""+ prevents from being added together)
+    var time = now_est.toTimeString();
+    var time = time.substr(0,2) +""+ time.substr(3,2); // HHMM ( +""+ prevents from being added together)
     var day = now_est.getDay();
     var holidayExactDate = now_est.toISOString().slice(0,10); // YYYY-MM-DD
     var holidayEveryYear = "0000-" + now_est.toISOString().slice(5,10); // 0000-MM-DD
