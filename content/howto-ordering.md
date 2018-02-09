@@ -95,19 +95,19 @@ Shipping fees also tend to double when special services such as overnight delive
 
 ### When can I expect my package?
 
-Orders placed over the phone Monday - Friday before 4pm <abbr title="Eastern Standard Time">EST</abbr> are processed and shipped out on the same day. Orders placed Monday - Thursday after 4pm are shipped out the next day. Orders placed Friday after 4pm or any time Saturday are processed and shipped on the following Monday.
+Orders placed Monday - Friday before 4pm <abbr title="Eastern Standard Time">EST</abbr> are processed and shipped out on the same day. Any order placed after 4pm EST will ship out the next business day. Orders placed on Fridays at 4pm and after will be shipped on the following Monday.
 
-Transit times vary depending on the carrier, weight of the package, and shipping address. Estimated delivery times are detailed below:
+Transit times vary depending on the carrier and shipping destination.
 
-* Domestic orders are usually sent via FedEx, UPS, or USPS:
+* Domestic orders are sent via FedEx, UPS, or USPS:
 	* Orders placed over the phone
 		* "Free Shipping" typically arrive between 5 to 7 business days <a href="#domestic_disclaimer"><sup>1</sup></a>
-	    * Guaranteed delivery dates can be specified for an additional shipping fee
+	    * Specific shipping services are available upon request
 	* Orders placed online (Amazon, eBay, Web Store)
 		* "Standard Shipping" typically arrive between 5 to 7 business days <a href="#domestic_disclaimer"><sup>1</sup></a>
 	    * "Expedited Shipping" typically arrive between 3 to 5 business days <a href="#domestic_disclaimer"><sup>1</sup></a>
-	    * Quicker delivery options exist if the order is placed over the phone
-* All international orders are sent via USPS:
+	    * "One-day Shipping" will arrive the next business day once the package is shipped <a href="#domestic_disclaimer"><sup>1</sup></a>
+* All International orders are sent via USPS or UPS:
 	* Typical transit times are 6 to 10 business days <a href="#international_disclaimer"><sup>2</sup></a>
 
 ##### Disclaimers
