@@ -1,5 +1,5 @@
 ---
-Title: Dealer Program
+Title: Dealers
 Description: Monster performance parts and other distributor, dealer, and vendor programs
 ---
 

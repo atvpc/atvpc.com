@@ -1,5 +1,5 @@
 ---
-Title: Howtos
+Title: FAQs & Howtos
 Description: Frequently asked questions, howtos, and tips
 ---
 

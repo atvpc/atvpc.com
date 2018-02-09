@@ -1,5 +1,5 @@
 ---
-Title: Contact Us
+Title: Contact
 Description: Phone number, email, physical address, map, and hours
 ---
 
