@@ -101,20 +101,18 @@ Transit times vary depending on the carrier and shipping destination.
 
 * Domestic orders are sent via FedEx, UPS, or USPS:
 	* Orders placed over the phone
-		* "Free Shipping" typically arrive between 5 to 7 business days <a href="#domestic_disclaimer"><sup>1</sup></a>
+		* "Free Shipping" typically arrive between 5 to 7 business days <sup>1</sup>
 	    * Specific shipping services are available upon request
 	* Orders placed online (Amazon, eBay, Web Store)
-		* "Standard Shipping" typically arrive between 5 to 7 business days <a href="#domestic_disclaimer"><sup>1</sup></a>
-	    * "Expedited Shipping" typically arrive between 3 to 5 business days <a href="#domestic_disclaimer"><sup>1</sup></a>
-	    * "One-day Shipping" will arrive the next business day once the package is shipped <a href="#domestic_disclaimer"><sup>1</sup></a>
+		* "Standard Shipping" typically arrive between 5 to 7 business days <sup>1</sup>
+	    * "Expedited Shipping" typically arrive between 3 to 5 business days <sup>1</sup>
+	    * "One-day Shipping" will arrive the next business day once the package is shipped <sup>1</sup>
 * All International orders are sent via USPS or UPS:
-	* Typical transit times are 6 to 10 business days <a href="#international_disclaimer"><sup>2</sup></a>
+	* Typical transit times are 6 to 10 business days <sup>2</sup>
 
-##### Disclaimers
-
-1. <a name="domestic_disclaimer"></a> Transit time are estimates and are not guaranteed. To ensure the package arrives on or before a specific date, please place the order over the phone and specify the needed delivery date. You may have to pay an additional shipping charge.
-
-2. <a name="international_disclaimer"></a> Transit time are estimates and are not guaranteed. Shipping transit times vary depending on the country, customs, clearance, and local postal services. Unfortunately, these factors are outside of our control; we cannot offer a guaranteed delivery date.
+#### Disclaimers
+1. Transit time are estimates and are not guaranteed. To ensure the package arrives on or before a specific date, please place the order over the phone and specify the needed delivery date. You may have to pay an additional shipping charge.
+2. Transit time are estimates and are not guaranteed. Shipping transit times vary depending on the country, customs, clearance, and local postal services. Unfortunately, these factors are outside of our control; we cannot offer a guaranteed delivery date.
 
 ---
 
