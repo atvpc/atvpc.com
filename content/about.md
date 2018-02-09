@@ -1,5 +1,5 @@
 ---
-Title: About Us
+Title: About
 Description: Who we are and what we do
 ---
 
