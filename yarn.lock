@@ -25,16 +25,16 @@ brace-expansion@^1.1.7:
     concat-map "0.0.1"
 
 clean-css-cli@^4.1.10:
-  version "4.1.10"
-  resolved "https://registry.yarnpkg.com/clean-css-cli/-/clean-css-cli-4.1.10.tgz#83624c9046341421875cc60a2894b382f7ca0ca6"
+  version "4.1.11"
+  resolved "https://registry.yarnpkg.com/clean-css-cli/-/clean-css-cli-4.1.11.tgz#01c5689f05bc512a23285f1defdbde00bc11d86c"
   dependencies:
     clean-css "^4.1.9"
     commander "2.x"
     glob "7.x"
 
 clean-css@^4.1.9:
-  version "4.1.9"
-  resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.1.9.tgz#35cee8ae7687a49b98034f70de00c4edd3826301"
+  version "4.1.10"
+  resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.1.10.tgz#3dfc2c2569d5f03c14b41d875ad9bccae09cb89e"
   dependencies:
     source-map "0.5.x"
 
