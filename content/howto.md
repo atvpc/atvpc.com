@@ -20,7 +20,7 @@ Description: Frequently asked questions, howtos, and tips
 * [What are Propshafts?](/?howto-propshafts)
 
 ## Returns &amp; Warranty Claims
-* [What is your warranty and returns policy?](?howto-returns#warranty-policy)
+* [What is your warranty and returns policy?](/?policies#warranty)
 * [The item I recieved is a different color than the picture](?howto-returns#diff-color)
 * [The part I ordered does not fit on my vehicle](?howto-returns#fitment-issues)
 

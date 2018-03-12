@@ -4,13 +4,6 @@ Description: Returns and Warranty Claims
 Hiding: 1
 ---
 
-<a name="warranty-policy"></a>
-## What is your warranty and returns policy?
-
-ATV Parts Connection proudly stands behind our products with an fair, brief, and easy to understand, warranty policy. You can find it on our [store policies](/?policies#warranty") page.
-
----
-
 <a name="diff-color"></a>
 ## The item I recieved is a different color than the picture
 
