@@ -4,12 +4,12 @@ Description: Frequently asked questions, howtos, and tips
 ---
 
 ## Ordering Questions
-* [Ordering: Where to find the eBay item number?](/?howto-ordering#ebay)
-* [Choosing the correct side: right or left?](/?howto-ordering#left-or-right)
-* [Finding the VIN](/?howto-ordering#vin)
-* [How is the shipping fee determined?](/?howto-ordering#shipping-fee)
-* [When can I expect my package?](/?howto-ordering#shipping-time)
-* [Tracking a package](/?howto-ordering#tracking)
+* [Ordering: Where to find the eBay item number?](/?howto-ebay-item-num)
+* [Choosing the correct side: right or left?](/?howto-left-or-right)
+* [Finding the VIN](/?howto-vin)
+* [How is the shipping fee determined?](/?howto-shipping-fee)
+* [When can I expect my package?](/?howto-shipping-time)
+* [Tracking a package](/?howto-tracking)
 
 ## Terminology
 * [What are C.V. Joints?](/?howto-terms#cv-joints)
