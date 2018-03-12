@@ -21,8 +21,8 @@ Description: Frequently asked questions, howtos, and tips
 
 ## Returns &amp; Warranty Claims
 * [What is your warranty and returns policy?](/?policies#warranty)
-* [The item I recieved is a different color than the picture](?howto-returns#diff-color)
-* [The part I ordered does not fit on my vehicle](?howto-returns#fitment-issues)
+* [The item I recieved is a different color than the picture](/?howto-diff-color)
+* [The part I ordered does not fit on my vehicle](/?howto-fitment-issues)
 
 ## Changing Bands on a Boot
 * [Installing Pinch-Type Bands](/?howto-boots#pinch-bands)
