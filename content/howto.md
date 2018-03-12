@@ -25,10 +25,10 @@ Description: Frequently asked questions, howtos, and tips
 * [The part I ordered does not fit on my vehicle](/?howto-fitment-issues)
 
 ## Changing Bands on a Boot
-* [Installing Pinch-Type Bands](/?howto-boots#pinch-bands)
-* [Using the Economy Banding Tool](/?howto-boots#economy-banding-tool)
-* [Using the Professional Banding Tool](/?howto-boots#pro-banding-tool)
-* [Installing Split Boots or Bolt-On Boots](/?howto-boots#split-and-bolt-boots)
+* [Installing Pinch-Type Bands](/?howto-install-pinch-bands)
+* [Using the Economy Banding Tool](/?howto-economy-banding-tool)
+* [Using the Professional Banding Tool](/?howto-pro-banding-tool)
+* [Installing Split Boots or Bolt-On Boots](/?howto-split-boots)
 
 ## Remove and replace CV Joints and U-Joints 
 * [ATV CV Axle removal steps](/?howto-axles#remove-axles)
