@@ -12,12 +12,12 @@ Description: Frequently asked questions, howtos, and tips
 * [Tracking a package](/?howto-tracking)
 
 ## Terminology
-* [What are C.V. Joints?](/?howto-terms#cv-joints)
-* [Inner vs outer joints](/?howto-terms#inner-vs-outer)
-* [Differences between Halfshafts, Complete C.V. axles, and a U-Joints](/?howto-terms#types)
-* [Female vs male splines on U-Joint Axles](/?howto-terms#female-vs-male)
-* [Avoiding the "Driveshaft" Ambiguity](/?howto-terms#driveshafts)
-* [What are Propshafts?](/?howto-terms#propshafts)
+* [What are C.V. Joints?](/?howto-what-are-cv-joints)
+* [Inner vs. outer joints](/?howto-inner-vs-outer)
+* [Differences between Halfshafts, Complete C.V. axles, and U-Joints](/?howto-different-axle-types)
+* [Female vs. Male splines on U-Joint Axles](/?howto-female-male-splines)
+* [Avoiding the "Driveshaft" Ambiguity](/?howto-avoid-driveshaft)
+* [What are Propshafts?](/?howto-propshafts)
 
 ## Returns &amp; Warranty Claims
 * [What is your warranty and returns policy?](?howto-returns#warranty-policy)
