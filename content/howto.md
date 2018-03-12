@@ -31,13 +31,13 @@ Description: Frequently asked questions, howtos, and tips
 * [Installing Split Boots or Bolt-On Boots](/?howto-split-boots)
 
 ## Remove and replace CV Joints and U-Joints 
-* [ATV CV Axle removal steps](/?howto-axles#remove-axles)
-* [ATV CV Axle removal and disassembly video](/?howto-axles#remove-axles-video)
-* [Outer CV joint disassembly](/?howto-axles#outer-cv-disassembly)
-* [Inner CV joint disassembly](/?howto-axles#inner-cv-disassembly)
-* [Rebuilding CV joints](/?howto-axles#cv-rebuild)
-* [Disassembly of a "Non-Rebuildable" U-Joint](/?howto-axles#u-joint-disassembly)
-* [Installation of a "Non-Rebuildable" U-Joint](/?howto-axles#u-joint-install)
+* [ATV CV Axle removal steps](/?howto-remove-axles)
+* [ATV CV Axle removal and disassembly video](/?howto-axle-removal-video)
+* [Outer CV joint disassembly](/?howto-outer-cv-disassembly)
+* [Inner CV joint disassembly](/?howto-inner-cv-disassembly)
+* [Rebuilding CV joints](/?howto-cv-rebuild)
+* [Disassembly of a "Non-Rebuildable" U-Joint](/?howto-u-joint-disassembly)
+* [Installation of a "Non-Rebuildable" U-Joint](/?howto-u-joint-install)
 
 <!-- 
     ## Helmet Sizing Charts
