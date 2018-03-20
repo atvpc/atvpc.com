@@ -2,22 +2,22 @@
     <div class="col-md-8 hidden-sm hidden-xs">
         <div id="action-shots-carousel" class="carousel slide col-centered" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
-                <div class="item active">
+                <div class="carousel-item active">
                     <img class="img-responsive" src="img/action-shots/0.jpg">
                 </div>
-                <div class="item">
+                <div class="carousel-item">
                     <img class="img-responsive" src="img/action-shots/1.jpg">
                 </div>
-                <div class="item">
+                <div class="carousel-item">
                     <img class="img-responsive" src="img/action-shots/2.jpg">
                 </div>
-                <div class="item">
+                <div class="carousel-item">
                     <img class="img-responsive" src="img/action-shots/3.jpg">
                 </div>
-                <div class="item">
+                <div class="carousel-item">
                     <img class="img-responsive" src="img/action-shots/4.jpg">
                 </div>
-                <div class="item">
+                <div class="carousel-item">
                     <img class="img-responsive" src="img/action-shots/5.jpg">
                 </div>
             </div>
@@ -41,22 +41,22 @@
     <div class="col-md-6 hidden-sm hidden-xs box">
         <h1>We Carry Parts For</h1>
 
-        <div id="vendor-carousel" class="box-body carousel slide text-center" data-ride="carousel">
+        <div id="vendor-carousel" class="box-body carousel slide slide-down text-center" data-ride="carousel">
 
             <div class="carousel-inner" role="listbox">
-                <div class="item active">
+                <div class="carousel-item active">
                     <img class="img-responsive" alt="Arctic Cat Logo" title="Arctic Cat ATV & UTV Parts" src="img/slider/vendors/arctic-cat.jpg">
                     <img class="img-responsive" alt="Bombardier Recreational Products Logo" title="BRP ATV Parts" src="img/slider/vendors/brp.jpg">
                     <img class="img-responsive" alt="Can-Am Logo" title="Can-Am ATV & UTV Parts" src="img/slider/vendors/can-am.jpg">
                     <img class="img-responsive" alt="Daihatsu Motor Company Logo" title="Daihatsu Mini Truck Driveline Parts" src="img/slider/vendors/daihatsu.jpg">
                 </div>
-                <div class="item">
+                <div class="carousel-item">
                     <img class="img-responsive" alt="Honda Logo" title="Honda ATV, UTV, and Auto Driveline Parts" src="img/slider/vendors/honda.jpg">
                     <img class="img-responsive" alt="Kawasaki Logo" title="Kawasaki ATV & UTV Parts" src="img/slider/vendors/kawasaki.jpg">
                     <img class="img-responsive" alt="Kubota Logo" title="Kubota UTV Parts" src="img/slider/vendors/kubota.jpg">
                     <img class="img-responsive" alt="Kymco Logo" title="Kymco ATV Electrical Parts" src="img/slider/vendors/kymco.jpg">
                 </div>
-                <div class="item">
+                <div class="carousel-item">
                     <img class="img-responsive" alt="Mitsubishi Logo" title="Mitsubishi Auto Driveline Parts" src="img/slider/vendors/mitsubishi.jpg">
                     <img class="img-responsive" alt="Polaris Logo" title="Polaris ATV Parts" src="img/slider/vendors/polaris.jpg">
                     <img class="img-responsive" alt="Suzuki Logo" title="Suzuki ATV & Auto Driveline Parts"  src="img/slider/vendors/suzuki.jpg">
@@ -69,21 +69,21 @@
     <div class="col-md-6 hidden-sm hidden-xs box">
         <h1>Products We Sell</h1>
 
-        <div id="product-carousel" class="box-body carousel slide text-center" data-ride="carousel" data-type="right">
+        <div id="product-carousel" class="box-body carousel slide slide-down text-center" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
-                <div class="item active">
+                <div class="carousel-item active">
                     <img class="img-responsive" alt="Arrowhead Electrical Logo" title="Arrowhead Electrical Products" src="img/slider/products/arrowhead.jpg">
                     <img class="img-responsive" alt="Kali Protectives Logo" title="Kali Protectives" src="img/slider/products/kali.jpg">
                     <img class="img-responsive" alt="Apparel" title="Apparel" src="img/slider/products/apparel.jpg">
                     <img class="img-responsive" alt="Drive Belts" title="Drive Belts" src="img/slider/products/drive-belts.jpg">
                 </div>
-                <div class="item">
+                <div class="carousel-item">
                     <img class="img-responsive" alt="Gates Logo" title="Gates Drivebelts" src="img/slider/products/gates.jpg">
                     <img class="img-responsive" alt="Driveline" title="Driveline" src="img/slider/products/driveline.jpg">
                     <img class="img-responsive" alt="Electrical Units" title="Electrical Units" src="img/slider/products/electrical-units.jpg">
                     <img class="img-responsive" alt="Suspension" title="Suspension" src="img/slider/products/suspension.jpg">
                 </div>
-                <div class="item">
+                <div class="carousel-item">
                     <img class="img-responsive" alt="Tools" title="Tools" src="img/slider/products/tools.jpg">
                     <img class="img-responsive" alt="Monster Performance Parts Logo" title="Monster Axles" src="img/slider/products/monster-parts.jpg">
                     <!-- DUPLICATES -->

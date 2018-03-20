@@ -176,6 +176,25 @@ thead {
     background: url("../img/grunge-frame.png");
 }
 
+
+/* ---------- SLIDE DOWN CAROUSEL ---------- */
+
+    .slide-down .carousel-item-next.carousel-item-left,
+    .slide-down .carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+     }
+     .slide-down .carousel-item-next,
+     .slide-down .active.carousel-item-right {
+       -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+     }
+     .slide-down .carousel-item-prev,
+     .slide-down .active.carousel-item-left {
+     -webkit-transform: translate3d(0, +100%, 0);
+            transform: translate3d(0, +100, 0);
+     }
+
 /* ---------- BOXES ---------- */
 
 .box h1 {

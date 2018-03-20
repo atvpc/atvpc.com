@@ -23,7 +23,7 @@
 </head>
 
 <body class="has-drawer">
-    <div id="menuDrawer" class="hidden-md hidden-lg drawer dw-xs-10 dw-sm-6 dw-md-4 fold" aria-labelledby="menuDrawer">
+    <div id="menuDrawer" class="d-md-none drawer dw-xs-10 dw-sm-6 dw-md-4 fold" aria-labelledby="menuDrawer">
         <div class="drawer-controls">
             <a href="#menuDrawer" data-toggle="drawer" aria-foldedopen="false" aria-controls="menuDrawer" class="btn btn-primary btn-sm">
                 <i class="fa fa-bars" aria-hidden="true"></i> 
@@ -52,30 +52,30 @@
                 <a href="/"><img id="logo" src="{{ theme_url }}/img/logo.png" alt="ATV Parts Connection Logo"></a>
             </div>
             <div class="col-md-6 col-sm-8 col-xs-8 text-center info">
-                <div class="row tagline hidden-sm hidden-xs">
+                <div class="row tagline d-none d-md-block">
                     America's Connection for ATV Parts
                 </div>
-                <div class="row hours hidden-sm hidden-xs">
+                <div class="row hours d-none d-md-block">
                     Monday&ndash;Friday: 8am&ndash;6pm &amp; Saturday: 9am&ndash;3pm EST
                 </div>
-                <div class="row phone">
+                <div class="row phone d-block">
                     800-338-2326
                 </div>
-                <div class="row hours hidden-md hidden-lg">
+                <div class="row hours d-sm-none">
                     Monday&ndash;Friday: 8am&ndash;6pm<br>
                     Saturday: 9am&ndash;3pm EST
                 </div>
             </div>
-            <div id="store-hours" class="col-md-3 hidden-sm hidden-xs">
-                <div id="store-hours-status" class="row text-center"><!-- propagated by store-hours.js --></div>
-                <div id="store-hours-shipping" class="row text-center"><!-- propagated by store-hours.js --></div>
+            <div id="store-hours" class="col-md-3 d-none d-md-block">
+                <div id="store-hours-status" class="row text-center d-block"><!-- propagated by store-hours.js --></div>
+                <div id="store-hours-shipping" class="row text-center d-block"><!-- propagated by store-hours.js --></div>
             </div>
         </header>
 
-        <div class="row hidden-sm hidden-xs">
-            <nav class="navbar" role="navigation">
+        <div class="row d-none d-md-block">
+            <nav class="navbar navbar-expand-sm" role="navigation">
                 <div class="collapse navbar-collapse" id="main-navbar">
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav mr-auto">
                         {% for page in pages if page.title %}
                             <li class="nav-item{% if page.id == current_page.id %} active{% endif %}">
                                 <a class="nav-link" href="{{ page.url }}">{{ page.title }}</a>
@@ -83,7 +83,7 @@
                         {% endfor %}
                     </ul>
 
-                    <form class="navbar-form navbar-right" role="search">
+                    <form class="navbar-form" role="search">
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Search">
                             <div class="input-group-btn">
@@ -127,16 +127,16 @@
             </div>
         </div>
 
-        <div class="row text-center fineprint">
+        <div class="row text-center fineprint d-block">
             <p>
-                ATV Parts Connection, Monster Performance Parts, the Monster Axle logo, and ATV Parts Connection graphics are the servicemarks, trademarks, or registered trademarks owned by ATV Parts Connection.<br>
-                All other servicemarks and trademarks are the property of their respective owner.
+                ATV Parts Connection, Monster Performance Parts, the Monster Axle logo, and ATV Parts Connection graphics are the servicemarks, trademarks, or registered trademarks owned by ATV Parts Connection.
+                All other servicemarks and trademarks are the property of their respective owner.<br><br>
+                
+                [ <a href="/?tos">Terms of Service</a> ] [ <a href="/?privacy">Privacy Policy</a> ]
             </p>
-
-            [ <a href="/?tos">Terms of Service</a> ] [ <a href="/?privacy">Privacy Policy</a> ]
         </div>
 
-        <div class="row text-center awareness">
+        <div class="row text-center awareness d-block">
             <a href="http://stepsfordoug.org"><img src="img/steps4doug.jpg" title="ATV Parts Connection supports Steps 4 Doug and general awareness for ALS"></a>
         </div>
     </div><!-- /container -->
@@ -146,23 +146,6 @@
 <script src="{{ theme_url }}/js/drawer.min.js"></script>
 
 <script>
-    function findBootstrapEnvironment() {
-        var envs = ['xs', 'sm', 'md', 'lg'];
-
-        var $el = $('<div>');
-        $el.appendTo($('body'));
-
-        for (var i = envs.length - 1; i >= 0; i--) {
-            var env = envs[i];
-
-            $el.addClass('hidden-'+env);
-            if ($el.is(':hidden')) {
-                $el.remove();
-                return env;
-            }
-        }
-    }
-
     function scriptLoad(src) {
         $.ajax({
             type: "GET",
@@ -182,12 +165,7 @@
 
         loadIfFound(".carousel", "{{ theme_url }}/js/multi-item-carousel.js");
         loadIfFound("#testimonials", "{{ theme_url }}/js/testimonials.js");
-
-        // Only load when not on mobile
-        env = findBootstrapEnvironment();
-        if (env == "md" || env == "lg") {
-            loadIfFound("#store-hours", "{{ theme_url }}/js/store-hours.js");
-        }
+        loadIfFound("#store-hours", "{{ theme_url }}/js/store-hours.js");
 
         // Google Analytics (don't load if on dev server)
         host = window.location.hostname;
