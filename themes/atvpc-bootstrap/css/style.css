@@ -67,13 +67,21 @@ main a, main a:hover, main a:visited {
     transition: all 0.3s ease-out;
 }
 
+.img-rounded {
+    border-radius: .5em;
+}
+
+.img-rounded:hover {
+    border-radius: 0;
+}
+
 .img-thumb {
     max-height: 20em;
     max-width: 25vw;
 }
 
 .img-container:hover {
-    transform: scale(1.5);
+    transform: scale(2);
 	z-index:10;
 }
 

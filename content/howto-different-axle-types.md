@@ -14,6 +14,6 @@ A CV axle is located between the wheel and differential, sometimes it is incorre
 A complete CV axle has two CV joints for the inner and outer joints. An u-joint axle has one CV joint on the outer joint and an u-joint for the inner joint.
 
 <div class="img-container">
-	<img class="img-responsive img-rounded img-thumb" src="img/diagrams/axle_types.jpg">
+	<img class="img-fluid img-rounded img-thumb" src="img/diagrams/axle_types.jpg">
 	<span class="caption"></span>
 </div>

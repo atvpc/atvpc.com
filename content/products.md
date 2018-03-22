@@ -12,7 +12,7 @@ Our aftermarket constant velocity axles are designed to be a direct replacement 
 ### Original Equipment Series
 <!-- axle_oe.jpg = YA-8-300 -->
 <div class="img-container pull-right">
-    <img class="img-responsive img-rounded img-thumb" src="img/axles/axle_oe.jpg">
+    <img class="img-fluid img-rounded img-thumb" src="img/axles/axle_oe.jpg">
     <span class="caption">OE series</span>
 </div>
 
@@ -27,7 +27,7 @@ Original Equipment Type: meets or exceeds OEM specifications.
 
 <!-- axle_hd.jpg = B110 -->
 <div class="img-container pull-right">
-    <img class="img-responsive img-rounded img-thumb" src="img/axles/axle_hd.jpg">
+    <img class="img-fluid img-rounded img-thumb" src="img/axles/axle_hd.jpg">
     <span class="caption">HD series</span>
 </div>
 
@@ -47,7 +47,7 @@ Heavy Duty: designed for rough terrain.
 
 <!-- axle_xp.jpg = XB-110 -->
 <div class="img-container pull-right">
-    <img class="img-responsive img-rounded img-thumb" src="img/axles/axle_xp.jpg">
+    <img class="img-fluid img-rounded img-thumb" src="img/axles/axle_xp.jpg">
     <span class="caption">Monster XP series</span>
 </div>
 
@@ -68,12 +68,12 @@ Monster Extreme Performance: designed for high performance lifted vehicles. <!--
 All of our boot kits come with the boot, packet of moly grease, and two pinch type bands. At the customer's request, the pinch type bands can be substituted with a band type band that needs a seperate banding tool.
 
 <div class="img-container pull-right">
-    <img class="img-responsive img-rounded img-thumb" src="img/boots/boot_oe.jpg">
+    <img class="img-fluid img-rounded img-thumb" src="img/boots/boot_oe.jpg">
     <span class="caption">OE series</span>
 </div>
 
 <div class="img-container pull-right">
-    <img class="img-responsive img-rounded img-thumb" src="img/boots/boot_hd.jpg">
+    <img class="img-fluid img-rounded img-thumb" src="img/boots/boot_hd.jpg">
     <span class="caption">HD series</span>
 </div>
 

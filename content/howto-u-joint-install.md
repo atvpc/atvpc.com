@@ -8,7 +8,7 @@ Hiding: 1
 Press the new U-Joint and bearing caps into position and insert the "C" clip
 
 <div class="img-container">
-    <img class="img-responsive img-rounded img-thumb" src="img/howto/non-rebuildable-joint/install-1.jpg">
+    <img class="img-fluid img-rounded img-thumb" src="img/howto/non-rebuildable-joint/install-1.jpg">
     <span class="caption"></span>
 </div>
 
@@ -22,6 +22,6 @@ Repeat the above steps for the remaining clips.
 Make sure all the clips are completely seated into the groove of the new bearing caps
 
 <div class="img-container">
-    <img class="img-responsive img-rounded img-thumb" src="img/howto/non-rebuildable-joint/install-2.jpg">
+    <img class="img-fluid img-rounded img-thumb" src="img/howto/non-rebuildable-joint/install-2.jpg">
     <span class="caption"></span>
 </div>
