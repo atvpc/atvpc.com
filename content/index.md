@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-md-8 hidden-sm hidden-xs">
+    <div class="col-md-8 d-none d-md-block">
         <div id="action-shots-carousel" class="carousel slide col-centered" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
@@ -24,7 +24,7 @@
         </div>
     </div>
     
-    <div class="col-md-4 col-sm-12 box">
+    <div class="col-sm-12 col-md-4 box">
         <h1>Welcome</h1>
         <div class="box-body">
             <p>
@@ -95,7 +95,7 @@
     </div>
 </div>
 
-<div class="row footer">
+<div class="row footer d-none d-md-block">
     <div class="col-md-3">
         <h1>Address</h1>
         ATV Parts Connection<br>

@@ -48,24 +48,33 @@
     <div class="container">
 
         <header class="row">
-            <div class="col-md-3 col-sm-3 col-xs-3">
-                <a href="/"><img id="logo" src="{{ theme_url }}/img/logo.png" alt="ATV Parts Connection Logo"></a>
+            <div class="col-sm-3 col-md-3 d-block">
+                <a href="/"><img class="img-fluid" src="{{ theme_url }}/img/logo.png" alt="ATV Parts Connection Logo"></a>
             </div>
-            <div class="col-md-6 col-sm-8 col-xs-8 text-center info">
-                <div class="row tagline d-none d-md-block">
-                    America's Connection for ATV Parts
+            
+            <div class="col-sm-9 col-md-6 text-center info">
+                <div class="d-none d-md-block">
+                    <div class="tagline">
+                        America's Connection for ATV Parts
+                    </div>
+                    
+                    <div class="hours">
+                        Monday&ndash;Friday:&nbsp;8am&ndash;6pm&nbsp;&amp; Saturday:&nbsp;9am&ndash;3pm&nbsp;EST
+                    </div>
                 </div>
-                <div class="row hours d-none d-md-block">
-                    Monday&ndash;Friday: 8am&ndash;6pm &amp; Saturday: 9am&ndash;3pm EST
-                </div>
-                <div class="row phone d-block">
+                    
+                <div class="phone d-block">
                     800-338-2326
                 </div>
-                <div class="row hours d-sm-none">
-                    Monday&ndash;Friday: 8am&ndash;6pm<br>
-                    Saturday: 9am&ndash;3pm EST
+             
+                <div class="col-md-3 d-md-none">
+                    <div class="hours">
+                        Monday&ndash;Friday: 8am&ndash;6pm<br>
+                        Saturday: 9am&ndash;3pm EST
+                    </div>
                 </div>
             </div>
+            
             <div id="store-hours" class="col-md-3 d-none d-md-block">
                 <div id="store-hours-status" class="row text-center d-block"><!-- propagated by store-hours.js --></div>
                 <div id="store-hours-shipping" class="row text-center d-block"><!-- propagated by store-hours.js --></div>
