@@ -38,7 +38,7 @@
 </div>
 
 <div class="row">
-    <div class="col-md-6 hidden-sm hidden-xs box">
+    <div class="col box d-none d-md-block">
         <h1>We Carry Parts For</h1>
 
         <div id="vendor-carousel" class="box-body carousel slide slide-down text-center" data-ride="carousel">
@@ -66,7 +66,7 @@
         </div>
     </div>
     
-    <div class="col-md-6 hidden-sm hidden-xs box">
+    <div class="col box d-none d-md-block">
         <h1>Products We Sell</h1>
 
         <div id="product-carousel" class="box-body carousel slide slide-down text-center" data-ride="carousel">

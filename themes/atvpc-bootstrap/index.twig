@@ -97,19 +97,19 @@
             </nav>
         </div>
 
-        <main class="row">
-            {% if is_front_page %}
+        <main>
+        {% if is_front_page %}
 
-                {{ content }}
+            {{ content }}
 
-            {% else %}
-                <div class="row">
-                    <div class="col-sm-12">
-                        {% if meta.title %}<h1>{{ meta.title }}</h1>{% endif %}
-                        {{ content }}
-                    </div>
+        {% else %}
+            <div class="row">
+                <div class="col-sm-12">
+                    {% if meta.title %}<h1>{{ meta.title }}</h1>{% endif %}
+                    {{ content }}
                 </div>
-            {% endif %}
+            </div>
+        {% endif %}
         </main>
             
         <div class="row footer-bar">
