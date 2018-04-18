@@ -16,27 +16,27 @@
  
 @font-face {
     font-family: 'shortcut';
-    src: url('content/themes/ca-webstore/fonts/shortcut/shortcut.woff') format('woff'),
-         url('content/themes/ca-webstore/fonts/shortcut/shortcut.ttf') format('truetype'),
-         url('content/themes/ca-webstore/fonts/shortcut/shortcut.svg#shortcut') format('svg');
+    src: url('//atvpc.com/content/themes/ca-webstore/fonts/shortcut/shortcut.woff') format('woff'),
+         url('//atvpc.com/content/themes/ca-webstore/fonts/shortcut/shortcut.ttf') format('truetype'),
+         url('//atvpc.com/content/themes/ca-webstore/fonts/shortcut/shortcut.svg#shortcut') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'oswald-bold';
-    src: url('content/themes/ca-webstore/fonts/oswald/oswald-bold.woff') format('woff'),
-         url('content/themes/ca-webstore/fonts/oswald/oswald-bold.ttf') format('truetype'),
-         url('content/themes/ca-webstore/fonts/oswald/oswald-bold.svg#oswald-bold') format('svg');
+    src: url('//atvpc.com/content/themes/ca-webstore/fonts/oswald/oswald-bold.woff') format('woff'),
+         url('//atvpc.com/content/themes/ca-webstore/fonts/oswald/oswald-bold.ttf') format('truetype'),
+         url('//atvpc.com/content/themes/ca-webstore/fonts/oswald/oswald-bold.svg#oswald-bold') format('svg');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'muli-regular';
-    src: url('content/themes/ca-webstore/fonts/muli/muli-regular.woff') format('woff'),
-         url('content/themes/ca-webstore/fonts/muli/muli-regular.ttf') format('truetype'),
-         url('content/themes/ca-webstore/fonts/muli/muli-regular.svg#muli-regular') format('svg');
+    src: url('//atvpc.com/content/themes/ca-webstore/fonts/muli/muli-regular.woff') format('woff'),
+         url('//atvpc.com/content/themes/ca-webstore/fonts/muli/muli-regular.ttf') format('truetype'),
+         url('//atvpc.com/content/themes/ca-webstore/fonts/muli/muli-regular.svg#muli-regular') format('svg');
     font-weight: 400;
     font-style: normal;
 }
