@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/atvpc/atvpc.com/master/content/themes/ca-webstore/img/logo.png" alt="ATV Parts Connection Logo">
+    <img src="https://raw.githubusercontent.com/atvpc/atvpc.com/master/themes/atvpc-bootstrap/img/logo.png" alt="ATV Parts Connection Logo">
 </p>
 <p align="center">
     <a href="https://github.com/atvpc/atvpc.com/blob/master/LICENSE">
