@@ -1,6 +1,3 @@
 node_modules/
 index.php
-inc
-*.log
-content/db/visitors/*.dat
-content/db/visitors/ips/*.dat
+yarn-error.log

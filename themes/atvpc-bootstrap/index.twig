@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="publisher" href="https://plus.google.com/b/103602236030149683509">
+    <link type="text/plain" rel="author" href="/humans.txt">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
+    {% if meta.description %}
+        <meta name="description" content="{{ meta.description|striptags }}">
+    {% endif %}{% if meta.robots %}
+        <meta name="robots" content="{{ meta.robots }}">
+    {% endif %}
+
+    <link rel="stylesheet" href="{{ theme_url }}/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ theme_url }}/css/bootstrap-drawer.min.css">
+    <link rel="stylesheet" href="{{ theme_url }}/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ theme_url }}/css/style.min.css">
+</head>
+
+<body class="has-drawer">
+    <div id="menuDrawer" class="d-lg-none drawer dw-xs-10 dw-sm-6 dw-md-4 fold" aria-labelledby="menuDrawer">
+        <div class="drawer-controls">
+            <a href="#menuDrawer" data-toggle="drawer" aria-foldedopen="false" aria-controls="menuDrawer" class="btn btn-primary btn-sm">
+                <i class="fa fa-bars" aria-hidden="true"></i> 
+            </a>
+        </div>
+        <div class="drawer-contents">
+            <div class="drawer-heading text-center"></div>
+            <div class="drawer-body"></div>
+
+            <ul class="drawer-nav">
+                {% for page in pages if page.title %}
+                    <li role="presentation"{% if page.id == current_page.id %} class="active"{% endif %}>
+                        <a href="{{ page.url }}">{{ page.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+
+            <div class="drawer-footer"></div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <header class="row">
+            <div class="col-sm-3 col-lg-3 d-block">
+                <a href="/"><img src="{{ theme_url }}/img/logo.png" alt="ATV Parts Connection Logo"></a>
+            </div>
+            
+            <div class="col-sm-9 col-lg-6 text-center info">
+                <div class="d-none d-lg-block">
+                    <div class="tagline">
+                        America's Connection for ATV Parts
+                    </div>
+                    
+                    <div class="hours">
+                        Monday&ndash;Friday:&nbsp;8am&ndash;6pm&nbsp;&amp; Saturday:&nbsp;9am&ndash;3pm&nbsp;EST
+                    </div>
+                </div>
+                    
+                <div class="phone d-block">
+                    800-338-2326
+                </div>
+             
+                <div class="col-lg-3 d-lg-none">
+                    <div class="hours">
+                        Monday&ndash;Friday: 8am&ndash;6pm<br>
+                        Saturday: 9am&ndash;3pm EST
+                    </div>
+                </div>
+            </div>
+            
+            <div id="store-hours" class="col-lg-3 d-none d-lg-block">
+                <div id="store-hours-status" class="row text-center d-block"><!-- propagated by store-hours.js --></div>
+                <div id="store-hours-shipping" class="row text-center d-block"><!-- propagated by store-hours.js --></div>
+            </div>
+        </header>
+
+        <div class="row d-none d-lg-block">
+            <nav class="navbar navbar-expand-sm" role="navigation">
+                <div class="collapse navbar-collapse" id="main-navbar">
+                    <ul class="nav navbar-nav mr-auto">
+                        {% for page in pages if page.title %}
+                            <li class="nav-item{% if page.id == current_page.id %} active{% endif %}">
+                                <a class="nav-link" href="{{ page.url }}">{{ page.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+
+                    <form class="navbar-form" role="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div><!-- /input-group-btn -->
+                        </div><!-- /input-group -->
+                    </form>
+                </div><!-- /navbar-collapse -->
+            </nav>
+        </div>
+
+        <main>
+        {% if is_front_page %}
+
+            {{ content }}
+
+        {% else %}
+            <div class="row">
+                <div class="col-sm-12">
+                    {% if meta.title %}<h1>{{ meta.title }}</h1>{% endif %}
+                    {{ content }}
+                </div>
+            </div>
+        {% endif %}
+        </main>
+            
+        <div class="row footer-bar">
+            <div class="col-sm-9">
+                Copyright © 2007&ndash;{{ "now"|date('Y') }} <a href="mailto:sales@atvpartsconnection.com">CV Restoration, LLC</a>. All Rights Reserved.
+            </div>
+            <div class="col-sm-3">
+                <ul class="social pull-right">
+                    <li><a href="//www.facebook.com/pages/ATV-Parts-Connection/227990890564556" title="Visit our Facebook page"><i class="fa fa-facebook"></i></a>
+                    <li><a href="//google.com/+Atvpc" title="Visit our Google+ page" rel="publisher"><i class="fa fa-google-plus"></i></a>
+                    <li><a href="//twitter.com/atvpartsconnect" title="Visit our Twitter profile"><i class="fa fa-twitter"></i></a>
+                    <li><a href="//www.amazon.com/gp/aag/main?seller=A1YR0DBBU4DM4B" title="Visit our Amazon storefront"><i class="fa fa-amazon"></i></a>
+                    <li><a href="//stores.ebay.com/ATV-Parts-Connection" title="Visit our eBay store"><i class="fa fa-suitcase"></i></a> <!-- fa-shopping-cart -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="row text-center fineprint d-block">
+            <p>
+                ATV Parts Connection, Monster Performance Parts, the Monster Axle logo, and ATV Parts Connection graphics are the servicemarks, trademarks, or registered trademarks owned by ATV Parts Connection.
+                All other servicemarks and trademarks are the property of their respective owner.<br><br>
+                
+                [ <a href="/?tos">Terms of Service</a> ] [ <a href="/?privacy">Privacy Policy</a> ]
+            </p>
+        </div>
+
+        <div class="row text-center awareness d-block">
+            <a href="http://stepsfordoug.org"><img src="img/steps4doug.jpg" title="ATV Parts Connection supports Steps 4 Doug and general awareness for ALS"></a>
+        </div>
+    </div><!-- /container -->
+
+<script src="{{ theme_url }}/js/jquery.min.js"></script>
+<script src="{{ theme_url }}/js/bootstrap.min.js"></script>
+<script src="{{ theme_url }}/js/drawer.min.js"></script>
+
+<script>
+    function scriptLoad(src) {
+        $.ajax({
+            type: "GET",
+            url: src,
+            dataType: "script"
+        });
+    }
+
+    // Selectively load JS if relevant class found on page
+    function loadIfFound(selector, src) {
+        if( $( selector ).length ) {
+            scriptLoad( src );
+        }
+    }
+
+    $( document ).ready(function() {
+
+        loadIfFound(".carousel", "{{ theme_url }}/js/multi-item-carousel.js");
+        loadIfFound("#testimonials", "{{ theme_url }}/js/testimonials.js");
+        loadIfFound("#store-hours", "{{ theme_url }}/js/store-hours.js");
+
+        // Google Analytics (don't load if on dev server)
+        host = window.location.hostname;
+        if (host != "127.0.0.1" && host != "localhost") {
+            $.ajax({
+                type: "GET",
+                url: "https://www.googletagmanager.com/gtag/js?id=UA-53852617-1",
+                dataType: "script"
+            });
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-53852617-1');
+        }
+    });
+</script>
+</body>
+</html>

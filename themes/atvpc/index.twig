@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="publisher" href="https://plus.google.com/b/103602236030149683509">
+    <link type="text/plain" rel="author" href="//humans.txt">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
+    {% if meta.description %}
+        <meta name="description" content="{{ meta.description|striptags }}">
+    {% endif %}{% if meta.robots %}
+        <meta name="robots" content="{{ meta.robots }}">
+    {% endif %}
+
+    <link rel="stylesheet" href="{{ theme_url }}/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="{{ theme_url }}/style.css" type="text/css" />
+
+
+    <script src="{{ theme_url }}/scripts/modernizr.js"></script>
+    <style type="text/css">
+        /* Prevents Flash of Unstyled Content, jQuery will undo this when fully loaded */
+        .fouc { display: none; } 
+    </style>
+</head>
+<body>
+
+
+    <div style="display: none;" id="theme-name">atvpc</div>
+
+    <div id="wrapper-page" itemscope itemtype="http://schema.org/LocalBusiness">
+        <header role="banner">
+            <a href="index.php?p=index" title="ATV Parts Connection"><img id="logo" itemprop="image" src="{{ theme_url }}/images/logo.png"></a>
+                
+            <svg id="info">
+                <defs>
+                    <linearGradient id="bluegradient" x="0%" y="0%" x2="0%" y2="100%">
+                        <stop stop-color="#33A3E3" offset="0%" />
+                        <stop stop-color="#005797" offset="80%" />
+                        <stop stop-color="#33A3E3" offset="90%" />
+                    </linearGradient>
+                    <linearGradient id="whitegradient" x="0%" y="0%" x2="0%" y2="100%">
+                        <stop stop-color="#EEEEEE" offset="0%" />
+                        <stop stop-color="#CCCCCC" offset="80%" />
+                        <stop stop-color="#EEEEEE" offset="90%" />
+                    </linearGradient>
+                </defs>
+	
+                <text x="50%" y="30" text-anchor="middle" font-size="24" fill="url(#whitegradient)" stroke="none">America's Connection for ATV Parts</text>  
+                <text x="50%" y="50" text-anchor="middle" font-size="14" fill="url(#whitegradient)" stroke="none">Monday &ndash; Friday: 8am&ndash;6pm &nbsp;&nbsp;&amp;&nbsp;&nbsp; Saturday: 9am&ndash;3pm EST</text>
+					<text x="50%" y="90" text-anchor="middle" font-size="32" fill="url(#bluegradient)" stroke="none">800-338-2326</text>
+            </svg>
+
+            <div id="store-hours">
+                <div id="store-hours-status"><!-- propagated by store-hours.js --></div>
+                <div id="store-hours-shipping"><!-- propagated by store-hours.js --></div>
+            </div>
+        </header>
+
+        <div id="wrapper-content">
+            <nav>
+                <ul>
+                    {% for page in pages if page.title %}
+                        <li {% if page.id == current_page.id %} class="active"{% endif %}>
+                            <a href="{{ page.url }}">{{ page.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+
+            <div id="wrapper-main">
+                <main>{{ content }}</main>
+            </div><!-- End #wrapper-main -->
+
+            <footer>
+                <div id="footer-info">
+                    <section itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <svg class="h2svg">
+                            <defs>
+                                <linearGradient id="textgradient" x="0%" y="0%" x2="0%" y2="100%">
+                                    <stop stop-color="#33A3E3" offset="0%" />
+                                    <stop stop-color="#005797" offset="80%" />
+                                    <stop stop-color="#33A3E3" offset="90%" />
+                                </linearGradient>
+                            </defs>
+
+                            <text x="0" y="25" text-anchor="start" fill="url(#textgradient)" stroke="none">Address</text>  
+                        </svg>
+
+                        <span itemprop="name">ATV Parts Connection</span><br>
+                        <span itemprop="streetAddress">10555 Guilford Road<br>
+                        Suite 113</span><br>
+                        <span itemprop="addressLocality">Jessup</span>, <span itemprop="addressRegion">MD</span> <span itemprop="postalCode">20794</span>
+                    </section>
+
+                    <section>
+                        <svg class="h2svg">
+                            <defs>
+                                <linearGradient id="textgradient" x="0%" y="0%" x2="0%" y2="100%">
+                                    <stop stop-color="#33A3E3" offset="0%" />
+                                    <stop stop-color="#005797" offset="80%" />
+                                    <stop stop-color="#33A3E3" offset="90%" />
+                                </linearGradient>
+                            </defs>
+
+                            <text x="0" y="25" text-anchor="start" fill="url(#textgradient)" stroke="none">Hours</text>  
+                        </svg>
+
+                        <ul>
+                            <li>Monday - Friday: 8am - 6pm
+                            <li>Saturday: 9am - 3pm
+                            <li>Sunday: Closed
+                        </ul>
+                    </section>
+
+                    <section>
+                        <svg class="h2svg">
+                            <defs>
+                                <linearGradient id="textgradient" x="0%" y="0%" x2="0%" y2="100%">
+                                    <stop stop-color="#33A3E3" offset="0%" />
+                                    <stop stop-color="#005797" offset="80%" />
+                                    <stop stop-color="#33A3E3" offset="90%" />
+                                </linearGradient>
+                            </defs>
+
+                            <text x="0" y="25" text-anchor="start" fill="url(#textgradient)" stroke="none">Contact</text>  
+                        </svg>
+
+                        <ul>
+                            <li>Toll-Free: <span itemprop="telephone">800-338-2326</span>
+                            <li>Local: 301-498-4326
+                            <li>{{ site_email }}
+                        </ul>
+                    </section>
+
+                    <section>
+                        <svg class="h2svg">
+                            <defs>
+                                <linearGradient id="textgradient" x="0%" y="0%" x2="0%" y2="100%">
+                                    <stop stop-color="#33A3E3" offset="0%" />
+                                    <stop stop-color="#005797" offset="80%" />
+                                    <stop stop-color="#33A3E3" offset="90%" />
+                                </linearGradient>
+                            </defs>
+
+                            <text x="0" y="25" text-anchor="start" fill="url(#textgradient)" stroke="none">Testimonials</text>  
+                        </svg>
+
+                        <div id="testimonials">{{ inc_testimonials }}</div>
+                    </section>
+                </div><!-- End #footer-info -->
+
+                <div id="footer-bar">
+                    <div id="copyright">
+                        Copyright &copy; 2007&ndash;{{ "now"|date('Y') }} <a href="mailto:sales@atvpartsconnection.com">CV Restoration, LLC</a>. All Rights Reserved.
+                    </div>
+	
+                    <a href="//www.facebook.com/pages/ATV-Parts-Connection/227990890564556" title="Visit our Facebook page"><img class="social" src="{{ theme_url }}/images/social/facebook.png"></a>
+                    <a href="//google.com/+Atvpc" title="Visit our Google+ page" rel="publisher"><img class="social" src="{{ theme_url }}/images/social/google-plus.png"></a>
+                    <a href="//twitter.com/atvpartsconnect" title="Visit our Twitter profile"><img class="social" src="{{ theme_url }}/images/social/twitter.png"></a>
+                    <a href="//stores.ebay.com/ATV-Parts-Connection" title="Visit our eBay store"><img class="social" src="{{ theme_url }}/images/social/ebay.png"></a>
+                    <a href="//www.amazon.com/gp/aag/main?seller=A1YR0DBBU4DM4B" title="Visit our Amazon storefront"><img class="social" src="{{ theme_url }}/images/social/amazon.png"></a>
+                </div>
+
+                <div id="fineprint">
+                    ATV Parts Connection, Monster Performance Parts, the Monster Axle logo, and ATV Parts Connection graphics are the servicemarks, trademarks, or registered trademarks owned by ATV Parts Connection. All other servicemarks and trademarks are the property of their respective owner.<br><br>
+
+                    <strong>[&nbsp;</strong><a href="./?p=tos">Terms of Service</a><strong>&nbsp;]</strong>&nbsp;&nbsp;<strong>[&nbsp;</strong><a href="./?p=privacy">Privacy Policy</a><strong>&nbsp;]</strong>
+                </div>
+
+            </footer>
+        </div><!-- End #wrapper-content -->
+    </div><!-- End #wrapper-page -->
+
+    <div id="go-to-top"><a href="#top">&and;</a></div>
+
+    <script src="{{ theme_url }}/scripts/jquery.js"></script>
+    <script src="{{ theme_url }}/scripts/init.js"></script>
+</body>
+</html>
