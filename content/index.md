@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-md-8 d-none d-md-block">
+    <div class="col-lg-8 d-none d-lg-block">
         <div id="action-shots-carousel" class="carousel slide col-centered" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
@@ -24,7 +24,7 @@
         </div>
     </div>
     
-    <div class="col-sm-12 col-md-4 box">
+    <div class="col-sm-12 col-md-12 col-lg-4 box">
         <h1>Welcome</h1>
         <div class="box-body">
             <p>
@@ -95,15 +95,15 @@
     </div>
 </div>
 
-<div class="row footer d-none d-md-block">
-    <div class="col-md-3">
+<div class="row footer"> 
+    <div class="d-inline-block col-md-4 col-lg-3">
         <h1>Address</h1>
         ATV Parts Connection<br>
         10555 Guilford Road<br>
         Suite 113<br>
         Jessup, MD 20794
     </div>
-    <div class="col-md-3">
+    <div class="d-inline-block col-md-4 col-lg-3">
         <h1>Hours</h1>
         <ul>
             <li>Monday - Friday: 8am - 6pm
@@ -111,7 +111,7 @@
             <li>Sunday: Closed
         </ul>
     </div>
-    <div class="col-md-3">
+    <div class="d-inline-block col-md-4 col-lg-3">
         <h1>Contact</h1>
         <ul>
             <li>Toll-Free: 800-338-2326
@@ -119,11 +119,10 @@
             <li><a href="mailto:sales@atvpc.com">sales@atvpc.com</a>
         </ul>
     </div>
-    <div class="col-md-3">
+    <div class="d-none d-lg-inline-block col-lg-3">
         <h1>Testimonials</h1>
         <div id="testimonials"><!-- Populated by JS --></div>
     </div>
 </div>
-
 
 
