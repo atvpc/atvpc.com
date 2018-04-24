@@ -1,3 +1,10 @@
+## 3.0.0 (2018-04-24)
+- PicoCMS backend
+- Rewrite of CSS theme to Bootstrap 4
+- Responsive theme for small screens / mobile devices
+- Yarn to keep site dependances up-to-date
+- Simplified JS code 
+
 ## 2.1.2 (2017-12-15)
 - Security fix: the http referrer for all visitors is stored in a plaintext .dat file. Malicious PHP code could be injected if the webserver is set to interprete all file extensions for PHP code (non-standard setup)
 
