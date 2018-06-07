@@ -8,9 +8,6 @@
     <a href="https://github.com/atvpc/atvpc.com/releases">
         <img src="https://img.shields.io/github/tag/atvpc/atvpc.com.svg" alt="Current Version">
     </a>
-    <a href="https://gemnasium.com/github.com/atvpc/atvpc.com">
-        <img src="https://gemnasium.com/badges/github.com/atvpc/atvpc.com.svg" alt="Dependency Status">
-    </a>
     <a href="https://www.codacy.com/app/timothykeith/atvpc.com">
         <img src="https://api.codacy.com/project/badge/Grade/c18d8f710dc744fb940f1124b0f9378e" alt="Codacy Badge">
     </a>
@@ -29,7 +26,7 @@ Submit bug reports via GitHub's [Issue Tracker](https://github.com/atvpc/atvpc.c
 
 
 ## Copyright & License
-Copyright &copy; 2014 &ndash; 2018 Timothy Keith and CV Restoration, LLC, except where otherwise noted.
+Copyright &copy; 2014 &ndash; 2018 CV Restoration, LLC d. b. a. ATV Parts Connection, except where otherwise noted.
 
 *ATV Parts Connection, Monster Performance Parts, the Monster Axle logo, and ATV Parts Connection graphics are the servicemarks, trademarks, or registered trademarks owned by ATV Parts Connection. All other servicemarks and trademarks are the property of their respective owner.*
 
