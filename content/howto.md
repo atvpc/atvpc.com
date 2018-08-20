@@ -4,6 +4,8 @@ Description: Frequently asked questions, howtos, and tips
 ---
 
 ## Ordering Questions
+<a name="ordering"></a>
+
 * [Ordering: Where to find the eBay item number?](/?howto-ebay-item-num)
 * [Choosing the correct side: right or left?](/?howto-left-or-right)
 * [Finding the VIN](/?howto-vin)
@@ -12,6 +14,8 @@ Description: Frequently asked questions, howtos, and tips
 * [Tracking a package](/?howto-tracking)
 
 ## Terminology
+<a name="terms"></a>
+
 * [What are C.V. Joints?](/?howto-what-are-cv-joints)
 * [Inner vs. outer joints](/?howto-inner-vs-outer)
 * [Differences between Halfshafts, Complete C.V. axles, and U-Joints](/?howto-different-axle-types)
@@ -20,17 +24,23 @@ Description: Frequently asked questions, howtos, and tips
 * [What are Propshafts?](/?howto-propshafts)
 
 ## Returns &amp; Warranty Claims
+<a name="returns"></a>
+
 * [What is your warranty and returns policy?](/?policies#warranty)
 * [The item I recieved is a different color than the picture](/?howto-diff-color)
 * [The part I ordered does not fit on my vehicle](/?howto-fitment-issues)
 
 ## Changing Bands on a Boot
+<a name="boots"></a>
+
 * [Installing Pinch-Type Bands](/?howto-install-pinch-bands)
 * [Using the Economy Banding Tool](/?howto-economy-banding-tool)
 * [Using the Professional Banding Tool](/?howto-pro-banding-tool)
 * [Installing Split Boots or Bolt-On Boots](/?howto-split-boots)
 
 ## Remove and replace CV Joints and U-Joints 
+<a name="joints"></a>
+
 * [ATV CV Axle removal steps](/?howto-remove-axles)
 * [ATV CV Axle removal and disassembly video](/?howto-axle-removal-video)
 * [Outer CV joint disassembly](/?howto-outer-cv-disassembly)
