@@ -1,3 +1,9 @@
+Redirect 301 /about.php /?about
+Redirect 301 /howto_joints.php /?howto#joints
+Redirect 301 /dealer.php /?dealers
+Redirect 301 /review_weekendatv.php /?review-atv-utvtech
+Redirect 301 /contact.php /?contact
+
 <IfModule mod_rewrite.c>
     RewriteEngine On
     # May be required to access sub directories
