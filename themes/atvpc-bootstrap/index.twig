@@ -16,10 +16,10 @@
         <meta name="robots" content="{{ meta.robots }}">
     {% endif %}
 
-    <link rel="stylesheet" href="{{ theme_dir | replace({'http://atvpc.com': '//atvpc.com', 'https://atvpc.com': '//atvpc.com'}) }}/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ theme_dir | replace({'http://atvpc.com': '//atvpc.com', 'https://atvpc.com': '//atvpc.com'}) }}/css/bootstrap-drawer.min.css">
-    <link rel="stylesheet" href="{{ theme_dir | replace({'http://atvpc.com': '//atvpc.com', 'https://atvpc.com': '//atvpc.com'}) }}/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{ theme_dir | replace({'http://atvpc.com': '//atvpc.com', 'https://atvpc.com': '//atvpc.com'}) }}/css/style.min.css">
+    <link rel="stylesheet" href="{{ theme_url | replace({'https:': '', 'http:': ''}) }}/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ theme_url | replace({'https:': '', 'http:': ''}) }}/css/bootstrap-drawer.min.css">
+    <link rel="stylesheet" href="{{ theme_url | replace({'https:': '', 'http:': ''}) }}/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ theme_url | replace({'https:': '', 'http:': ''}) }}/css/style.min.css">
 </head>
 
 <body class="has-drawer">
@@ -49,7 +49,7 @@
 
         <header class="row">
             <div class="col-sm-3 col-lg-3 d-block">
-                <a href="/"><img src="{{ theme_dir }}/img/logo.png" alt="ATV Parts Connection Logo"></a>
+                <a href="/"><img src="{{ theme_url | replace({'https:': '', 'http:': ''}) }}/img/logo.png" alt="ATV Parts Connection Logo"></a>
             </div>
             
             <div class="col-sm-9 col-lg-6 text-center info">
@@ -150,9 +150,9 @@
         </div>
     </div><!-- /container -->
 
-<script src="{{ theme_dir | replace({'http://atvpc.com': '//atvpc.com', 'https://atvpc.com': '//atvpc.com'}) }}/js/jquery.min.js"></script>
-<script src="{{ theme_dir | replace({'http://atvpc.com': '//atvpc.com', 'https://atvpc.com': '//atvpc.com'}) }}/js/bootstrap.min.js"></script>
-<script src="{{ theme_dir | replace({'http://atvpc.com': '//atvpc.com', 'https://atvpc.com': '//atvpc.com'}) }}/js/drawer.min.js"></script>
+<script src="{{ theme_url | replace({'https:': '', 'http:': ''}) }}/js/jquery.min.js"></script>
+<script src="{{ theme_url | replace({'https:': '', 'http:': ''}) }}/js/bootstrap.min.js"></script>
+<script src="{{ theme_url | replace({'https:': '', 'http:': ''}) }}/js/drawer.min.js"></script>
 
 <script>
     function scriptLoad(src) {
@@ -172,9 +172,9 @@
 
     $( document ).ready(function() {
 
-        loadIfFound(".carousel", "{{ theme_dir | replace({'http://atvpc.com': '//atvpc.com', 'https://atvpc.com': '//atvpc.com'}) }}/js/multi-item-carousel.js");
-        loadIfFound("#testimonials", "{{ theme_dir | replace({'http://atvpc.com': '//atvpc.com', 'https://atvpc.com': '//atvpc.com'}) }}/js/testimonials.js");
-        loadIfFound("#store-hours", "{{ theme_dir | replace({'http://atvpc.com': '//atvpc.com', 'https://atvpc.com': '//atvpc.com'}) }}/js/store-hours.js");
+        loadIfFound(".carousel", "{{ theme_url | replace({'https:': '', 'http:': ''}) }}/js/multi-item-carousel.js");
+        loadIfFound("#testimonials", "{{ theme_url | replace({'https:': '', 'http:': ''}) }}/js/testimonials.js");
+        loadIfFound("#store-hours", "{{ theme_url | replace({'https:': '', 'http:': ''}) }}/js/store-hours.js");
 
         // Google Analytics (don't load if on dev server)
         host = window.location.hostname;
