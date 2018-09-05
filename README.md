@@ -20,12 +20,12 @@ Source code for ATV Parts Connection's [website](http://atvpc.com). We use [Pico
 - **General business inquiries should be directed to:**  
   :email: **[sales@atvpc.com](mailto:sales@atvpc.com)**
 
-- For technical issues with the website, its code, or this git repo:  
+- Bug reports or issues can be submitted to GitHub's Issue Tracker:  
+  :beetle: [atvpc.com/issues](https://github.com/atvpc/atvpc.com/issues)
+
+- For other technical concerns with the website, its code, or this git repo:  
   :email: [timothy@atvpc.com](mailto:timothy@atvpc.com)  
   :key: [28DC31E49D496D07861334417982B15239458B9C](https://gist.github.com/keithieopia/9dd6d4197f76c244e2e0daa4ebcd5c15)
-
-## Bug Reports
-Submit bug reports via GitHub's [Issue Tracker](https://github.com/atvpc/atvpc.com/issues)
 
 
 ## Copyright & License
