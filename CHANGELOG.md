@@ -1,3 +1,9 @@
+## 3.1 (2018-09-05)
+- Protocol relative URLs (HTTP / HTTPS)
+- Diagram redesigns
+- Anchor links in Howto
+- Unused assets purged
+
 ## 3.0.0 (2018-04-24)
 - PicoCMS backend
 - Rewrite of CSS theme to Bootstrap 4
