@@ -35,6 +35,6 @@ Copyright &copy; 2014 &ndash; 2018 CV Restoration, LLC d. b. a. ATV Parts Connec
 
 ---
 
-Source code is licensed under the [MIT License](https://github.com/keithieopia/atvpc.com/blob/master/LICENSE).
+Source code is licensed under the [MIT License](https://github.com/atvpc/atvpc.com/blob/master/LICENSE).
 
 *This is free software: you are free to change and redistribute it. There is NO WARRANTY, to the extent permitted by law.*
