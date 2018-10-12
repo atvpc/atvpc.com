@@ -86,9 +86,11 @@
                 <div class="collapse navbar-collapse" id="main-navbar">
                     <ul class="nav navbar-nav mr-auto">
                         {% for page in pages if page.title %}
+							{% if not (page.id starts with "blog/") %}
                             <li class="nav-item{% if page.id == current_page.id %} active{% endif %}">
                                 <a class="nav-link" href="{{ page.url }}">{{ page.title }}</a>
                             </li>
+                            {% endif %}
                         {% endfor %}
                     </ul>
 
@@ -108,6 +110,51 @@
 
         <main>
         {% if is_front_page %}
+			<div class="row">
+				<div class="col-lg-8 d-none d-lg-block">
+					<div id="action-shots-carousel" class="carousel slide col-centered" data-ride="carousel">
+						<div class="carousel-inner" role="listbox">
+							<div class="carousel-item active">
+								<img class="img-fluid" src="img/action-shots/0.jpg">
+							</div>
+							<div class="carousel-item">
+								<img class="img-fluid" src="img/action-shots/1.jpg">
+							</div>
+							<div class="carousel-item">
+								<img class="img-fluid" src="img/action-shots/2.jpg">
+							</div>
+							<div class="carousel-item">
+								<img class="img-fluid" src="img/action-shots/3.jpg">
+							</div>
+							<div class="carousel-item">
+								<img class="img-fluid" src="img/action-shots/4.jpg">
+							</div>
+							<div class="carousel-item">
+								<img class="img-fluid" src="img/action-shots/5.jpg">
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-sm-12 col-md-12 col-lg-4 box">
+					<h1>News</h1>
+					<div class="box-body">
+					
+						{% for page in pages|sort_by("time")|reverse|slice(0, 2) %}
+							{% if page.id starts with "blog/" and not page.hidden %}
+								<div class="news">
+									<h4><a href="{{ page.url }}">{{ page.title }}</a></h4>
+									
+									<p class="excerpt">{{ page.description }}</p>
+									<p class="date">{{ page.date | date('F j, Y', 'America/New_York') }}</p>
+								</div>
+							{% endif %}
+						{% endfor %}
+
+					</div>
+				</div>
+			</div>
+
 
             {{ content }}
 

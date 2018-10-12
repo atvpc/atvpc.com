@@ -1,43 +1,4 @@
 <div class="row">
-    <div class="col-lg-8 d-none d-lg-block">
-        <div id="action-shots-carousel" class="carousel slide col-centered" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <img class="img-fluid" src="img/action-shots/0.jpg">
-                </div>
-                <div class="carousel-item">
-                    <img class="img-fluid" src="img/action-shots/1.jpg">
-                </div>
-                <div class="carousel-item">
-                    <img class="img-fluid" src="img/action-shots/2.jpg">
-                </div>
-                <div class="carousel-item">
-                    <img class="img-fluid" src="img/action-shots/3.jpg">
-                </div>
-                <div class="carousel-item">
-                    <img class="img-fluid" src="img/action-shots/4.jpg">
-                </div>
-                <div class="carousel-item">
-                    <img class="img-fluid" src="img/action-shots/5.jpg">
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="col-sm-12 col-md-12 col-lg-4 box">
-        <h1>Welcome</h1>
-        <div class="box-body">
-            <p>
-                ATV Parts Connection specializes in aftermarket parts for ATVs, UTVs, and automotives. We're located in Jessup, Maryland and have been in the ATV/ UTV industry for over 20 years.
-            </p>
-            <p>
-                By using our experience and extensive knowledge of the field, we're able to design, improve, import, and stock parts that meet or exceed OEM specifications at much lower costs than directly from the dealer.
-            </p>
-        </div>
-    </div>
-</div>
-
-<div class="row">
     <div class="col box d-none d-md-block">
         <h1>We Carry Parts For</h1>
 
