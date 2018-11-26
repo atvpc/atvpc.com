@@ -364,6 +364,7 @@ thead {
 
 .social {
     list-style-type: none;
+    text-align: right;
 }
 
 .social li {
