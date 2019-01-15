@@ -29,7 +29,7 @@ Source code for ATV Parts Connection's [website](http://atvpc.com). We use [Pico
 
 
 ## Copyright & License
-Copyright &copy; 2014 &ndash; 2018 CV Restoration, LLC d. b. a. ATV Parts Connection, except where otherwise noted.
+Copyright &copy; 2014 &ndash; 2019 CV Restoration, LLC, except where otherwise noted.
 
 *ATV Parts Connection, Monster Performance Parts, the Monster Axle logo, and ATV Parts Connection graphics are the servicemarks, trademarks, or registered trademarks owned by ATV Parts Connection. All other servicemarks and trademarks are the property of their respective owner.*
 
