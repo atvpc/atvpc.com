@@ -11,10 +11,6 @@ endif
 	rsync -ah node_modules/bootstrap-drawer/dist/js/drawer.min.js themes/atvpc-bootstrap/js/
 	rsync -ah node_modules/jquery/dist/jquery.min.js themes/atvpc-bootstrap/js/
 	rsync -ah node_modules/typeface-oswald/files/* themes/atvpc-bootstrap/fonts/
-	rsync -ah node_modules/font-awesome/css/font-awesome.min.css themes/atvpc-bootstrap/css/
-	sed -i -e "s/..\/fonts/\/\/atvpc.com\/themes\/atvpc-bootstrap\/fonts/g" themes/atvpc-bootstrap/css/font-awesome.min.css
-	rsync -ah node_modules/font-awesome/fonts/* themes/atvpc-bootstrap/fonts/
-	rm themes/atvpc-bootstrap/fonts/FontAwesome.otf
 
 build:
 	node_modules/clean-css-cli/bin/cleancss -o themes/atvpc-bootstrap/css/style.min.css themes/atvpc-bootstrap/css/style.css
