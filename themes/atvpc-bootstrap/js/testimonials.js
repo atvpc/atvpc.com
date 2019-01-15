@@ -49,7 +49,27 @@ var testimonials = [
   "Arrived sooner than expected. Great seller!",
   "Excellent Customer support, would definitely purchase from them again.",
   "Fast shipping arrived before estimated delivery date.",
-  "Product was delivered very fast and is better than factory at a way less cost."
+  "Product was delivered very fast and is better than factory at a way less cost.",
+  "As advertised, no surprises. Would purchase from again in future for sure. Thx",
+  "Super fast can't go wrong with this seller",
+  "Excellent product, very well priced, and fast shipping",
+  "Amazing quality, machine rides like a dream, best $80 I've spent!!!!!!",
+  "Packaged very well and fast shipping thank you",
+  "Lightning fast shipping and a great deal. Will buy from again!",
+  "Arrived ahead of schedule and was a perfect fit.",
+  "Great Ebayer! This Iraq War Veteran enjoyed doing business with them! HOOAH!!!",
+  "Very professional and courteous company. I will order from them again and again",
+  "Went in tight, but works fine. No issues AA++",
+  "Hassle free delivery, very accomidating, great products, great communication",
+  "Great product... exactly as described w/ fast delivery! Will buy again... Thx!"
+  "Got it, thank you. Can't wait to install. FAST SHIPPING",
+  "Absolutely blazing fast delivery, Great price! Awesome Ebay seller!! A+",
+  "Very fast shipping. Nice bearings, can’t wait to install.",
+  "Fast shipping to Canada, good quality, would buy again, thanks. A+++++++",
+  "Fit perfect, high quality and matches OEM",
+  "Fast shipping to Germany. Good Salesman. Gladly purchase again.",
+  "Placed the order on Sunday got it in on wednesday.... Good service!!",
+  "Thank you for making my return process reasonably smooth!"
 ];
 
 function newTestimonial() {
