@@ -61,7 +61,7 @@ var testimonials = [
   "Very professional and courteous company. I will order from them again and again",
   "Went in tight, but works fine. No issues AA++",
   "Hassle free delivery, very accomidating, great products, great communication",
-  "Great product... exactly as described w/ fast delivery! Will buy again... Thx!"
+  "Great product... exactly as described w/ fast delivery! Will buy again... Thx!",
   "Got it, thank you. Can't wait to install. FAST SHIPPING",
   "Absolutely blazing fast delivery, Great price! Awesome Ebay seller!! A+",
   "Very fast shipping. Nice bearings, can’t wait to install",
