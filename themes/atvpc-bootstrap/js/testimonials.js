@@ -73,25 +73,22 @@ var testimonials = [
 ];
 
 function newTestimonial() {
-    var testimonial = testimonials[Math.floor(Math.random() * testimonials.length)];
-    return "<span class='testimonial'>" + testimonial + "</span>";
+  var testimonial = testimonials[Math.floor(Math.random() * testimonials.length)];
+  return "<span class='testimonial'>" + testimonial + "</span>";
 }
 
 function aniTestimonial() {
-    $( "#testimonials" ).fadeOut( "slow", function() {
-        $( "#testimonials" ).html( newTestimonial ).fadeIn( "slow" );
-    });
+  $( "#testimonials" ).fadeOut( "slow", function() {
+    $( "#testimonials" ).html( newTestimonial ).fadeIn( "slow" );
+  });
 }
 
 $( document ).ready(function() {
-
-    // Make sure testimonials exists on the page before creating timers
-    if( $( "#testimonials" ).length ) {
-
-        // Populate the testimonial on first page load
-        $( "#testimonials" ).html( newTestimonial() );
-
-        // animate new testimonials every 5 seconds
-        var testimonialTimer = setInterval(aniTestimonial, 5000);
-    }
+  // Make sure testimonials exists on the page before creating timers
+  if( $( "#testimonials" ).length ) {
+    // Populate the testimonial on first page load
+    $( "#testimonials" ).html( newTestimonial() );
+    // animate new testimonials every 5 seconds
+    var testimonialTimer = setInterval(aniTestimonial, 5000);
+  }
 });
