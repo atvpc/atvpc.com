@@ -21,4 +21,5 @@ serve: build
 	xdg-open 'http://127.0.0.1:8000'
 
 push:
+	git push
 	rsync -avz -e ssh --exclude=.git --exclude=node_modules --progress --no-perms --no-owner --no-group --no-times . www.atvpc.com:/srv/htdocs/atvpc.com
