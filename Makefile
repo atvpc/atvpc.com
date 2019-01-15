@@ -20,5 +20,5 @@ serve: build
 	lsof -i -P -n | grep -q 'php.*LISTEN' || php -S '127.0.0.1:8000' &
 	xdg-open 'http://127.0.0.1:8000'
 
-upload:
-	git push atvpc-dev
+push:
+	rsync -avz -e ssh --exclude=.git --exclude=node_modules --progress --no-perms --no-owner --no-group --no-times . www.atvpc.com:/srv/htdocs/atvpc.com
