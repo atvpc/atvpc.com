@@ -13,4 +13,8 @@ ATV Parts Connection supports education and the local community. We were
 very excited to be part of Northern Middle School's career day and will
 be back at next year's career day.
 
-![Photo of Presentation](/img/blog/2019-career-day.jpg)
+<div class="text-center">
+  <div class="img-container">
+    <img class="img-fluid img-rounded img-thumb" src="/img/blog/2019-career-day.jpg"><span class="caption">Career Day Presentation</span>
+  </div>
+</div>
