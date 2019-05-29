@@ -1,9 +1,10 @@
 YARN := $(shell command -v yarn 2>/dev/null)
 
 update:
-ifndef YARN
-	$(error "yarn is not installed")
-endif
+	ifndef YARN
+		$(error "yarn is not installed")
+	endif
+
 	yarn upgrade
 	rsync -ah node_modules/bootstrap/dist/css/bootstrap.min.css themes/atvpc-bootstrap/css/
 	rsync -ah node_modules/bootstrap/dist/js/bootstrap.min.js themes/atvpc-bootstrap/js/
@@ -21,5 +22,5 @@ serve: build
 	xdg-open 'http://127.0.0.1:8000'
 
 push:
-	git push
+	git push github
 	rsync -avz -e ssh --exclude=.git --exclude=node_modules --progress --no-perms --no-owner --no-group --no-times . www.atvpc.com:/srv/htdocs/atvpc.com
