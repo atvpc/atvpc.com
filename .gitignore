@@ -1,4 +1,8 @@
-node_modules/
+
 index.php
 yarn-error.log
 xpaxle/
+
+# Composer and npm managed assets
+node_modules/
+vendor/
