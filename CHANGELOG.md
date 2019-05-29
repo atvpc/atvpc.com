@@ -1,3 +1,7 @@
+## 3.2 (2019-05-29)
+- Switched PicoCMS assets to use Composer
+- Updated insecure jQuery version
+
 ## 3.1 (2018-09-05)
 - Protocol relative URLs (HTTP / HTTPS)
 - Diagram redesigns
