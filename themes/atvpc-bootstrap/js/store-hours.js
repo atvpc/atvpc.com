@@ -5,28 +5,28 @@ var hours = [
         "shipping" : 0
     },
     {   "day"      : "Monday",
-        "open"     : 800,
-        "close"    : 1800,
+        "open"     : 900,
+        "close"    : 1700,
         "shipping" : 1630
     },
     {   "day"      : "Tuesday",
-        "open"     : 800,
-        "close"    : 1800,
+        "open"     : 900,
+        "close"    : 1700,
         "shipping" : 1630
     },
     {   "day"      : "Wednesday",
-        "open"     : 800,
-        "close"    : 1800,
+        "open"     : 900,
+        "close"    : 1700,
         "shipping" : 1630
     },
     {   "day"      : "Thursday",
-        "open"     : 800,
-        "close"    : 1800,
+        "open"     : 900,
+        "close"    : 1700,
         "shipping" : 1630
     },
     {   "day"      : "Friday",
-        "open"     : 800,
-        "close"    : 1800,
+        "open"     : 900,
+        "close"    : 1700,
         "shipping" : 1630
     },
     {   "day"      : "Saturday",

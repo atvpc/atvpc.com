@@ -67,7 +67,7 @@
     <div class="d-inline-block col-md-4 col-lg-3">
         <h1>Hours</h1>
         <ul>
-            <li>Monday - Friday: 8am - 6pm
+            <li>Monday - Friday: 9am - 5pm
             <li>Saturday: 9am - 3pm
             <li>Sunday: Closed
         </ul>
