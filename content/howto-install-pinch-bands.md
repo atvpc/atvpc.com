@@ -40,7 +40,7 @@ Once you have pinched the box tab, it should mushroom up as seen in the picture.
 </div>
 
 ### Step 4
-The last thing you want to do is grab a small tac hammer and just tap down the mushroomed tab till its flat, just in case there are clearence issues.
+The last thing you want to do is grab a small tac hammer and just tap down the mushroomed tab till its flat, just in case there are clearance issues.
 
 <div class="img-container">
 	<img class="img-fluid img-rounded img-thumb" src="img/howto/pinch-type-bands/4.jpg">
