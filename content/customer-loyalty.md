@@ -1,6 +1,7 @@
 ---
 Title: Customer Loyalty
 Description: Discounts for frequent customers
+Hiding: 1
 ---
 
 As a reward for customer loyalty, special discounts are available for our repeat customers.
