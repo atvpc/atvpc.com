@@ -1,7 +1,6 @@
 ---
 Title: Clearance
 Description: Liquidation and Clearance specials
-Hiding: 1
 ---
 
 The current items are offered on both eBay and craigslist. eBay listings include a flat rate freight shipping fee, whereas craigslist excludes this fee but is offered for //local pickup only//.
