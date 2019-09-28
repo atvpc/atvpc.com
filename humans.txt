@@ -2,7 +2,10 @@
 /* humanstxt.org */
 
 /* TEAM */
-    The Big Cheese aka The C.V. Man:
+    President:
+        Steve Amjad <steve@atvpc.com>
+
+    The Original "The C.V. Man":
         Danny Walburn <danny@atvpc.com>
 
     Project Manager, UI Testing, Photography: 
@@ -17,9 +20,6 @@
 /* SUPPORTING COMPANIES */
     Early Prototype: 
         Frooition - http://www.frooition.com
-
-    Host:
-        Webfaction - https://webfaction.com
 
 /* CONTENT & THEME */
     Engine: Pico CMS
