@@ -4,7 +4,7 @@
     "bootstrap-drawer": "^1.0.6",
     "jquery": "^3.2.1",
     "typeface-oswald": "^0.0.45",
-    "yarn": "^1.17.3"
+    "yarn": "^1.22.0"
   },
   "devDependencies": {
     "clean-css-cli": "^4.1.10"
