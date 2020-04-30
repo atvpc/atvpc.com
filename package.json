@@ -2,7 +2,7 @@
   "dependencies": {
     "bootstrap": "^4.0.0",
     "bootstrap-drawer": "^1.0.6",
-    "jquery": "^3.2.1",
+    "jquery": "^3.5.0",
     "typeface-oswald": "^0.0.45",
     "yarn": "^1.17.3"
   },
